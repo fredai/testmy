@@ -1,0 +1,478 @@
+
+/*
+ * Copyright (C) Inspur(Beijing)
+ */
+
+
+#include "db.h"
+#include "svr_define.h"
+#include "buffer.h"
+#include "protocol.h"
+#include "util.h"
+#include "error_handle.h"
+
+#include <pthread.h>
+#include <time.h>
+#include <mysql.h>
+
+
+#define MAX_SQL_LEN_FOR_ONE_NODE MAX_TOTAL_INDEX_NUM * LEN_32
+#define MAX_INSERT_SQL_PREFIX_LEN MAX_TOTAL_INDEX_NUM * LEN_32
+
+
+static void add_quote_for_data(app_data_t *data, char *dest);
+static int convert_data_to_sql(const app_data_buf_t *app_data, \
+        const char *datetime, char *p_sql_buffer);
+static int generate_index_name_sql(const config_mod_info_t *g_mod_info, \
+        char *sql_buffer);
+static int generate_table_structure_sql(const config_mod_info_t *g_mod_info, \
+        char *sql_buffer , const monitor_list_t *monitor_list);
+static int produce_insert_sql_prefix(const config_mod_info_t *g_mod_info, \
+        const char *table_name, char *sql_buffer);
+static int free_one_data(app_data_buf_t * app_data);
+
+
+void*
+thread_db(void *arg_db) 
+{
+
+    LOG_START(SVR_LOG_PATH, g_app_svr_config.log_level);
+    assert(arg_db != NULL);
+
+    LOG(LOG_INFO, "thread db %lu started", pthread_self());
+    const config_mod_info_t *mod_info_head = (config_mod_info_t*) arg_db;
+
+    int reconnect = 0;
+
+    /* mysql init */
+    MYSQL *con, *ret_conn;
+
+RECONNECT:
+
+    con = mysql_init(NULL);
+    if (con == NULL) {
+        LOG(LOG_FATAL, "%s", "mysql init error");
+        if (reconnect == 0) {
+            exit(201);
+        } else {
+            sleep(5);
+            goto RECONNECT;
+        }
+    }
+    /* db config */
+    const db_config_t *db_config = &(g_app_svr_config.db_config);
+    /* set options */
+    const unsigned int db_conn_timeout = DB_CONN_TIMEOUT;
+    mysql_options(con, MYSQL_OPT_CONNECT_TIMEOUT, &db_conn_timeout);
+
+    /* connect */
+    ret_conn = mysql_real_connect(con,
+            db_config -> db_server_ip,
+            db_config -> db_username,
+            db_config -> db_password,
+            db_config -> db_name,
+            db_config -> db_server_port, NULL, 0);
+    if (ret_conn == NULL) {
+        LOG(LOG_FATAL, "%s", "mysql connect error");
+        if (reconnect == 0) {
+            exit(202);
+        } else {
+            sleep(5);
+            mysql_close(con);
+            goto RECONNECT;
+        }
+    } else {
+        LOG(LOG_INFO, "%s", "mysql connect success");
+	sleep(1);
+    }
+
+    int ret;
+    /* last time for inserting data */
+    time_t last_db_time = 0;
+
+    const int interval = g_app_svr_config.itvl;
+    /* nodes */
+    app_node_data_t *nodes = g_data_buffer.data;
+    /* table name */
+    const char * table_name = g_app_svr_config.table_name;
+    /* node count */
+    const int count = g_data_buffer.count;
+
+    /* buffer for sql */
+    char *sql_buffer = (char *) malloc(MAX_SQL_LEN_FOR_ONE_NODE * \
+            count + MAX_INSERT_SQL_PREFIX_LEN);
+    if (sql_buffer == NULL) {
+        LOG (LOG_FATAL, "%s", "malloc sql buffer failure");
+        exit (203);
+    }
+
+//printf("FILE=%s, LINE=%d, sql_buffer = %x\n", __FILE__, __LINE__, sql_buffer);
+    memset(sql_buffer, 0, MAX_SQL_LEN_FOR_ONE_NODE * count + \
+            MAX_INSERT_SQL_PREFIX_LEN);
+
+    /* produce sql prefix */
+    produce_insert_sql_prefix(mod_info_head, table_name, sql_buffer);
+    const int sql_prefix_len = strlen(sql_buffer);
+
+    while (1) {
+        struct timeval start_time = timeval_current();
+
+        /* mutex lock */
+        int k = 0;
+        for (k = 0; k < count; k++) {
+            pthread_mutex_lock(&(nodes[k].notex));
+        }
+
+        /* count of data */
+        int n = get_nodes_data_count(&g_data_buffer);
+        if (n <= 0) {
+            LOG ( LOG_DEBUG, "data count is %d", n );
+            for (k = count - 1; k >= 0 ; k --) {
+            	pthread_mutex_unlock ( & ( nodes [ k ].notex ) );
+	    }
+              goto NEXT;
+        }
+
+        /* time now */
+        time_t d, t = time (NULL);
+        int x = 0;
+
+        /*
+         * time of 1st data is t + ( - n + 0 ) * interval
+         * time of 2nd data is t + ( - n + 1 ) * interval
+         * time of 3rd data is t + ( - n + 2 ) * interval
+         */
+        for (x = 0; x < n; x++) {
+            /* d = t - n + x; */
+            d = t + (- n + x) * (int) interval;
+            /* discard */
+            if (d <= last_db_time) {
+                LOG(LOG_DEBUG, "data %d ignore", x);
+                free_one_data (&g_data_buffer);
+                continue;
+            }
+            /* produce datetime */
+            char datetime[MAX_DATE_TIME_LEN];
+            u_time_stamp_r_by_t(d, datetime);
+            /* convert data to sql statement */
+            ret = convert_data_to_sql(&g_data_buffer, \
+                    datetime, sql_buffer + sql_prefix_len);
+            /* execute sql statement */
+            LOG(LOG_DEBUG, "%s", "before insert data to db");
+
+
+            /* BLOCK PROBLEM */
+            ret = mysql_query(con, sql_buffer);
+            if (ret != 0) {
+                reconnect = 1;
+                LOG (LOG_ERROR, "%s", "insert data to db error");
+            } else {
+                reconnect = 0;
+                LOG (LOG_DEBUG, "%s", "insert data to db success");
+            }
+        }
+
+        /* update last insert data time */
+        last_db_time = d;
+NEXT:
+
+        for (k = count - 1; k >= 0 ; k --) {
+            pthread_mutex_unlock ( & ( nodes [ k ].notex ) );
+        }
+
+        if (reconnect == 1) {
+            mysql_close(con);
+            goto RECONNECT;
+        }
+
+        smart_sleep(interval, &start_time);
+    }
+
+    free(sql_buffer);
+    mysql_close(con);
+    pthread_exit(NULL);
+
+}
+
+
+static int 
+free_one_data(app_data_buf_t * app_data) {
+
+    assert(app_data != NULL);
+
+    int i;
+    app_node_data_t *nodes = app_data->data;
+    const int count = app_data->count;
+
+    for (i = 0; i < count; i ++) {
+        /* if not active ignore */
+        if (nodes[i].node_status != ACTIVE) {
+            continue;
+        }
+        /* free first data */
+    	if (nodes[i].data_count > 1) {
+    		node_data_t *del = nodes[i].node_data_head.next;
+    		nodes[i].node_data_head.next = del -> next;
+    		free(del);
+    		/* reduce count of data */
+    		nodes[i].data_count--;;
+    	}
+    }
+    return 0;
+}
+
+static void
+add_quote_for_data(app_data_t *data, char *dest)
+{
+    assert(data != NULL && dest != NULL && dest[0] == 0);
+
+    char *str, *token, *save_ptr;
+    int len;
+
+    char *buffer_temp = (char *)malloc(sizeof(data->buffer));
+    strcpy(buffer_temp, data->buffer);
+
+    for (str = buffer_temp; ; str = NULL) {
+       token = strtok_r(str, TEYE_DATA_DELIMTER, &save_ptr);
+       if (token == NULL) {
+           break;
+       }
+       len = sprintf(dest, "\'%s\'%s", token, DATABASE_ITEM_DELIMTER);
+       dest += len;
+    }
+   
+    /* ignore the last DATABASE_ITEM_DELIMTER */ 
+    if (strcmp(dest-1, DATABASE_ITEM_DELIMTER) == 0) {
+        dest[-1] = 0;
+    }
+
+    free(buffer_temp);
+}
+
+
+static int 
+convert_data_to_sql(const app_data_buf_t *app_data, \
+        const char *datetime, char *p_sql_buffer) 
+{
+    assert(app_data != NULL && datetime != NULL && \
+            p_sql_buffer != NULL);
+
+    int i;
+    char *sql_buffer = p_sql_buffer;
+    app_node_data_t *nodes = app_data->data;
+    const int count = app_data->count;
+
+    for (i = 0; i < count; i ++) {
+        /* if not active ignore */
+        if (nodes[i].node_status != ACTIVE) {
+            continue;
+        }
+        /* node name, node ip */
+        sprintf(sql_buffer, "(\'%s\',\'%s\',\'%s\',", datetime, \
+                nodes[i].node_name, nodes[i].node_ip);
+
+        /* first data in data list */
+        app_data_t *data = &( (nodes[i].node_data_head.next)->data); 
+        char quote_buffer[PACKAGE_SIZE] = {0};
+
+        add_quote_for_data(data, quote_buffer);
+        strcat(sql_buffer, quote_buffer);
+
+        /* free this data */
+	if (nodes[i].data_count > 1) {
+		node_data_t *del  = nodes[i].node_data_head.next;
+		nodes[i].node_data_head.next = del->next;
+		free(del);
+		/* reduce count of data */
+		nodes[i].data_count--;;
+	}
+        strcat(sql_buffer, " ),");
+        sql_buffer = sql_buffer + strlen(sql_buffer);
+    }
+    sql_buffer[strlen(sql_buffer) - 1] = 0;
+    return 0;
+}
+
+
+static int
+generate_index_name_sql(const config_mod_info_t *g_mod_info, \
+        char *sql_buffer)
+{
+    assert(g_mod_info != NULL && sql_buffer != NULL);
+
+    int i, cnt, j;
+    char buf_temp[LEN_32];
+    const config_mod_info_item_t *item;
+	const config_mod_info_t *g_mod_head;
+
+	/* monitor list */
+	extern app_svr_config_t g_app_svr_config;
+	monitor_list_t *monitor_list = &(g_app_svr_config.monitor_list);
+	const int  monitor_count = monitor_list->count;
+	cf_monitor_t *cf_monitor = monitor_list->head.next;
+	
+	/* add monitor */
+	for (j = 0; j < monitor_count; j++) {
+		g_mod_head = g_mod_info;
+		while ( (g_mod_head = g_mod_head->next) != NULL) {
+			item = &(g_mod_head->info); 
+
+			cnt = item->index_cnt;
+			if(0==strcmp(item->mod_name, cf_monitor -> monitor_name)) {//3
+				for (i = 0; i < cnt; i++) {
+					memset(buf_temp, 0, sizeof(buf_temp));
+					snprintf(buf_temp, sizeof(buf_temp), "%s", \
+							(item->index_info[i]).index_name);
+
+					if (g_mod_head->next != NULL || i != cnt -1) { 
+						strcat(buf_temp, ",");
+					}
+					strcat(sql_buffer, buf_temp);
+				}
+			}//if
+		} 
+		cf_monitor = cf_monitor -> next;
+	}
+		if(sql_buffer[strlen(sql_buffer)-1]==',')
+			sql_buffer[strlen(sql_buffer)-1]='\0';
+
+    return 0;
+}
+
+
+static int
+generate_table_structure_sql(const config_mod_info_t *g_mod_info, \
+        char *sql_buffer, const monitor_list_t *monitor_list)
+{
+    assert(g_mod_info != NULL && sql_buffer != NULL);
+    
+    int i, j, cnt;
+    char buf_temp[LEN_256];
+    const config_mod_info_item_t *item;
+	const config_mod_info_t *info_head;
+
+
+	const int monitor_count = monitor_list -> count;
+    cf_monitor_t *cf_monitor = monitor_list -> head.next;
+
+	
+	for (j = 0; j < monitor_count; j++) {//1
+		assert(cf_monitor != NULL);//2
+		info_head = g_mod_info;	
+		while ( (info_head = info_head->next) != NULL) {
+			item = &(info_head -> info); 
+
+			cnt = item -> index_cnt;
+			if(0==strcmp(item->mod_name, cf_monitor -> monitor_name)) {//3
+				for (i = 0; i < cnt; i++) {
+					memset(buf_temp, sizeof(buf_temp), 0);
+					snprintf(buf_temp, sizeof(buf_temp), "%s %s NOT NULL", \
+							(item->index_info[i]).index_name, 
+							(item->index_info[i].data_type));
+					if (info_head->next != NULL || i != cnt -1) {
+						strcat(buf_temp, ",");
+					}
+					strcat(sql_buffer, buf_temp);
+				}
+			}//if3
+		}//while
+		cf_monitor = cf_monitor -> next;
+	}//for4
+		if(sql_buffer[strlen(sql_buffer)-1]==',')
+			sql_buffer[strlen(sql_buffer)-1]='\0';
+    return 0;
+}
+
+
+static int 
+produce_insert_sql_prefix(const config_mod_info_t *g_mod_info, \
+        const char *table_name, char *sql_buffer) 
+{
+    assert(g_mod_info != NULL && table_name != NULL && \
+            sql_buffer != NULL);
+
+    const char * sql_prefix_1 = "INSERT INTO ";
+    const char * sql_prefix_2 = " ( date_time," \
+                                 "node_name," \
+                                 "node_ip,";
+    char sql_prefix_3 [MAX_TOTAL_INDEX_NUM * LEN_32];
+    const char * sql_prefix_4 = " ) VALUES ";
+
+    memset(sql_prefix_3, 0, sizeof(sql_prefix_3));
+    generate_index_name_sql(g_mod_info, sql_prefix_3);
+
+    sprintf(sql_buffer, "%s%s%s%s%s", sql_prefix_1, table_name, \
+            sql_prefix_2, sql_prefix_3, sql_prefix_4);
+
+    return 0;
+}
+
+
+int
+create_db_table (const app_svr_config_t *conf, \
+        const config_mod_info_t *g_mod_info)
+{
+    assert(conf != NULL && g_mod_info != NULL);
+
+    const db_config_t *db_config = &(conf->db_config);
+	/* monitor list */
+    const monitor_list_t  *monitor_list = &(conf->monitor_list);
+   
+    
+	const int MAX_BUFFER_SIZE = MAX_TOTAL_INDEX_NUM * LEN_32;
+    char sql_buffer[MAX_BUFFER_SIZE];
+
+    const char * create_sql_prefix_1 = "create table "; 
+    const char * create_sql_prefix_2 = \
+       " ( id bigint(20) NOT NULL auto_increment," \
+       "PRIMARY KEY (id), " \
+       "date_time datetime NOT NULL," \
+        "node_name varchar(32) NOT NULL," \
+        "node_ip varchar(32) NOT NULL," ;
+
+    char  create_sql_suffix_1[MAX_BUFFER_SIZE];
+    const char * create_sql_suffix_2 = ") ENGINE=MyISAM DEFAULT CHARSET=utf8";
+    const char * create_sql_suffix_3 = "create index date_time on DataInfo (date_time)";
+
+    memset(create_sql_suffix_1, 0, sizeof(create_sql_suffix_1));
+    
+	generate_table_structure_sql(g_mod_info, create_sql_suffix_1, monitor_list);
+   
+	snprintf(sql_buffer, sizeof(sql_buffer), "%s%s%s%s%s", \
+            create_sql_prefix_1, conf->table_name, 
+            create_sql_prefix_2, create_sql_suffix_1, \
+            create_sql_suffix_2);
+
+    MYSQL *con, *ret_conn;
+    con = mysql_init(NULL);
+    if (con == NULL) {
+        err_msg("mysql_init error");
+        return -1;
+    }
+    const unsigned int db_conn_timeout = DB_CONN_TIMEOUT;
+    mysql_options(con, MYSQL_OPT_CONNECT_TIMEOUT, &db_conn_timeout);
+    ret_conn = mysql_real_connect(con, db_config->db_server_ip, \
+            db_config -> db_username,
+            db_config -> db_password,
+            db_config -> db_name, 
+            db_config -> db_server_port,
+            NULL, 0 );
+
+    if (ret_conn == NULL) {
+        err_msg("mysql real connect error");
+        return -1;
+    }
+
+    int ret = mysql_query(con, sql_buffer);
+    ret = mysql_query(con, create_sql_suffix_3);
+/*
+    if(ret != 0) {
+        err_msg("mysql_query error");
+        return -1;
+    }
+*/
+    mysql_close(con);
+    mysql_library_end();
+    return 0;
+}
+

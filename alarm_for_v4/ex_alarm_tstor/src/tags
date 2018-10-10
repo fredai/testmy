@@ -1,0 +1,300 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+ALARMED	./ex_alarm.h	/^    ALARMED$/;"	e	enum:alarm_flag_e
+ALARMING	./ex_alarm.h	/^    ALARMING,$/;"	e	enum:alarm_flag_e
+ALARM_EMAIL_SUBJECT	./alarm.c	60;"	d	file:
+ALARM_ERRMSG_LEN	./ex_alarm.h	29;"	d
+ALARM_GET_DATA_INTERVAL	./ex_alarm.h	34;"	d
+ALARM_LEVEL_COMMON	./ex_alarm.h	/^    ALARM_LEVEL_COMMON,$/;"	e	enum:alarm_leval_e
+ALARM_LEVEL_NUM	./ex_alarm.h	27;"	d
+ALARM_LEVEL_SERIOUS	./ex_alarm.h	/^    ALARM_LEVEL_SERIOUS,$/;"	e	enum:alarm_leval_e
+ALARM_LEVEL_WARN	./ex_alarm.h	/^    ALARM_LEVEL_WARN$/;"	e	enum:alarm_leval_e
+ALARM_MSG_FMT	./alarm.c	57;"	d	file:
+ALARM_MSG_FMT_CH	./alarm.c	58;"	d	file:
+ALARM_TEST_INFO	./alarm.h	10;"	d
+ALARM_TEST_SUBJECT	./alarm.h	11;"	d
+CC	./Makefile	/^CC = gcc$/;"	m
+CFLAGS	./Makefile	/^CFLAGS = -g -Wall -O0 -D_REENTRANT$/;"	m
+CF_STR_ALARM_FREQ	./config.c	40;"	d	file:
+CF_STR_ALARM_FREQ_INTERVAL	./config.c	41;"	d	file:
+CF_STR_ALARM_FREQ_TIMES	./config.c	42;"	d	file:
+CF_STR_ALARM_ITEM	./config.c	44;"	d	file:
+CF_STR_ALARM_METHOD	./config.c	22;"	d	file:
+CF_STR_ALARM_METHOD_EMAIL	./config.c	23;"	d	file:
+CF_STR_ALARM_METHOD_SMS	./config.c	24;"	d	file:
+CF_STR_ALARM_METHOD_TEL	./config.c	25;"	d	file:
+CF_STR_DB	./config.c	15;"	d	file:
+CF_STR_DB_NAME	./config.c	18;"	d	file:
+CF_STR_DB_PASSWORD	./config.c	20;"	d	file:
+CF_STR_DB_SERVER_IP	./config.c	16;"	d	file:
+CF_STR_DB_SERVER_PORT	./config.c	17;"	d	file:
+CF_STR_DB_USER_NAME	./config.c	19;"	d	file:
+CF_STR_EMAIL	./config.c	30;"	d	file:
+CF_STR_EMAIL_CC	./config.c	37;"	d	file:
+CF_STR_EMAIL_FROM	./config.c	33;"	d	file:
+CF_STR_EMAIL_NAME	./config.c	34;"	d	file:
+CF_STR_EMAIL_PASSWORD	./config.c	35;"	d	file:
+CF_STR_EMAIL_SMTP	./config.c	31;"	d	file:
+CF_STR_EMAIL_SMTP_PORT	./config.c	32;"	d	file:
+CF_STR_EMAIL_TO	./config.c	36;"	d	file:
+CF_STR_EMAIL_USE_TLS_SSL	./config.c	38;"	d	file:
+CF_STR_SMS	./config.c	27;"	d	file:
+CF_STR_TEL	./config.c	28;"	d	file:
+CHECK_ALARM_INFO_TABLE_SQL	./db.c	22;"	d	file:
+CHECK_PID_BUF_LEN	./utils.c	324;"	d	file:
+CHECK_SMS_ERROR	./ex_alarm.c	27;"	d	file:
+COIS_DEBUG_PRINT	./log.h	44;"	d
+CONFIG_FILE_PATH	./config.h	18;"	d
+CS_LOG_PATH	./alarm.c	81;"	d	file:
+CS_LOG_PATH	./alarm.c	83;"	d	file:
+CS_LOG_PATH	./config.h	20;"	d
+DB_CONN_TIMEOUT_VALUE	./db.c	16;"	d	file:
+DB_INSERT_SQL_FMT	./alarm.c	64;"	d	file:
+DB_INSERT_SQL_PREFIX	./alarm.c	62;"	d	file:
+DB_RETRY_TIMES	./alarm.c	65;"	d	file:
+DEFAULT_DB_PORT	./config.c	46;"	d	file:
+EMAIL_RE_SEND_INTERVAL	./alarm.c	76;"	d	file:
+EMAIL_RE_SEND_TIMES	./alarm.c	75;"	d	file:
+EQ	./ex_alarm.h	/^    EQ,$/;"	e	enum:alarm_relation_e
+EX_ALARM_PID_FILE	./config.h	22;"	d
+GE	./ex_alarm.h	/^    GE,$/;"	e	enum:alarm_relation_e
+GET_LAST_ID_SQL	./db.c	19;"	d	file:
+GET_SQL_DATA	./db.c	23;"	d	file:
+GET_SQL_DATA	./ex_alarm.c	29;"	d	file:
+GNOKII_CMD	./alarm.c	71;"	d	file:
+GNOKII_CONFIG	./alarm.c	72;"	d	file:
+GT	./ex_alarm.h	/^    GT,$/;"	e	enum:alarm_relation_e
+HAVE_NOT_ALARM	./ex_alarm.h	/^    HAVE_NOT_ALARM,$/;"	e	enum:alarm_flag_e
+HDRS	./Makefile	/^HDRS    =               		\\$/;"	m
+INCLUDES	./Makefile	/^INCLUDES = -I ..\/lib\/include\/mysql -I ..\/lib\/include$/;"	m
+IS_END_MSG	./alarm.h	13;"	d
+LDFLAGS	./Makefile	/^LDFLAGS = -g -Wall -O0 $/;"	m
+LE	./ex_alarm.h	/^    LE,$/;"	e	enum:alarm_relation_e
+LIBS	./Makefile	/^LIBS = -lm -lpthread -lssl -L $(LIB_PATH) -L $(MYSQL_PATH) -lcengine -lmysqlclient -lemail -lcrypto#-lc \/usr\/lib64\/libcrypto.so.10 #-lcrypto$/;"	m
+LIB_PATH	./Makefile	/^LIB_PATH = ..\/lib\/lib32$/;"	m
+LIB_PATH	./Makefile	/^LIB_PATH = ..\/lib\/lib64$/;"	m
+LOG_DEBUG	./log.h	/^    LOG_DEBUG,$/;"	e	enum:__anon1
+LOG_ERROR	./log.h	/^    LOG_ERROR,$/;"	e	enum:__anon1
+LOG_FATAL	./log.h	/^    LOG_FATAL$/;"	e	enum:__anon1
+LOG_INFO	./log.h	/^    LOG_INFO,$/;"	e	enum:__anon1
+LOG_WARN	./log.h	/^    LOG_WARN,$/;"	e	enum:__anon1
+LT	./ex_alarm.h	/^    LT,$/;"	e	enum:alarm_relation_e
+MAX_ALARM_ITEM_NAME_LEN	./ex_alarm.h	18;"	d
+MAX_ALARM_MSG_BUFFER_LEN	./ex_alarm.h	31;"	d
+MAX_ALARM_MSG_BUFFER_LEN_MYSQL	./ex_alarm.h	32;"	d
+MAX_ALARM_NODE_NAME_LEN	./ex_alarm.h	16;"	d
+MAX_ALARM_SCRIPT_NAME_LEN	./ex_alarm.h	36;"	d
+MAX_CONFIG_FILE_LINE_LEN	./config.h	13;"	d
+MAX_CONFIG_ITEM_LEN	./config.h	15;"	d
+MAX_DATE_TIME_LEN	./ex_alarm.h	24;"	d
+MAX_DB_NAME_LEN	./config.h	24;"	d
+MAX_DB_PASSWORD_LEN	./config.h	28;"	d
+MAX_DB_USER_NAME_LEN	./config.h	26;"	d
+MAX_IP_STR_LEN	./ex_alarm.h	22;"	d
+MAX_IP_V4_STR_LEN	./ex_alarm.h	20;"	d
+MAX_SMS_CMD_LEN	./alarm.c	69;"	d	file:
+MAX_SMS_STR_LEN	./config.h	31;"	d
+MAX_SMS_STR_NUM	./config.h	33;"	d
+MAX_SQL_LEN	./db.c	17;"	d	file:
+MAX_SQL_LEN	./ex_alarm.c	30;"	d	file:
+METHOD_OFF	./config.h	/^    METHOD_OFF,$/;"	e	enum:alarm_method_switch_e
+METHOD_ON	./config.h	/^    METHOD_ON,$/;"	e	enum:alarm_method_switch_e
+MYSQL_PATH	./Makefile	/^MYSQL_PATH = ..\/lib\/lib32\/mysql$/;"	m
+MYSQL_PATH	./Makefile	/^MYSQL_PATH = ..\/lib\/lib64\/mysql$/;"	m
+NQ	./ex_alarm.h	/^    NQ,$/;"	e	enum:alarm_relation_e
+OBJS	./Makefile	/^OBJS    =               		\\$/;"	m
+PRECISION	./ex_alarm.c	633;"	d	file:
+QUERY_DATA_SQL	./db.c	21;"	d	file:
+RET_ITEM	./config.c	797;"	d	file:
+SCRIPT_PATH	./alarm.h	15;"	d
+SEND_MSG_INTERVAL	./alarm.c	59;"	d	file:
+SEND_SMS_TIMEOUT	./alarm.c	68;"	d	file:
+SMS_END_INFO	./alarm.c	78;"	d	file:
+SMS_RESULT_LEN	./alarm.c	67;"	d	file:
+SMS_RE_SEND_INTERVAL	./alarm.c	74;"	d	file:
+SMS_RE_SEND_TIMES	./alarm.c	73;"	d	file:
+SRCS	./Makefile	/^SRCS	=               		\\$/;"	m
+START_INFO_A	./ex_alarm.c	23;"	d	file:
+START_INFO_B	./ex_alarm.c	26;"	d	file:
+START_INFO_C	./ex_alarm.c	24;"	d	file:
+START_INFO_D	./ex_alarm.c	25;"	d	file:
+TARGET	./Makefile	/^TARGET = ex_alarm$/;"	m
+UNKNOW	./ex_alarm.h	/^    UNKNOW$/;"	e	enum:alarm_relation_e
+_ALARM_H	./alarm.h	8;"	d
+_CONFIG_H	./config.h	8;"	d
+_CS_DEBUG_LOG_BUFFER_	./log.h	/^char  _CS_DEBUG_LOG_BUFFER_[4*1024];$/;"	v
+_CS_DEBUG_LOG_BUFFER_	./log.h	/^char *_CS_DEBUG_LOG_BUFFER_=NULL;$/;"	v
+_CS_DEBUG_LOG_FILE_	./log.h	/^FILE *_CS_DEBUG_LOG_FILE_;$/;"	v
+_CS_DEBUG_LOG_FILE_	./log.h	/^FILE *_CS_DEBUG_LOG_FILE_=NULL;$/;"	v
+_CS_DEBUG_LOG_FMT_	./log.h	41;"	d
+_CS_DEBUG_LOG_INFO_	./log.h	42;"	d
+_CS_MAX_LOG_FILE_SIZE_	./log.h	40;"	d
+_C_DEBUG_LOG_H	./log.h	8;"	d
+_DB_H	./db.h	8;"	d
+_EX_ALARM_H	./ex_alarm.h	9;"	d
+_UTILS_H	./utils.h	8;"	d
+_cs_buffer_	./log.h	/^char *_cs_buffer_=NULL;$/;"	v
+_cs_buffer_	./log.h	/^char _cs_buffer_[20];$/;"	v
+alarmAgent	./ex_alarm.h	/^    char alarmAgent [ MAX_ALARM_NODE_NAME_LEN];$/;"	m	struct:alarm_msg_buf_s
+alarmLevel	./ex_alarm.h	/^    char alarmLevel;$/;"	m	struct:alarm_msg_buf_s
+alarmSource	./ex_alarm.h	/^    int alarmSource;$/;"	m	struct:alarm_msg_buf_s
+alarmTime	./ex_alarm.h	/^    char alarmTime [ MAX_DATE_TIME_LEN ];$/;"	m	struct:alarm_msg_buf_s
+alarmType	./ex_alarm.h	/^    char alarmType [ MAX_ALARM_ITEM_NAME_LEN ];$/;"	m	struct:alarm_msg_buf_s
+alarm_condition	./ex_alarm.h	/^    alarm_condition_t alarm_condition [ ALARM_LEVEL_NUM ];$/;"	m	struct:alarm_item_s
+alarm_condition_s	./ex_alarm.h	/^struct alarm_condition_s {$/;"	s
+alarm_condition_t	./ex_alarm.h	/^typedef struct alarm_condition_s alarm_condition_t;$/;"	t	typeref:struct:alarm_condition_s
+alarm_data_s	./db.h	/^struct alarm_data_s {$/;"	s
+alarm_data_t	./db.h	/^typedef struct alarm_data_s alarm_data_t;$/;"	t	typeref:struct:alarm_data_s
+alarm_flag	./ex_alarm.h	/^    alarm_flag_t alarm_flag [ ALARM_LEVEL_NUM ];$/;"	m	struct:alarm_node_s
+alarm_flag_e	./ex_alarm.h	/^typedef enum alarm_flag_e {$/;"	g
+alarm_flag_t	./ex_alarm.h	/^} alarm_flag_t;$/;"	t	typeref:enum:alarm_flag_e
+alarm_freq	./config.h	/^    alarm_freq_t alarm_freq;$/;"	m	struct:ex_alarm_config_s
+alarm_freq_s	./config.h	/^struct alarm_freq_s {$/;"	s
+alarm_freq_t	./config.h	/^typedef struct alarm_freq_s alarm_freq_t;$/;"	t	typeref:struct:alarm_freq_s
+alarm_item	./ex_alarm.h	/^    alarm_item_t * alarm_item;$/;"	m	struct:alarm_th_stob_s
+alarm_item_count	./ex_alarm.h	/^    int alarm_item_count;$/;"	m	struct:alarm_items_s
+alarm_item_head	./ex_alarm.h	/^    alarm_item_t alarm_item_head;$/;"	m	struct:alarm_items_s
+alarm_item_name	./ex_alarm.h	/^    char alarm_item_name [ MAX_ALARM_ITEM_NAME_LEN ];$/;"	m	struct:alarm_item_s
+alarm_item_node	./ex_alarm.h	/^struct alarm_item_node {$/;"	s
+alarm_item_node_count	./ex_alarm.h	/^    int alarm_item_node_count;$/;"	m	struct:alarm_item_s
+alarm_item_node_head	./ex_alarm.h	/^    alarm_item_node_t alarm_item_node_head;$/;"	m	struct:alarm_item_s
+alarm_item_node_name	./ex_alarm.h	/^	char alarm_item_node_name[MAX_ALARM_ITEM_NAME_LEN];$/;"	m	struct:alarm_item_node
+alarm_item_node_t	./ex_alarm.h	/^typedef struct alarm_item_node alarm_item_node_t;$/;"	t	typeref:struct:alarm_item_node
+alarm_item_s	./ex_alarm.h	/^struct alarm_item_s {$/;"	s
+alarm_item_t	./ex_alarm.h	/^typedef struct alarm_item_s alarm_item_t;$/;"	t	typeref:struct:alarm_item_s
+alarm_items_s	./ex_alarm.h	/^struct alarm_items_s {$/;"	s
+alarm_items_t	./ex_alarm.h	/^typedef struct alarm_items_s alarm_items_t;$/;"	t	typeref:struct:alarm_items_s
+alarm_leval_e	./ex_alarm.h	/^typedef enum alarm_leval_e {$/;"	g
+alarm_level	./ex_alarm.h	/^    alarm_level_t alarm_level;$/;"	m	struct:alarm_th_stob_s
+alarm_level_str	./alarm.c	/^static char * alarm_level_str [ ] = {$/;"	v	file:
+alarm_level_str_ch	./alarm.c	/^static char * alarm_level_str_ch [] = {$/;"	v	file:
+alarm_level_t	./ex_alarm.h	/^} alarm_level_t;$/;"	t	typeref:enum:alarm_leval_e
+alarm_method	./config.h	/^    alarm_method_t alarm_method;$/;"	m	struct:ex_alarm_config_s
+alarm_method_s	./config.h	/^struct alarm_method_s {$/;"	s
+alarm_method_switch_e	./config.h	/^typedef enum alarm_method_switch_e {$/;"	g
+alarm_method_switch_t	./config.h	/^} alarm_method_switch_t;$/;"	t	typeref:enum:alarm_method_switch_e
+alarm_method_t	./config.h	/^typedef struct alarm_method_s alarm_method_t;$/;"	t	typeref:struct:alarm_method_s
+alarm_msg_buf_s	./ex_alarm.h	/^struct alarm_msg_buf_s {$/;"	s
+alarm_msg_buf_t	./ex_alarm.h	/^typedef struct alarm_msg_buf_s alarm_msg_buf_t;$/;"	t	typeref:struct:alarm_msg_buf_s
+alarm_node	./ex_alarm.h	/^    alarm_node_t * alarm_node;$/;"	m	struct:alarm_th_stob_s
+alarm_node_head	./ex_alarm.h	/^    alarm_node_t alarm_node_head;$/;"	m	struct:alarm_item_s
+alarm_node_name	./ex_alarm.h	/^    char alarm_node_name [ MAX_ALARM_NODE_NAME_LEN ];$/;"	m	struct:alarm_node_s
+alarm_node_s	./ex_alarm.h	/^struct alarm_node_s {$/;"	s
+alarm_node_t	./ex_alarm.h	/^typedef struct alarm_node_s alarm_node_t;$/;"	t	typeref:struct:alarm_node_s
+alarm_relation	./ex_alarm.h	/^    alarm_relation_t alarm_relation;$/;"	m	struct:alarm_condition_s
+alarm_relation_e	./ex_alarm.h	/^typedef enum alarm_relation_e {$/;"	g
+alarm_relation_str	./alarm.c	/^static char * alarm_relation_str [ ] = {$/;"	v	file:
+alarm_relation_str_ch	./alarm.c	/^static char * alarm_relation_str_ch [ ] = {$/;"	v	file:
+alarm_relation_t	./ex_alarm.h	/^} alarm_relation_t;$/;"	t	typeref:enum:alarm_relation_e
+alarm_script	./ex_alarm.h	/^    char alarm_script [ MAX_ALARM_SCRIPT_NAME_LEN ]; $/;"	m	struct:alarm_item_s
+alarm_th_stob_s	./ex_alarm.h	/^struct alarm_th_stob_s {$/;"	s
+alarm_th_stob_t	./ex_alarm.h	/^typedef struct alarm_th_stob_s alarm_th_stob_t;$/;"	t	typeref:struct:alarm_th_stob_s
+alarm_thread_mutex	./ex_alarm.h	/^    alarm_thread_mutex_t alarm_thread_mutex [ ALARM_LEVEL_NUM ];$/;"	m	struct:alarm_node_s
+alarm_thread_mutex_t	./ex_alarm.h	/^typedef pthread_mutex_t alarm_thread_mutex_t;$/;"	t
+alarm_value	./ex_alarm.h	/^    float alarm_value;$/;"	m	struct:alarm_th_stob_s
+check_alarm_item_conditon	./config.c	/^static int check_alarm_item_conditon ( const alarm_item_t * alarm_item ) {$/;"	f	file:
+check_database	./db.c	/^int check_database ( MYSQL * con ) {$/;"	f
+check_email_addr_format	./config.c	/^static int check_email_addr_format ( char * email_addr, int email_addr_len ) {$/;"	f	file:
+check_pid	./utils.c	/^int check_pid ( char * path ) {$/;"	f
+check_sms	./alarm.c	/^int check_sms ( ) {$/;"	f
+check_sms_num_format	./config.c	/^static int check_sms_num_format ( char * sms_num, int sms_num_len ) {$/;"	f	file:
+count	./db.h	/^    int count;$/;"	m	struct:alarm_data_s
+cs_log	./log.h	56;"	d
+cs_log_end	./log.h	111;"	d
+cs_log_start	./log.h	50;"	d
+datetime	./db.h	/^    char datetime [ MAX_DATE_TIME_LEN ];$/;"	m	struct:alarm_data_s
+db_config	./config.h	/^    db_config_t db_config;$/;"	m	struct:ex_alarm_config_s
+db_config_s	./config.h	/^struct db_config_s {$/;"	s
+db_config_t	./config.h	/^typedef struct db_config_s db_config_t;$/;"	t	typeref:struct:db_config_s
+db_name	./config.h	/^    char db_name [ MAX_DB_NAME_LEN ];$/;"	m	struct:db_config_s
+db_password	./config.h	/^    char db_password [ MAX_DB_PASSWORD_LEN ];$/;"	m	struct:db_config_s
+db_server_ip	./config.h	/^    char db_server_ip [ MAX_IP_STR_LEN ];$/;"	m	struct:db_config_s
+db_server_port	./config.h	/^    unsigned short int db_server_port;$/;"	m	struct:db_config_s
+db_username	./config.h	/^    char db_username [ MAX_DB_USER_NAME_LEN ];$/;"	m	struct:db_config_s
+destroy_alarm_items	./config.c	/^int destroy_alarm_items ( alarm_items_t * alarm_items ) {$/;"	f
+email	./config.h	/^    alarm_method_switch_t email;$/;"	m	struct:alarm_method_s
+email_config	./config.h	/^    email_config_t email_config;$/;"	m	struct:ex_alarm_config_s
+end_flag	./ex_alarm.h	/^    char end_flag;$/;"	m	struct:alarm_msg_buf_s
+ex_alarm_config_s	./config.h	/^struct ex_alarm_config_s {$/;"	s
+ex_alarm_config_t	./config.h	/^typedef struct ex_alarm_config_s ex_alarm_config_t;$/;"	t	typeref:struct:ex_alarm_config_s
+ex_mysql_close	./db.h	36;"	d
+ex_mysql_free_results	./db.h	34;"	d
+fetch_alarm_data	./db.c	/^int fetch_alarm_data ( MYSQL * con,  MYSQL_RES * results, alarm_data_t * alarm_data , alarm_items_t *alarm_items) {$/;"	f
+find_alarm_node	./ex_alarm.c	/^static alarm_node_t * find_alarm_node ( alarm_item_t * alarm_item, char * node_name ) {$/;"	f	file:
+g_alarm_msg_buf	./alarm.c	/^alarm_msg_buf_t g_alarm_msg_buf;$/;"	v
+g_ex_alarm_config	./ex_alarm.c	/^ex_alarm_config_t g_ex_alarm_config;$/;"	v
+get_data_from_db	./db.c	/^int get_data_from_db ( MYSQL * con, long long int last_id, MYSQL_RES * * results ) {$/;"	f
+get_init_id	./db.c	/^int get_init_id ( MYSQL * con, long long int * last_id ) {$/;"	f
+id	./db.h	/^    long long int id;$/;"	m	struct:alarm_data_s
+init_alarm_items	./config.c	/^int init_alarm_items ( alarm_items_t * alarm_items ) {$/;"	f
+init_config	./config.c	/^int init_config ( char * config_file_path, ex_alarm_config_t * ex_alarm_config, \\$/;"	f
+interval	./config.h	/^    int interval;$/;"	m	struct:alarm_freq_s
+ip	./ex_alarm.h	/^    char ip [ MAX_IP_V4_STR_LEN ];$/;"	m	struct:alarm_msg_buf_s
+ip_str_is_valid	./utils.c	/^int ip_str_is_valid ( char * ip ) {$/;"	f
+is_match_value_relation	./ex_alarm.c	/^static int is_match_value_relation ( alarm_condition_t * alarm_condition, float value ) {$/;"	f	file:
+item	./db.h	/^    char item [ MAX_ALARM_ITEM_NAME_LEN ];$/;"	m	struct:alarm_data_s
+main	./ex_alarm.c	/^int main ( int argc, char * argv [ ] ) {$/;"	f
+main	./ex_alarm_stop.c	/^main(void) $/;"	f
+main	./test.c	/^main()$/;"	f
+msg	./ex_alarm.h	/^    char * msg;$/;"	m	struct:alarm_msg_buf_s
+msg_ch	./ex_alarm.h	/^    char * msg_ch;$/;"	m	struct:alarm_msg_buf_s
+mutex_g_alarm_msg_buf	./alarm.c	/^pthread_mutex_t mutex_g_alarm_msg_buf;$/;"	v
+mysql_get_connection	./db.c	/^int mysql_get_connection ( db_config_t * db_config, MYSQL * * connection ) {$/;"	f
+next	./ex_alarm.h	/^	struct alarm_item_node *next;$/;"	m	struct:alarm_item_node	typeref:struct:alarm_item_node::alarm_item_node
+next	./ex_alarm.h	/^    struct alarm_item_s * next;$/;"	m	struct:alarm_item_s	typeref:struct:alarm_item_s::alarm_item_s
+next	./ex_alarm.h	/^    struct alarm_msg_buf_s * next;$/;"	m	struct:alarm_msg_buf_s	typeref:struct:alarm_msg_buf_s::alarm_msg_buf_s
+next	./ex_alarm.h	/^    struct alarm_node_s * next;$/;"	m	struct:alarm_node_s	typeref:struct:alarm_node_s::alarm_node_s
+node	./db.h	/^    char node [ MAX_ALARM_NODE_NAME_LEN ];$/;"	m	struct:alarm_data_s
+nodeName	./ex_alarm.h	/^    char nodeName [ MAX_ALARM_NODE_NAME_LEN ];$/;"	m	struct:alarm_msg_buf_s
+padding_len	./config.c	88;"	d	file:
+parse_alarm_condition	./config.c	/^static int parse_alarm_condition ( alarm_condition_t * alarm_condition, \\$/;"	f	file:
+parse_alarm_condition_relation	./config.c	/^static int parse_alarm_condition_relation ( alarm_relation_t * alarm_relation, char * str ) {$/;"	f	file:
+parse_alarm_config_line	./config.c	/^int parse_alarm_config_line ( char * config_line, ex_alarm_config_t * ex_alarm_config, \\$/;"	f
+parse_cf_alarm_freq	./config.c	/^static int parse_cf_alarm_freq ( alarm_freq_t * alarm_freq, \\$/;"	f	file:
+parse_cf_alarm_item	./config.c	/^static int parse_cf_alarm_item ( alarm_items_t * alarm_items, \\$/;"	f	file:
+parse_cf_alarm_method	./config.c	/^static int parse_cf_alarm_method ( alarm_method_t * alarm_method, \\$/;"	f	file:
+parse_cf_db_config	./config.c	/^static int parse_cf_db_config ( db_config_t * db_config, \\$/;"	f	file:
+parse_cf_email_config	./config.c	/^static int parse_cf_email_config ( email_config_t * email_config, \\$/;"	f	file:
+parse_cf_sms_config	./config.c	/^static int parse_cf_sms_config ( sms_config_t * sms_config, \\$/;"	f	file:
+parse_cf_tel_config	./config.c	/^static int parse_cf_tel_config ( tel_config_t * tel_config, \\$/;"	f	file:
+parse_float	./utils.c	/^int parse_float ( char * str, float * float_value ) {$/;"	f
+parse_long_long_int	./utils.c	/^int parse_long_long_int ( char * str, long long int * long_int_value ) {$/;"	f
+parse_port	./utils.c	/^int parse_port ( char * str, unsigned short int * port ) {$/;"	f
+process_alarm_data	./ex_alarm.c	/^static int process_alarm_data ( alarm_items_t * alarm_items, alarm_data_t * alarm_data ) {$/;"	f	file:
+process_common_level_alarm_data	./ex_alarm.c	/^static int process_common_level_alarm_data ( alarm_item_t * alarm_item, $/;"	f	file:
+process_warn_level_alarm_data	./ex_alarm.c	/^static int process_warn_level_alarm_data ( alarm_item_t * alarm_item, $/;"	f	file:
+read_config_from_file	./config.c	/^static int read_config_from_file ( char * config_file_path, ex_alarm_config_t * ex_alarm_config, \\$/;"	f	file:
+secs	./ex_alarm.h	/^    int secs;$/;"	m	struct:alarm_condition_s
+send_alarm_message	./alarm.c	/^int send_alarm_message ( char * num, char * alarm_msg, \\$/;"	f
+send_alarm_msg_from_buffer	./alarm.c	/^void * send_alarm_msg_from_buffer ( void * arg ) {$/;"	f
+send_alarm_msg_to_buffer	./alarm.c	/^void * send_alarm_msg_to_buffer ( void * arg ) {$/;"	f
+send_alarm_sms	./alarm.c	/^int send_alarm_sms ( char * num, char * alarm_msg, \\$/;"	f
+send_alarm_tel	./alarm.c	/^int send_alarm_tel ( char * num, char * alarm_msg, \\$/;"	f
+send_alarm_telephone	./alarm.c	/^int send_alarm_telephone ( char * num, char * alarm_msg, \\$/;"	f
+send_sms	./alarm.c	/^static int send_sms ( sms_config_t * sms_config, char * alarm_msg, \\$/;"	f	file:
+send_tel	./alarm.c	/^static int send_tel ( tel_config_t * tel_config, char * alarm_msg, \\$/;"	f	file:
+sms	./config.h	/^    alarm_method_switch_t sms;$/;"	m	struct:alarm_method_s
+sms_config	./config.h	/^    sms_config_t sms_config;$/;"	m	struct:ex_alarm_config_s
+sms_config_s	./config.h	/^struct sms_config_s {$/;"	s
+sms_config_t	./config.h	/^typedef struct sms_config_s sms_config_t;$/;"	t	typeref:struct:sms_config_s
+sms_num	./config.h	/^    char sms_num [ MAX_SMS_STR_NUM ] [ MAX_SMS_STR_LEN + 1 ];$/;"	m	struct:sms_config_s
+tel	./config.h	/^    alarm_method_switch_t tel;$/;"	m	struct:alarm_method_s
+tel_config	./config.h	/^    tel_config_t tel_config;$/;"	m	struct:ex_alarm_config_s
+tel_config_s	./config.h	/^struct tel_config_s {$/;"	s
+tel_config_t	./config.h	/^typedef struct tel_config_s tel_config_t;$/;"	t	typeref:struct:tel_config_s
+tel_num	./config.h	/^    char tel_num [ MAX_SMS_STR_NUM ] [ MAX_SMS_STR_LEN + 1 ];$/;"	m	struct:tel_config_s
+thread_cancel	./ex_alarm.h	/^    int thread_cancel [ ALARM_LEVEL_NUM ];$/;"	m	struct:alarm_node_s
+timer_start	./ex_alarm.h	/^    time_t timer_start [ ALARM_LEVEL_NUM ];$/;"	m	struct:alarm_node_s
+times	./config.h	/^    int times;$/;"	m	struct:alarm_freq_s
+trim	./utils.c	/^char * trim ( char * str, int max_size ) {$/;"	f
+trim_head	./utils.c	/^char * trim_head ( char * str, int max_len ) {$/;"	f
+u_msleep	./utils.c	/^int u_msleep ( int seconds, int msec ) {$/;"	f
+u_sleep	./utils.c	/^int u_sleep ( int seconds ) {$/;"	f
+u_time_stamp_by_t	./utils.c	/^void u_time_stamp_by_t ( char * buffer, time_t t ) {$/;"	f
+u_time_stamp_r	./utils.c	/^void u_time_stamp_r ( char * buffer ) {$/;"	f
+value	./db.h	/^    float value;$/;"	m	struct:alarm_data_s
+value	./ex_alarm.h	/^    float value;$/;"	m	struct:alarm_condition_s

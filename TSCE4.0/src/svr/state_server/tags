@@ -1,0 +1,307 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACTIVE	../buffer.h	/^    ACTIVE$/;"	e	enum:node_status_e
+APP_SVR_LOG_DIR	../svr_define.h	11;"	d
+APP_SVR_RUN_DIR	../svr_define.h	14;"	d
+AR	../state_server/Makefile	/^AR=ar -rcs$/;"	m
+BACKLOG	../state_server/state_server.h	21;"	d
+CC	../Makefile	/^CC = gcc$/;"	m
+CC	../state_server/Makefile	/^CC = gcc$/;"	m
+CC	../user/Makefile	/^CC = gcc$/;"	m
+CFLAGS	../Makefile	/^CFLAGS = -g -Wall -O0 -D_REENTRANT$/;"	m
+CFLAGS	../user/Makefile	/^CFLAGS = -g -Wall -O0 -D_REENTRANT$/;"	m
+CF_STR_APP_INTERVAL	../svr_config.h	27;"	d
+CF_STR_DB_NAME	../svr_config.h	22;"	d
+CF_STR_DB_PASSWORD	../svr_config.h	24;"	d
+CF_STR_DB_SERVER_IP	../svr_config.h	20;"	d
+CF_STR_DB_SERVER_PORT	../svr_config.h	21;"	d
+CF_STR_DB_USERNAME	../svr_config.h	23;"	d
+CF_STR_LOG_LEVEL	../svr_config.h	30;"	d
+CF_STR_SECTION_DB	../svr_config.h	19;"	d
+CF_STR_SECTION_INTERVAL	../svr_config.h	26;"	d
+CF_STR_SECTION_LOG	../svr_config.h	29;"	d
+CF_STR_SECTION_MONITORLIST	../svr_config.h	33;"	d
+CF_STR_SECTION_NODELIST	../svr_config.h	32;"	d
+CF_STR_SECTION_SVR	../svr_config.h	15;"	d
+CF_STR_SVR_IP	../svr_config.h	16;"	d
+CF_STR_SVR_PORT	../svr_config.h	17;"	d
+CHECK_STATEMENT	../db_oper.h	9;"	d
+CHECK_STATEMENT	../state_server/db_oper.h	9;"	d
+COMPILE	../state_server/Makefile	/^COMPILE = $(CC) -g $(INC_PATH) -c  			$/;"	m
+Conn	../db_oper.h	/^}Conn;$/;"	t	typeref:struct:conn_list
+Conn	../state_server/db_oper.h	/^}Conn;$/;"	t	typeref:struct:conn_list
+Connpool	../db_oper.h	/^}Connpool;$/;"	t	typeref:struct:__anon1
+Connpool	../state_server/db_oper.h	/^}Connpool;$/;"	t	typeref:struct:__anon2
+DB_CONN_TIMEOUT	../db.h	13;"	d
+DB_OPER	../db_oper.h	2;"	d
+DB_OPER	../state_server/db_oper.h	2;"	d
+DEFAULT_APP_INTERVAL	../svr_config.h	36;"	d
+DEFAULT_DB_SERVER_PORT	../svr_config.h	43;"	d
+DOWN	../buffer.h	/^    DOWN,$/;"	e	enum:node_status_e
+FAILURE	../state_server/state_server.c	60;"	d	file:
+HDRS	../Makefile	/^HDRS    =	svr.h			\\$/;"	m
+HDRS	../user/Makefile	/^HDRS    =	svr.h			\\$/;"	m
+ILLEGAL	../buffer.h	/^    ILLEGAL = 0,$/;"	e	enum:node_status_e
+INCLUDES	../Makefile	/^INCLUDES = -I..\/_con\/ -I..\/..\/lib\/include\/ -I.\/state_server\/$/;"	m
+INCLUDES	../user/Makefile	/^INCLUDES = -I..\/..\/_con\/ -I..\/..\/..\/lib\/include\/$/;"	m
+INC_PATH	../state_server/Makefile	/^INC_PATH = -I ..\/..\/..\/lib\/include\/ -I ..\/..\/..\/lib\/include\/util -I ..\/$/;"	m
+LDFLAGS	../Makefile	/^LDFLAGS = -g -Wall -O0$/;"	m
+LDFLAGS	../user/Makefile	/^LDFLAGS = -g -Wall -O0$/;"	m
+LIBS	../Makefile	/^LIBS = $(LIB_PATH) -lutil -llog -lpthread$/;"	m
+LIBS	../user/Makefile	/^LIBS = $(LIB_PATH) -lutil -llog -lpthread$/;"	m
+LIB_PATH	../Makefile	/^    LIB_PATH = -L..\/..\/lib\/lib32$/;"	m
+LIB_PATH	../Makefile	/^    LIB_PATH = -L..\/..\/lib\/lib64$/;"	m
+LIB_PATH	../user/Makefile	/^    LIB_PATH = -L..\/..\/..\/lib\/lib32$/;"	m
+LIB_PATH	../user/Makefile	/^    LIB_PATH = -L..\/..\/..\/lib\/lib64$/;"	m
+MAXBUF	../state_server/state_server.c	61;"	d	file:
+MAX_APP_INTERVAL	../svr_config.h	37;"	d
+MAX_CREATE_CONNECT_TRY	../db_oper.h	7;"	d
+MAX_CREATE_CONNECT_TRY	../state_server/db_oper.h	7;"	d
+MAX_DB_NAME_LEN	../svr_config.h	39;"	d
+MAX_DB_PASSWORD_LEN	../svr_config.h	41;"	d
+MAX_DB_USERNAME_LEN	../svr_config.h	40;"	d
+MAX_EVENTS	../state_server/state_server.h	20;"	d
+MAX_FDS	../state_server/state_server.h	19;"	d
+MAX_INSERT_SQL_PREFIX_LEN	../db.c	20;"	d	file:
+MAX_IP_COUNT	../state_server/state_server.h	17;"	d
+MAX_NODE_DATA_COUNT	../svr_define.h	17;"	d
+MAX_RES_SIZE	../db_oper.h	8;"	d
+MAX_RES_SIZE	../state_server/db_oper.h	8;"	d
+MAX_RTD_REQUEST	../rtd.c	20;"	d	file:
+MAX_SQL_LEN_FOR_ONE_NODE	../db.c	19;"	d	file:
+MAX_TABLE_NAME_LEN	../svr_config.h	42;"	d
+MIN_APP_INTERVAL	../svr_config.h	35;"	d
+NETWORK_RECOVERY_RETRY_INTERVAL	../service.h	16;"	d
+NETWORK_RECOVERY_RETRY_TIMES	../service.h	15;"	d
+NODE_STATUS_STR	../buffer.c	/^const char *NODE_STATUS_STR[] = {$/;"	v
+OBJS	../Makefile	/^OBJS    =       svr.o   		\\$/;"	m
+OBJS	../state_server/Makefile	/^OBJS = $(patsubst %.c,%.o,$(SRCS)) $/;"	m
+OBJS	../user/Makefile	/^OBJS    =       svr.o   		\\$/;"	m
+SERVER_SOCKET_LISTEN_LEN	../service.h	14;"	d
+SRCS	../Makefile	/^SRCS	=       svr.c   		\\$/;"	m
+SRCS	../state_server/Makefile	/^SRCS = $(wildcard .\/*.c) $/;"	m
+SRCS	../user/Makefile	/^SRCS	=       svr.c   		\\$/;"	m
+STR_SIZE	../state_server/state_server.h	16;"	d
+SVR_CONFIG_BASE	../svr_config.h	49;"	d
+SVR_CONFIG_BASE_PATH	../svr_config.h	46;"	d
+SVR_CONFIG_TSCE_INDEX	../svr_config.h	50;"	d
+SVR_CONFIG_TSCE_INDEX_PATH	../svr_config.h	47;"	d
+SVR_LOG_PATH	../svr_define.h	12;"	d
+SVR_PID_FILE_PATH	../svr_define.h	15;"	d
+TABLE_NAME	../svr.h	11;"	d
+TARGET	../Makefile	/^TARGET = tscesd tscesd_start tscesd_status tscesd_stop $/;"	m
+TARGET	../state_server/Makefile	/^TARGET = libstate_server.a$/;"	m
+TARGET	../user/Makefile	/^TARGET = teyesd_start teyesd_stop teyesd_status$/;"	m
+TEYE_BUFFER_H	../buffer.h	8;"	d
+TEYE_DB_H	../db.h	8;"	d
+TEYE_RECV_H	../recv.h	8;"	d
+TEYE_RTD_H	../rtd.h	8;"	d
+TEYE_SERVICE_H	../service.h	8;"	d
+TEYE_SVR_CONFIG_H	../svr_config.h	8;"	d
+TEYE_SVR_DEFINE_H	../svr_define.h	8;"	d
+TEYE_SVR_H	../svr.h	8;"	d
+TEYE_USER_H	../user.h	8;"	d
+add_quote_for_data	../db.c	/^add_quote_for_data(app_data_t *data, char *dest)$/;"	f	file:
+app_config_add_monitor	../svr_config.c	/^app_config_add_monitor(const char * monitor_name, \\$/;"	f	file:
+app_config_add_node	../svr_config.c	/^app_config_add_node(const char * node_name, \\$/;"	f	file:
+app_config_free_node_list	../svr_config.c	/^app_config_free_node_list(node_list_t *node_list)$/;"	f
+app_data_buf_s	../buffer.h	/^struct app_data_buf_s {$/;"	s
+app_data_buf_t	../buffer.h	/^typedef struct app_data_buf_s app_data_buf_t;$/;"	t	typeref:struct:app_data_buf_s
+app_interval_t	../svr_config.h	/^typedef unsigned int app_interval_t;$/;"	t
+app_node_data_s	../buffer.h	/^struct app_node_data_s {$/;"	s
+app_node_data_t	../buffer.h	/^typedef struct app_node_data_s app_node_data_t;$/;"	t	typeref:struct:app_node_data_s
+app_service	../service.c	/^app_service(const app_svr_config_t *app_svr_config) $/;"	f
+app_svr_config_s	../svr_config.h	/^struct app_svr_config_s {$/;"	s
+app_svr_config_t	../svr_config.h	/^typedef struct app_svr_config_s app_svr_config_t;$/;"	t	typeref:struct:app_svr_config_s
+cf_monitor_s	../svr_config.h	/^typedef struct cf_monitor_s {$/;"	s
+cf_monitor_t	../svr_config.h	/^} cf_monitor_t;$/;"	t	typeref:struct:cf_monitor_s
+cf_node_s	../svr_config.h	/^typedef struct cf_node_s {$/;"	s
+cf_node_t	../svr_config.h	/^} cf_node_t;$/;"	t	typeref:struct:cf_node_s
+check_conn	../db_oper.c	/^check_conn(MYSQL** conn)$/;"	f
+check_conn	../state_server/db_oper.c	/^check_conn(MYSQL** conn)$/;"	f
+check_nodes_data_status	../buffer.c	/^check_nodes_data_status(const app_data_buf_t * app_data)$/;"	f
+cleanup_resource	../service.c	/^cleanup_resource(int signum) {$/;"	f
+clear_node	../buffer.c	/^clear_node(app_node_data_t *node) $/;"	f
+client_ip	../rtd.h	/^    char client_ip[MAX_IP_STR_LEN];$/;"	m	struct:thread_arg_rtd_s
+client_ip	../user.h	/^    char client_ip[MAX_IP_STR_LEN];$/;"	m	struct:thread_arg_user_s
+close_sock	../state_server/state_server.c	/^void close_sock(void)$/;"	f
+conn_list	../db_oper.h	/^typedef struct conn_list$/;"	s
+conn_list	../state_server/db_oper.h	/^typedef struct conn_list$/;"	s
+conn_ptr	../db_oper.h	/^    MYSQL *conn_ptr;$/;"	m	struct:conn_list
+conn_ptr	../state_server/db_oper.h	/^    MYSQL *conn_ptr;$/;"	m	struct:conn_list
+convert_data_to_sql	../db.c	/^convert_data_to_sql(const app_data_buf_t *app_data, \\$/;"	f	file:
+count	../buffer.h	/^    int count;$/;"	m	struct:app_data_buf_s
+count	../svr_config.h	/^    int count;$/;"	m	struct:monitor_list_s
+count	../svr_config.h	/^    int count;$/;"	m	struct:node_list_s
+create_data_buffer	../buffer.c	/^create_data_buffer(const node_list_t *node_list, \\$/;"	f
+create_db_table	../db.c	/^create_db_table (const app_svr_config_t *conf, \\$/;"	f
+cur_conn_num	../db_oper.h	/^    int cur_conn_num;                            \/\/当前池中连接数$/;"	m	struct:__anon1
+cur_conn_num	../state_server/db_oper.h	/^    int cur_conn_num;                            \/\/当前池中连接数$/;"	m	struct:__anon2
+data	../buffer.h	/^    app_data_t data;$/;"	m	struct:node_data_s
+data	../buffer.h	/^    app_node_data_t *data;$/;"	m	struct:app_data_buf_s
+data_count	../buffer.h	/^    long long int data_count;$/;"	m	struct:app_node_data_s
+db_config	../svr_config.h	/^    db_config_t db_config;$/;"	m	struct:app_svr_config_s
+db_config_ns	../svr.h	/^struct db_config_ns {$/;"	s
+db_config_ns_t	../svr.h	/^typedef struct db_config_ns db_config_ns_t;$/;"	t	typeref:struct:db_config_ns
+db_config_ns_t_i	../state_server/state_server.c	/^static db_config_ns_t db_config_ns_t_i;$/;"	v	file:
+db_config_s	../svr_config.h	/^struct db_config_s {$/;"	s
+db_config_t	../svr_config.h	/^typedef struct db_config_s db_config_t;$/;"	t	typeref:struct:db_config_s
+db_name	../svr_config.h	/^    char db_name [MAX_DB_NAME_LEN];$/;"	m	struct:db_config_s
+db_password	../svr.h	/^	char db_password[512];$/;"	m	struct:db_config_ns
+db_password	../svr_config.h	/^    char db_password [MAX_DB_PASSWORD_LEN];$/;"	m	struct:db_config_s
+db_server_ip	../svr.h	/^	char db_server_ip[16];$/;"	m	struct:db_config_ns
+db_server_ip	../svr_config.h	/^    char db_server_ip[MAX_IP_STR_LEN];$/;"	m	struct:db_config_s
+db_server_port	../svr.h	/^	unsigned short int db_server_port;$/;"	m	struct:db_config_ns
+db_server_port	../svr_config.h	/^    unsigned short int db_server_port;$/;"	m	struct:db_config_s
+db_username	../svr.h	/^	char db_username[512];$/;"	m	struct:db_config_ns
+db_username	../svr_config.h	/^    char db_username [MAX_DB_USERNAME_LEN];$/;"	m	struct:db_config_s
+delete_list	../state_server/state_server.c	/^struct node *delete_list ()$/;"	f
+destroy_buffer_exit	../svr.c	22;"	d	file:
+destroy_data_buffer	../buffer.c	/^destroy_data_buffer(app_data_buf_t *p_data_buffer) $/;"	f
+epoll_add	../state_server/state_server.c	/^int epoll_add(int epollfd, int sockfd)$/;"	f
+epoll_sockfd	../state_server/state_server.c	/^int epoll_sockfd(int epollfd)$/;"	f
+exist_recent_data	../buffer.h	/^    char exist_recent_data; \/* data head of this node *\/$/;"	m	struct:app_node_data_s
+fd	../state_server/state_server.h	/^    int fd;$/;"	m	struct:node
+finish_thread	../rtd.c	/^finish_thread(int fd, pthread_t thread_id, const char *client_ip)$/;"	f	file:
+flag	../db_oper.h	/^    int flag;                                    \/\/是否被占用  0非，1是被占用$/;"	m	struct:conn_list
+flag	../state_server/db_oper.h	/^    int flag;                                    \/\/是否被占用  0非，1是被占用$/;"	m	struct:conn_list
+flag	../state_server/state_server.h	/^    int flag;$/;"	m	struct:node
+free_one_data	../db.c	/^free_one_data(app_data_buf_t * app_data) {$/;"	f	file:
+g_app_svr_config	../svr.c	/^app_svr_config_t g_app_svr_config;$/;"	v
+g_data_buffer	../svr.c	/^app_data_buf_t g_data_buffer;$/;"	v
+g_mod_info_head	../svr.c	/^config_mod_info_t g_mod_info_head;$/;"	v
+g_rtd_num	../rtd.c	/^int g_rtd_num;$/;"	v
+g_rtd_num_mutex	../rtd.c	/^pthread_mutex_t g_rtd_num_mutex;$/;"	v
+g_sockfd	../service.c	/^int g_sockfd;$/;"	v
+generate_index_name_sql	../db.c	/^generate_index_name_sql(const config_mod_info_t *g_mod_info, \\$/;"	f	file:
+generate_table_structure_sql	../db.c	/^generate_table_structure_sql(const config_mod_info_t *g_mod_info, \\$/;"	f	file:
+get_all_index_data_by_node_ix	../buffer.c	/^get_all_index_data_by_node_ix(const app_data_buf_t *app_data, \\$/;"	f
+get_all_index_data_by_node_name	../buffer.c	/^get_all_index_data_by_node_name(const app_data_buf_t *app_data, \\$/;"	f
+get_ip_list	../state_server/state_server.c	/^int get_ip_list(char *ip_result)$/;"	f
+get_microsec	../state_server/state_server.c	/^unsigned int get_microsec()$/;"	f
+get_node_in_list	../buffer.c	/^get_node_in_list(const app_data_buf_t *p_data_buffer, ip_t node_ip)$/;"	f
+get_nodes_data_count	../buffer.c	/^get_nodes_data_count(const app_data_buf_t *app_data) $/;"	f
+get_part_index_data_by_node_ix	../buffer.c	/^get_part_index_data_by_node_ix(const app_data_buf_t *app_data, \\$/;"	f
+get_part_index_data_by_node_name	../buffer.c	/^get_part_index_data_by_node_name(const app_data_buf_t *app_data,$/;"	f
+get_part_index_data_one_node	../buffer.c	/^get_part_index_data_one_node(const app_node_data_t *app_data, \\$/;"	f
+gettimediff	../state_server/state_server.c	/^unsigned int gettimediff(struct timeval time)$/;"	f
+handle_exit	../rtd.c	/^handle_exit(char *response_buffer, int socket_fd)$/;"	f	file:
+handle_get_status	../rtd.c	/^handle_get_status(char *response_buffer, int socket_fd)$/;"	f	file:
+handle_request_data	../rtd.c	/^handle_request_data(char *request_package, int socket_fd)$/;"	f	file:
+head	../state_server/state_server.c	/^static struct node *head = NULL;$/;"	v	typeref:struct:node	file:
+head	../svr_config.h	/^    cf_monitor_t head;$/;"	m	struct:monitor_list_s
+head	../svr_config.h	/^    cf_node_t head;$/;"	m	struct:node_list_s
+init_app_svr_base_config	../svr_config.c	/^init_app_svr_base_config(const char *path, app_svr_config_t *app_svr_config, char *flag) $/;"	f
+init_app_svr_tsce_index_config	../svr_config.c	/^init_app_svr_tsce_index_config(const char *path, app_svr_config_t *app_svr_config, char *flag) $/;"	f
+init_conn_num	../db_oper.h	/^    int init_conn_num;                           \/\/初始链接数$/;"	m	struct:__anon1
+init_conn_num	../state_server/db_oper.h	/^    int init_conn_num;                           \/\/初始链接数$/;"	m	struct:__anon2
+init_sockfd	../service.c	/^init_sockfd(const app_svr_config_t *app_svr_config) $/;"	f
+ip	../state_server/state_server.h	/^    char ip[16];$/;"	m	struct:node
+is_get_all_index	../rtd.c	/^is_get_all_index(char (*index_name_list)[LEN_32])$/;"	f	file:
+is_get_all_nodes	../rtd.c	/^is_get_all_nodes(char (*node_name_list)[MAX_NODE_NAME_LEN])$/;"	f	file:
+itvl	../svr_config.h	/^    app_interval_t itvl;$/;"	m	struct:app_svr_config_s
+lk_closedb	../db_oper.c	/^int lk_closedb(MYSQL *conn_ptr)$/;"	f
+lk_closedb	../state_server/db_oper.c	/^int lk_closedb(MYSQL *conn_ptr)$/;"	f
+lk_conndb	../db_oper.c	/^MYSQL* lk_conndb(char* IPAddr, char* DbUsr, char* DbPwd, char* DbName)$/;"	f
+lk_conndb	../state_server/db_oper.c	/^MYSQL* lk_conndb(char* IPAddr, char* DbUsr, char* DbPwd, char* DbName)$/;"	f
+log_config	../svr.c	24;"	d	file:
+log_level	../svr_config.h	/^    log_level_t log_level;$/;"	m	struct:app_svr_config_s
+main	../main.c	/^int main()$/;"	f
+main	../svr.c	/^main(int argc, char **argv)$/;"	f
+main	../tscesd_start.c	/^main(int argc, char* argv[]) $/;"	f
+main	../tscesd_status.c	/^main(void) $/;"	f
+main	../tscesd_stop.c	/^main(void) $/;"	f
+main	../user/teyesd_status.c	/^int main()$/;"	f
+main	../user/teyesd_stop.c	/^int main()$/;"	f
+max_conn_num	../db_oper.h	/^    int max_conn_num;                            \/\/最大连接数$/;"	m	struct:__anon1
+max_conn_num	../state_server/db_oper.h	/^    int max_conn_num;                            \/\/最大连接数$/;"	m	struct:__anon2
+min_conn_num	../db_oper.h	/^    int min_conn_num;                            \/\/最小连接数，就是连接池中还剩多少个连接的时候需要增加链接$/;"	m	struct:__anon1
+min_conn_num	../state_server/db_oper.h	/^    int min_conn_num;                            \/\/最小连接数，就是连接池中还剩多少个连接的时候需要增加链接$/;"	m	struct:__anon2
+monitor_list	../svr_config.h	/^    monitor_list_t monitor_list;$/;"	m	struct:app_svr_config_s
+monitor_list_s	../svr_config.h	/^struct monitor_list_s {$/;"	s
+monitor_list_t	../svr_config.h	/^typedef struct monitor_list_s monitor_list_t;$/;"	t	typeref:struct:monitor_list_s
+monitor_name	../svr_config.h	/^    char monitor_name[MAX_NODE_NAME_LEN];$/;"	m	struct:cf_monitor_s
+next	../buffer.h	/^    struct node_data_s *next;$/;"	m	struct:node_data_s	typeref:struct:node_data_s::node_data_s
+next	../db_oper.h	/^    struct conn_list *next;$/;"	m	struct:conn_list	typeref:struct:conn_list::conn_list
+next	../state_server/db_oper.h	/^    struct conn_list *next;$/;"	m	struct:conn_list	typeref:struct:conn_list::conn_list
+next	../state_server/state_server.h	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node
+next	../svr_config.h	/^    struct cf_monitor_s * next;$/;"	m	struct:cf_monitor_s	typeref:struct:cf_monitor_s::cf_monitor_s
+next	../svr_config.h	/^    struct cf_node_s * next;$/;"	m	struct:cf_node_s	typeref:struct:cf_node_s::cf_node_s
+node	../state_server/state_server.h	/^ struct node$/;"	s
+node_data_head	../buffer.h	/^    node_data_t node_data_head; \/* mutex *\/$/;"	m	struct:app_node_data_s
+node_data_s	../buffer.h	/^struct node_data_s {$/;"	s
+node_data_t	../buffer.h	/^typedef struct node_data_s node_data_t;$/;"	t	typeref:struct:node_data_s
+node_entry	../recv.h	/^    app_node_data_t * node_entry;$/;"	m	struct:thread_arg_recv_s
+node_id	../buffer.h	/^    ip_t node_id;$/;"	m	struct:app_node_data_s
+node_ip	../buffer.h	/^    char node_ip[MAX_IP_STR_LEN];$/;"	m	struct:app_node_data_s
+node_list	../svr_config.h	/^    node_list_t node_list;$/;"	m	struct:app_svr_config_s
+node_list_s	../svr_config.h	/^struct node_list_s {$/;"	s
+node_list_t	../svr_config.h	/^typedef struct node_list_s node_list_t;$/;"	t	typeref:struct:node_list_s
+node_name	../buffer.h	/^    char node_name[MAX_NODE_NAME_LEN];$/;"	m	struct:app_node_data_s
+node_name	../svr_config.h	/^    char node_name[MAX_NODE_NAME_LEN];$/;"	m	struct:cf_node_s
+node_status	../buffer.h	/^    node_status_t node_status;$/;"	m	struct:app_node_data_s
+node_status_e	../buffer.h	/^enum node_status_e {$/;"	g
+node_status_t	../buffer.h	/^typedef enum node_status_e node_status_t;$/;"	t	typeref:enum:node_status_e
+notex	../buffer.h	/^    pthread_mutex_t notex;$/;"	m	struct:app_node_data_s
+operate_res	../db_oper.c	/^unsigned long operate_res(char* str_sql, MYSQL* conn_ptr)       \/\/插入函数$/;"	f
+operate_res	../state_server/db_oper.c	/^unsigned long operate_res(char* str_sql, MYSQL* conn_ptr)       \/\/插入函数$/;"	f
+parse_clr_section_interval	../svr_config.c	/^parse_clr_section_interval(char *config_line, \\$/;"	f	file:
+parse_request_data_package	../rtd.c	/^parse_request_data_package(char *request_body, \\$/;"	f	file:
+parse_request_indexlist_name	../rtd.c	/^parse_request_indexlist_name(char *index_buffer, \\$/;"	f	file:
+parse_request_nodelist_name	../rtd.c	/^parse_request_nodelist_name(char *name_buffer, \\$/;"	f	file:
+parse_svr_config_base_line	../svr_config.c	/^parse_svr_config_base_line(char *config_line, const char *section_str, \\$/;"	f	file:
+parse_svr_config_line	../svr_config.c	/^parse_svr_config_line(char *config_line, const char *section_str, \\$/;"	f	file:
+parse_svr_section_db	../svr_config.c	/^parse_svr_section_db(char *config_line, \\$/;"	f	file:
+parse_svr_section_log	../svr_config.c	/^parse_svr_section_log(char *config_line, \\$/;"	f	file:
+parse_svr_section_monitorlist	../svr_config.c	/^parse_svr_section_monitorlist(char *config_line, app_svr_config_t *app_svr_config)$/;"	f	file:
+parse_svr_section_nodelist	../svr_config.c	/^int parse_svr_section_nodelist (char *config_line, \\$/;"	f	file:
+parse_svr_section_svr	../svr_config.c	/^parse_svr_section_svr (char *config_line, \\$/;"	f	file:
+pconn_head	../db_oper.h	/^    Conn * pconn_head;                           \/\/连接池$/;"	m	struct:__anon1
+pconn_head	../state_server/db_oper.h	/^    Conn * pconn_head;                           \/\/连接池$/;"	m	struct:__anon2
+printhead	../state_server/state_server.c	/^void printhead ()$/;"	f
+produce_insert_sql_prefix	../db.c	/^produce_insert_sql_prefix(const config_mod_info_t *g_mod_info, \\$/;"	f	file:
+put_data_in_buffer	../buffer.c	/^put_data_in_buffer(const app_data_t *data_body, app_node_data_t *node) $/;"	f
+read_config_from_file	../svr_config.c	/^read_config_from_file(const char *path, app_svr_config_t *app_svr_config, char *flag)$/;"	f	file:
+register_signal_usr1	../service.c	/^register_signal_usr1() $/;"	f
+remove_not_in_ip	../state_server/state_server.c	/^void remove_not_in_ip(void)$/;"	f
+s_state_conn	../state_server/state_server.c	/^static  MYSQL *s_state_conn = NULL;		\/* database handle *\/$/;"	v	file:
+s_state_freq	../state_server/state_server.c	/^static  unsigned int s_state_freq = 0;    $/;"	v	file:
+select_res	../db_oper.c	/^char* select_res(char* str_sql, MYSQL* conn_ptr, char *res_buf, int buf_size)$/;"	f
+select_res	../state_server/db_oper.c	/^char* select_res(char* str_sql, MYSQL* conn_ptr, char *res_buf, int buf_size)$/;"	f
+send_all_nodes_all_index_data	../rtd.c	/^send_all_nodes_all_index_data(int socket_fd)$/;"	f	file:
+send_all_nodes_part_index_data	../rtd.c	/^send_all_nodes_part_index_data(char (*index_name_list)[LEN_32], \\$/;"	f	file:
+send_part_nodes_all_index_data	../rtd.c	/^send_part_nodes_all_index_data(char (*node_name_list)[MAX_NODE_NAME_LEN], \\$/;"	f	file:
+send_part_nodes_part_index_data	../rtd.c	/^send_part_nodes_part_index_data(char (*node_name_list)[MAX_NODE_NAME_LEN], \\$/;"	f	file:
+send_request_data	../rtd.c	/^send_request_data(int socket_fd, const char *send_buffer)$/;"	f	file:
+set_node_recent_data	../buffer.c	/^set_node_recent_data(const app_data_t *data_body, app_node_data_t *node) $/;"	f
+setnonblocking	../state_server/state_server.c	/^static int  setnonblocking(int sock)$/;"	f	file:
+sock_create	../state_server/state_server.c	/^void  sock_create(int epollfd)$/;"	f
+socket_fd	../recv.h	/^    int socket_fd;$/;"	m	struct:thread_arg_recv_s
+socket_fd	../rtd.h	/^    int socket_fd;$/;"	m	struct:thread_arg_rtd_s
+socket_fd	../user.h	/^    int socket_fd;$/;"	m	struct:thread_arg_user_s
+split_index_data	../buffer.c	/^split_index_data(char *index_data_buffer, \\$/;"	f	file:
+svr_config	../svr_config.h	/^    svr_config_t svr_config;$/;"	m	struct:app_svr_config_s
+svr_config_s	../svr_config.h	/^struct svr_config_s {$/;"	s
+svr_config_t	../svr_config.h	/^typedef struct svr_config_s svr_config_t;$/;"	t	typeref:struct:svr_config_s
+svr_init_enviroment	../svr.c	/^svr_init_enviroment()$/;"	f	file:
+svr_ip	../svr_config.h	/^    char svr_ip [MAX_IP_STR_LEN];$/;"	m	struct:svr_config_s
+svr_port	../svr_config.h	/^    unsigned short int svr_port;$/;"	m	struct:svr_config_s
+table_name	../svr_config.h	/^    char table_name[MAX_TABLE_NAME_LEN];$/;"	m	struct:app_svr_config_s
+thread_arg_recv_s	../recv.h	/^struct thread_arg_recv_s {$/;"	s
+thread_arg_recv_t	../recv.h	/^typedef struct thread_arg_recv_s thread_arg_recv_t;$/;"	t	typeref:struct:thread_arg_recv_s
+thread_arg_rtd_s	../rtd.h	/^struct thread_arg_rtd_s {$/;"	s
+thread_arg_rtd_t	../rtd.h	/^typedef struct thread_arg_rtd_s thread_arg_rtd_t;$/;"	t	typeref:struct:thread_arg_rtd_s
+thread_arg_user_s	../user.h	/^struct thread_arg_user_s {$/;"	s
+thread_arg_user_t	../user.h	/^typedef struct thread_arg_user_s thread_arg_user_t;$/;"	t	typeref:struct:thread_arg_user_s
+thread_db	../db.c	/^thread_db(void *arg_db) $/;"	f
+thread_ns	../state_server/state_server.c	/^void *thread_ns (void *argv)$/;"	f
+thread_recv	../recv.c	/^thread_recv(void * arg_recv) $/;"	f
+thread_rtd	../rtd.c	/^thread_rtd(void *arg_rtd)$/;"	f
+thread_user	../user.c	/^thread_user(void *arg_user)$/;"	f
+traverse_state_list	../state_server/state_server.c	/^int traverse_state_list(void)$/;"	f
+update_node_state	../state_server/state_server.c	/^void update_node_state (void)$/;"	f
+write_state_flag	../state_server/state_server.c	/^struct node *write_state_flag (int sockfd, int flag)$/;"	f

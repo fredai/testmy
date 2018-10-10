@@ -1,0 +1,24 @@
+tsced is the daemon service of tsce system.
+
+To config tsced:
+	
+	* config/default:User must configure
+		* base.conf : This configuration file is used to configure the basic information
+		* tsce_index.conf : This configuration file is used to configure the user needs to collect the basic items and This collection item must be included in the base_index.conf
+	
+	* config/default:User is not frequently configured
+		* base_index.conf : This configuration file is used to configure the platform support collection items
+		* tsce_xml.conf : 
+
+If the configuration file has been configured properly:
+
+    * use command "bin/svr/tscesd_start" to start tsce server;
+    * use command "bin/clr/tscecd_start" to start tsce client;
+    * use command "bin/tools/tsce_start" to start server and client;
+    * use command "bin/tools/tsce_stop" to stop server and client;
+    * use command "bin/getdata/tsce_getdata" to get real-time data;
+
+If server or client can't start normally
+	*base.conf maybe configuration error
+	*if client can't start normally please check /var/log/tscecd/tscecd.log perhaps your script is not supported.
+

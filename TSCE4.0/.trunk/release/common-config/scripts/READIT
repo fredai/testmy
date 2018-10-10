@@ -1,0 +1,17 @@
+
+
+
+  The results of script executed should be printed to the standard output
+
+  And the format should be item=value^item=value ...
+
+  The name of item can be composed of letters ( both uppercase and lowercase letters ), 
+  digits, underscore and '.' only. The value should be a number
+
+  Both the length of the item name and value should not be greater than 32
+
+  And finally the exit code of script should be 100
+
+
+
+

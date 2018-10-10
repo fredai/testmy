@@ -1,0 +1,12 @@
+#!/bin/bash
+HOSTNAME="127.0.0.1"
+PORT="3306"
+USERNAME="root"
+PASSWORD="111111"
+
+DBNAME="tsce"
+TABLENAME="NodeInfo"
+
+select_sql="SELECT nodeName, ip, (CASE WHEN (state=1) THEN 'DOWN' WHEN (state=0||state=-1) THEN 'ACTIVE' WHEN (state=3) THEN 'NETBUSY' END) AS 'state' FROM ${TABLENAME} "
+
+mysql -h${HOSTNAME} -p${PORT} -u${USERNAME} -p${PASSWORD} ${DBNAME} -e"${select_sql}"

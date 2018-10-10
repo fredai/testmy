@@ -1,0 +1,146 @@
+CREATE DATABASE `em_db`
+;
+
+use em_db
+;
+
+CREATE TABLE `em1` (
+`id` bigint(20) NOT NULL auto_increment,
+`time` datetime NOT NULL,
+`type` char(20) NOT NULL,
+`node` char(20) NOT NULL,
+`data` float NOT NULL,
+PRIMARY KEY (`id`),
+KEY `time` (`time`,`type`,`node`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk
+;
+
+CREATE TABLE `em7` (
+`id` bigint(20) NOT NULL auto_increment,
+`time` datetime NOT NULL,
+`type` char(20) NOT NULL,
+`node` char(20) NOT NULL,
+`data` float NOT NULL,
+PRIMARY KEY (`id`),
+KEY `time` (`time`,`type`,`node`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk
+;
+
+CREATE TABLE `em30` (
+`id` bigint(20) NOT NULL auto_increment,
+`time` datetime NOT NULL,
+`type` char(20) NOT NULL,
+`node` char(20) NOT NULL,
+`data` float NOT NULL,
+PRIMARY KEY (`id`),
+KEY `time` (`time`,`type`,`node`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk
+;
+
+CREATE TABLE `em365` (
+`id` bigint(20) NOT NULL auto_increment,
+`time` datetime NOT NULL,
+`type` char(20) NOT NULL,
+`node` char(20) NOT NULL,
+`data` float NOT NULL,
+PRIMARY KEY (`id`),
+KEY `time` (`time`,`type`,`node`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk
+;
+
+delimiter //
+
+CREATE PROCEDURE proc1()
+BEGIN
+  delete from em1;
+END
+//
+
+CREATE PROCEDURE proc7()
+BEGIN
+	insert into em7(time,type,node,data)
+	
+	select FROM_UNIXTIME(unix_timestamp(`time`) - unix_timestamp(`time`)%60)  TID , type , node , avg(data) temp_data 
+
+from em1 
+
+where time >  now() - interval 1 hour 
+ 
+group by TID,type,node;
+
+
+delete from em7 where time <  now() - interval 7 day;
+END
+//
+
+
+CREATE PROCEDURE proc30()
+BEGIN
+	insert into em30(time,type,node,data)
+	
+	select FROM_UNIXTIME(unix_timestamp(`time`) - unix_timestamp(`time`)%300)  TID , type , node , avg(data) temp_data 
+
+from em7 
+
+where time >  now() - interval 1 day  
+
+group by TID,type,node;
+
+delete from em30 where time <  now() - interval 30 day;
+END
+//
+
+CREATE PROCEDURE proc365()
+BEGIN
+	insert into em365(time,type,node,data)
+	
+	select FROM_UNIXTIME(unix_timestamp(`time`) - unix_timestamp(`time`)%3600)  TID , type , node , avg(data) temp_data 
+
+from em30
+
+where time >  now() - interval 1 day  
+
+group by TID,type,node ;
+
+delete from em365 where time <  now() - interval 365 day;
+END
+//
+
+CREATE  EVENT evt1 
+ON SCHEDULE EVERY 1 DAY STARTS  FROM_UNIXTIME(unix_timestamp(now()) - unix_timestamp(now())%86400 + 86400)
+ON COMPLETION PRESERVE ENABLE 
+DO 
+    BEGIN 
+        CALL proc1(); 
+    END
+//
+
+CREATE  EVENT evt7 
+ON SCHEDULE EVERY 1 HOUR STARTS  FROM_UNIXTIME(unix_timestamp(now()) - unix_timestamp(now())%3600 + 3590)
+ON COMPLETION PRESERVE ENABLE 
+DO 
+    BEGIN 
+        CALL proc7(); 
+    END
+//
+
+CREATE  EVENT evt30
+ON SCHEDULE EVERY 1 DAY STARTS  FROM_UNIXTIME(unix_timestamp(now()) - unix_timestamp(now())%86400 + 86400)
+ON COMPLETION PRESERVE ENABLE 
+DO 
+    BEGIN 
+        CALL proc30(); 
+    END
+//
+
+CREATE  EVENT evt365
+ON SCHEDULE EVERY 1 DAY STARTS  FROM_UNIXTIME(unix_timestamp(now()) - unix_timestamp(now())%86400 + 86410)
+ON COMPLETION PRESERVE ENABLE 
+DO 
+    BEGIN 
+        CALL proc365(); 
+    END
+//
+
+delimiter ;
+

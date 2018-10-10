@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	./Makefile	/^CC = gcc$/;"	m
+CFLAGS	./Makefile	/^CFLAGS = -g -Wall -O0 -D_REENTRANT$/;"	m
+GETDATA_CONFIG_PATH	./getdata.h	10;"	d
+GETDATA_INDEX_CONFIG_PATH	./getdata.h	11;"	d
+GETDATA_MODULE_SEARCH_PATH	./getdata.h	12;"	d
+GETDATA_TAGS	./getdata.h	13;"	d
+HDRS	./Makefile	/^HDRS    =	getdata.h			\\$/;"	m
+INCLUDES	./Makefile	/^INCLUDES = -I..\/..\/_con\/ -I..\/..\/..\/lib\/include\/ -I..\/..\/clr\/ $/;"	m
+LDFLAGS	./Makefile	/^LDFLAGS = -g -Wall -O0$/;"	m
+LIBS	./Makefile	/^LIBS = $(LIB_PATH) -lutil -lm$/;"	m
+LIB_PATH	./Makefile	/^    LIB_PATH = -L..\/..\/..\/lib\/lib32$/;"	m
+LIB_PATH	./Makefile	/^    LIB_PATH = -L..\/..\/..\/lib\/lib64$/;"	m
+MAX_CONNECT_TIMES	./getdata.c	24;"	d	file:
+MODULE_FLAG_ILLEGAL	./framework.h	19;"	d
+MODULE_FLAG_INDEX_NOT_EXIST	./framework.h	20;"	d
+MODULE_FLAG_NORMAL	./framework.h	17;"	d
+MODULE_FLAG_NOT_EXIST	./framework.h	18;"	d
+MODULE_FLAG_NOT_USEABLE	./framework.h	21;"	d
+MODULE_REGISTER_FUNCTION	./framework.h	14;"	d
+OBJS	./Makefile	/^OBJS    =       getdata.o   		\\$/;"	m
+SRCS	./Makefile	/^SRCS	=       getdata.c   		\\$/;"	m
+TARGET	./Makefile	/^TARGET = getdata$/;"	m
+TEYE_FRAMEWORK_H	./framework.h	8;"	d
+_GETDATA_H	./getdata.h	8;"	d
+add_error_mask	./data.c	/^add_error_mask(char *data_buf, config_mod_info_item_t *item, int cnt)$/;"	f	file:
+analyse_index_info_cmd	./getdata.c	/^analyse_index_info_cmd(int argc, char *argv[], config_mod_info_t *g_mod_info)$/;"	f
+app_clr_module	./getdata.c	/^app_clr_module_t app_clr_module;$/;"	v
+begin_collect_data	./data.c	/^begin_collect_data(void)$/;"	f
+c_read	./framework.h	/^	void (*c_read)	(struct module*);$/;"	m	struct:module
+c_start	./framework.h	/^	void (*c_start) (void);	$/;"	m	struct:module
+col	./framework.h	/^	int		col;$/;"	m	struct:module
+collect_data_from_modules	./data.c	/^collect_data_from_modules(void)$/;"	f	file:
+compare_index_data	./data.c	/^compare_index_data(char *data_buf, struct module *mod, config_mod_info_item_t *item)$/;"	f	file:
+complete_app_data	./data.c	/^complete_app_data(app_data_t *app_data, config_mod_info_t * mod_info_head)$/;"	f
+complete_module_data	./data.c	/^complete_module_data(char *data_buf, config_mod_info_t *t)$/;"	f	file:
+flag	./framework.h	/^	int		flag;$/;"	m	struct:module
+free_modules	./framework.c	/^free_modules(void)$/;"	f
+get_app_data	./data.c	/^get_app_data(void)$/;"	f
+index_data	./framework.h	/^	char index_data[LEN_32];$/;"	m	struct:mod_info
+index_hdr	./framework.h	/^	char index_hdr[LEN_32];$/;"	m	struct:mod_info
+info	./framework.h	/^	struct 	mod_info *info;$/;"	m	struct:module	typeref:struct:module::mod_info
+init_module_array	./getdata.c	/^init_module_array(config_mod_info_t *mod_info_head)$/;"	f	file:
+lib	./framework.h	/^	void	*lib;$/;"	m	struct:module
+load_modules	./framework.c	/^load_modules(void)$/;"	f
+main	./getdata.c	/^main(int argc, char *argv[]) $/;"	f
+mod_info	./framework.h	/^struct mod_info {$/;"	s
+module	./framework.h	/^struct module {$/;"	s
+name	./framework.h	/^	char 	name[LEN_32];$/;"	m	struct:module
+produce_app_pkg_head	./data.c	/^produce_app_pkg_head(app_hdr_t * app_head) $/;"	f

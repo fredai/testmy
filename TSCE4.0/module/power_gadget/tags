@@ -1,0 +1,229 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APIC_ID_t	rapl.h	/^typedef struct APIC_ID_t {$/;"	s
+APIC_ID_t	rapl.h	/^} APIC_ID_t;$/;"	t	typeref:struct:APIC_ID_t
+A_F	t_rapl.c	/^const double A_F[4] = { 1.0, 1.1, 1.2, 1.3 };$/;"	v
+A_LNF	t_rapl.c	/^const double A_LNF[4] = {$/;"	v
+B2POW	msr.h	24;"	d
+DRAM	rapl.h	/^enum RAPL_DOMAIN { PKG, PP0, PP1, DRAM };$/;"	e	enum:RAPL_DOMAIN
+LN2	t_rapl.c	/^const double LN2 = 0.69314718055994530941723212145817656807550013436025;$/;"	v
+MAX_ENERGY_STATUS_JOULES	rapl.h	/^double MAX_ENERGY_STATUS_JOULES;   \/* default: 65536 *\/$/;"	v
+MAX_THROTTLED_TIME_SECONDS	rapl.h	/^double MAX_THROTTLED_TIME_SECONDS; \/* default: 4194304 *\/$/;"	v
+MSR_RAPL_DRAM_ENERGY_STATUS	msr.h	37;"	d
+MSR_RAPL_DRAM_PERF_STATUS	msr.h	38;"	d
+MSR_RAPL_DRAM_POWER_INFO	msr.h	39;"	d
+MSR_RAPL_DRAM_POWER_LIMIT	msr.h	36;"	d
+MSR_RAPL_PKG_ENERGY_STATUS	msr.h	31;"	d
+MSR_RAPL_PKG_PERF_STATUS	msr.h	32;"	d
+MSR_RAPL_PKG_POWER_INFO	msr.h	33;"	d
+MSR_RAPL_PKG_POWER_LIMIT	msr.h	30;"	d
+MSR_RAPL_POWER_UNIT	msr.h	27;"	d
+MSR_RAPL_PP0_ENERGY_STATUS	msr.h	43;"	d
+MSR_RAPL_PP0_PERF_STATUS	msr.h	45;"	d
+MSR_RAPL_PP0_POLICY	msr.h	44;"	d
+MSR_RAPL_PP0_POWER_LIMIT	msr.h	42;"	d
+MSR_RAPL_PP1_ENERGY_STATUS	msr.h	49;"	d
+MSR_RAPL_PP1_POLICY	msr.h	50;"	d
+MSR_RAPL_PP1_POWER_LIMIT	msr.h	48;"	d
+MSR_SUPPORT_MASK	t_rapl.c	34;"	d	file:
+MY_ERROR	msr.h	20;"	d
+MY_ERROR	rapl.h	25;"	d
+PKG	rapl.h	/^enum RAPL_DOMAIN { PKG, PP0, PP1, DRAM };$/;"	e	enum:RAPL_DOMAIN
+PP0	rapl.h	/^enum RAPL_DOMAIN { PKG, PP0, PP1, DRAM };$/;"	e	enum:RAPL_DOMAIN
+PP1	rapl.h	/^enum RAPL_DOMAIN { PKG, PP0, PP1, DRAM };$/;"	e	enum:RAPL_DOMAIN
+RAPL_DOMAIN	rapl.h	/^enum RAPL_DOMAIN { PKG, PP0, PP1, DRAM };$/;"	g
+RAPL_DRAM	rapl.h	31;"	d
+RAPL_ENERGY_UNIT	t_rapl.c	/^double RAPL_ENERGY_UNIT;$/;"	v
+RAPL_NR_DOMAIN	rapl.h	32;"	d
+RAPL_PKG	rapl.h	28;"	d
+RAPL_POWER_UNIT	t_rapl.c	/^double RAPL_POWER_UNIT;$/;"	v
+RAPL_PP0	rapl.h	29;"	d
+RAPL_PP1	rapl.h	30;"	d
+RAPL_TIME_UNIT	t_rapl.c	/^double RAPL_TIME_UNIT;$/;"	v
+_GNU_SOURCE	t_rapl.c	9;"	d	file:
+_h_cpuid	cpuid.h	16;"	d
+_h_msr_t	msr.h	16;"	d
+_h_rapl	rapl.h	21;"	d
+accumulated_throttled_time	msr.h	/^    uint64_t accumulated_throttled_time : 32;$/;"	m	struct:performance_throttling_status_msr_t
+balance_policy_msr_t	msr.h	/^typedef struct balance_policy_msr_t {$/;"	s
+balance_policy_msr_t	msr.h	/^} balance_policy_msr_t;$/;"	t	typeref:struct:balance_policy_msr_t
+bind_context	t_rapl.c	/^bind_context(cpu_set_t *new_context, cpu_set_t *old_context) {$/;"	f
+bind_cpu	t_rapl.c	/^bind_cpu(uint64_t cpu, cpu_set_t *old_context) {$/;"	f
+build_topology	t_rapl.c	/^build_topology() {$/;"	f
+clamp_enabled	msr.h	/^    uint64_t clamp_enabled       : 1;$/;"	m	struct:rapl_power_limit_control_msr_t
+clamp_enabled	rapl.h	/^    uint64_t clamp_enabled;$/;"	m	struct:dram_rapl_power_limit_control_t
+clamp_enabled	rapl.h	/^    uint64_t clamp_enabled;$/;"	m	struct:pp0_rapl_power_limit_control_t
+clamp_enabled	rapl.h	/^    uint64_t clamp_enabled;$/;"	m	struct:pp1_rapl_power_limit_control_t
+clamp_enabled_1	msr.h	/^    uint64_t clamp_enabled_1       : 1;$/;"	m	struct:pkg_rapl_power_limit_control_msr_t
+clamp_enabled_1	rapl.h	/^    uint64_t clamp_enabled_1;$/;"	m	struct:pkg_rapl_power_limit_control_t
+clamp_enabled_2	msr.h	/^    uint64_t clamp_enabled_2       : 1;$/;"	m	struct:pkg_rapl_power_limit_control_msr_t
+clamp_enabled_2	rapl.h	/^    uint64_t clamp_enabled_2;$/;"	m	struct:pkg_rapl_power_limit_control_t
+compute_Y	t_rapl.c	/^compute_Y(uint64_t F,$/;"	f
+convert_from_limit_time_window	t_rapl.c	/^convert_from_limit_time_window(uint64_t Y,$/;"	f
+convert_from_watts	t_rapl.c	/^convert_from_watts(double converted)$/;"	f
+convert_time_to_sec	t_rapl.c	/^convert_time_to_sec(struct timeval tv)$/;"	f
+convert_time_to_string	t_rapl.c	/^convert_time_to_string(struct timeval tv, char* time_buf)$/;"	f
+convert_to_joules	t_rapl.c	/^convert_to_joules(uint64_t raw)$/;"	f
+convert_to_seconds	t_rapl.c	/^convert_to_seconds(uint64_t raw)$/;"	f
+convert_to_watts	t_rapl.c	/^convert_to_watts(uint64_t raw)$/;"	f
+core_id	rapl.h	/^    uint64_t core_id;$/;"	m	struct:APIC_ID_t
+cpuid	t_rapl.c	/^cpuid(uint32_t eax_in, uint32_t ecx_in,$/;"	f
+cpuid_info_t	cpuid.h	/^typedef struct cpuid_info_t {$/;"	s
+cpuid_info_t	cpuid.h	/^} cpuid_info_t;$/;"	t	typeref:struct:cpuid_info_t
+do_print_energy_info	t_rapl.c	/^do_print_energy_info()$/;"	f
+dram_energy_status_msr_t	msr.h	/^typedef energy_status_msr_t dram_energy_status_msr_t;$/;"	t
+dram_node_to_cpu	t_rapl.c	/^dram_node_to_cpu(uint64_t node)$/;"	f
+dram_performance_throttling_status_msr_t	msr.h	/^typedef performance_throttling_status_msr_t dram_performance_throttling_status_msr_t;$/;"	t
+dram_rapl_parameters_msr_t	msr.h	/^typedef rapl_parameters_msr_t dram_rapl_parameters_msr_t;$/;"	t
+dram_rapl_parameters_t	rapl.h	/^typedef struct dram_rapl_parameters_t {$/;"	s
+dram_rapl_parameters_t	rapl.h	/^} dram_rapl_parameters_t;$/;"	t	typeref:struct:dram_rapl_parameters_t
+dram_rapl_power_limit_control_msr_t	msr.h	/^typedef rapl_power_limit_control_msr_t dram_rapl_power_limit_control_msr_t;$/;"	t
+dram_rapl_power_limit_control_t	rapl.h	/^typedef struct dram_rapl_power_limit_control_t {$/;"	s
+dram_rapl_power_limit_control_t	rapl.h	/^} dram_rapl_power_limit_control_t;$/;"	t	typeref:struct:dram_rapl_power_limit_control_t
+eax	cpuid.h	/^    uint32_t eax;$/;"	m	struct:cpuid_info_t
+ebx	cpuid.h	/^    uint32_t ebx;$/;"	m	struct:cpuid_info_t
+ecx	cpuid.h	/^    uint32_t ecx;$/;"	m	struct:cpuid_info_t
+edx	cpuid.h	/^    uint32_t edx;$/;"	m	struct:cpuid_info_t
+energy	msr.h	/^    uint64_t energy : 5;$/;"	m	struct:rapl_unit_multiplier_msr_t
+energy	t_rapl.c	/^    double energy;$/;"	m	struct:rapl_unit_multiplier_t	file:
+energy_status_msr_t	msr.h	/^typedef struct energy_status_msr_t {$/;"	s
+energy_status_msr_t	msr.h	/^} energy_status_msr_t;$/;"	t	typeref:struct:energy_status_msr_t
+get_dram_total_energy_consumed	t_rapl.c	/^get_dram_total_energy_consumed(uint64_t  node,$/;"	f
+get_num_rapl_nodes_dram	t_rapl.c	/^get_num_rapl_nodes_dram()$/;"	f
+get_num_rapl_nodes_pkg	t_rapl.c	/^get_num_rapl_nodes_pkg()$/;"	f
+get_num_rapl_nodes_pp0	t_rapl.c	/^get_num_rapl_nodes_pp0()$/;"	f
+get_num_rapl_nodes_pp1	t_rapl.c	/^get_num_rapl_nodes_pp1()$/;"	f
+get_os_freq	t_rapl.c	/^get_os_freq(uint64_t cpu, uint64_t *freq)$/;"	f
+get_pkg_total_energy_consumed	t_rapl.c	/^get_pkg_total_energy_consumed(uint64_t  node,$/;"	f
+get_pp0_freq_mhz	t_rapl.c	/^get_pp0_freq_mhz(uint64_t node, uint64_t *freq)$/;"	f
+get_pp0_total_energy_consumed	t_rapl.c	/^get_pp0_total_energy_consumed(uint64_t  node,$/;"	f
+get_pp1_total_energy_consumed	t_rapl.c	/^get_pp1_total_energy_consumed(uint64_t  node,$/;"	f
+get_processor_signature	t_rapl.c	/^get_processor_signature()$/;"	f
+get_processor_topology	t_rapl.c	/^get_processor_topology(uint32_t level)$/;"	f
+get_rapl_energy_info	t_rapl.c	/^get_rapl_energy_info(uint64_t power_domain, uint64_t node)$/;"	f
+get_rapl_unit_multiplier	t_rapl.c	/^get_rapl_unit_multiplier(uint64_t                cpu,$/;"	f
+get_total_energy_consumed	t_rapl.c	/^get_total_energy_consumed(uint64_t  cpu,$/;"	f
+init_rapl	t_rapl.c	/^init_rapl()$/;"	f
+is_supported_domain	t_rapl.c	/^is_supported_domain(uint64_t power_domain)$/;"	f
+is_supported_msr	t_rapl.c	/^is_supported_msr(uint64_t msr)$/;"	f
+limit_enabled	msr.h	/^    uint64_t limit_enabled       : 1;$/;"	m	struct:rapl_power_limit_control_msr_t
+limit_enabled	rapl.h	/^    uint64_t limit_enabled;$/;"	m	struct:dram_rapl_power_limit_control_t
+limit_enabled	rapl.h	/^    uint64_t limit_enabled;$/;"	m	struct:pp0_rapl_power_limit_control_t
+limit_enabled	rapl.h	/^    uint64_t limit_enabled;$/;"	m	struct:pp1_rapl_power_limit_control_t
+limit_enabled_1	msr.h	/^    uint64_t limit_enabled_1       : 1;$/;"	m	struct:pkg_rapl_power_limit_control_msr_t
+limit_enabled_1	rapl.h	/^    uint64_t limit_enabled_1;$/;"	m	struct:pkg_rapl_power_limit_control_t
+limit_enabled_2	msr.h	/^    uint64_t limit_enabled_2       : 1;$/;"	m	struct:pkg_rapl_power_limit_control_msr_t
+limit_enabled_2	rapl.h	/^    uint64_t limit_enabled_2;$/;"	m	struct:pkg_rapl_power_limit_control_t
+limit_time_window_f	msr.h	/^    uint64_t limit_time_window_f : 2;$/;"	m	struct:rapl_power_limit_control_msr_t
+limit_time_window_f_1	msr.h	/^    uint64_t limit_time_window_f_1 : 2;$/;"	m	struct:pkg_rapl_power_limit_control_msr_t
+limit_time_window_f_2	msr.h	/^    uint64_t limit_time_window_f_2 : 2;$/;"	m	struct:pkg_rapl_power_limit_control_msr_t
+limit_time_window_seconds	rapl.h	/^    double   limit_time_window_seconds;$/;"	m	struct:dram_rapl_power_limit_control_t
+limit_time_window_seconds	rapl.h	/^    double   limit_time_window_seconds;$/;"	m	struct:pp0_rapl_power_limit_control_t
+limit_time_window_seconds	rapl.h	/^    double   limit_time_window_seconds;$/;"	m	struct:pp1_rapl_power_limit_control_t
+limit_time_window_seconds_1	rapl.h	/^    double   limit_time_window_seconds_1;$/;"	m	struct:pkg_rapl_power_limit_control_t
+limit_time_window_seconds_2	rapl.h	/^    double   limit_time_window_seconds_2;$/;"	m	struct:pkg_rapl_power_limit_control_t
+limit_time_window_y	msr.h	/^    uint64_t limit_time_window_y : 5;$/;"	m	struct:rapl_power_limit_control_msr_t
+limit_time_window_y_1	msr.h	/^    uint64_t limit_time_window_y_1 : 5;$/;"	m	struct:pkg_rapl_power_limit_control_msr_t
+limit_time_window_y_2	msr.h	/^    uint64_t limit_time_window_y_2 : 5;$/;"	m	struct:pkg_rapl_power_limit_control_msr_t
+lock_enabled	msr.h	/^    uint64_t lock_enabled          : 1;$/;"	m	struct:pkg_rapl_power_limit_control_msr_t
+lock_enabled	msr.h	/^    uint64_t lock_enabled        : 1;$/;"	m	struct:rapl_power_limit_control_msr_t
+lock_enabled	rapl.h	/^    uint64_t lock_enabled;$/;"	m	struct:dram_rapl_power_limit_control_t
+lock_enabled	rapl.h	/^    uint64_t lock_enabled;$/;"	m	struct:pkg_rapl_power_limit_control_t
+lock_enabled	rapl.h	/^    uint64_t lock_enabled;$/;"	m	struct:pp0_rapl_power_limit_control_t
+lock_enabled	rapl.h	/^    uint64_t lock_enabled;$/;"	m	struct:pp1_rapl_power_limit_control_t
+main	t_rapl.c	/^main(int argc, char **argv)$/;"	f
+maximum_limit_time_window	msr.h	/^    uint64_t maximum_limit_time_window : 6;$/;"	m	struct:rapl_parameters_msr_t
+maximum_limit_time_window_seconds	rapl.h	/^    double maximum_limit_time_window_seconds;$/;"	m	struct:dram_rapl_parameters_t
+maximum_limit_time_window_seconds	rapl.h	/^    double maximum_limit_time_window_seconds;$/;"	m	struct:pkg_rapl_parameters_t
+maximum_power	msr.h	/^    uint64_t maximum_power             : 15;$/;"	m	struct:rapl_parameters_msr_t
+maximum_power_watts	rapl.h	/^    double maximum_power_watts;$/;"	m	struct:dram_rapl_parameters_t
+maximum_power_watts	rapl.h	/^    double maximum_power_watts;$/;"	m	struct:pkg_rapl_parameters_t
+minimum_power	msr.h	/^    uint64_t minimum_power             : 15;$/;"	m	struct:rapl_parameters_msr_t
+minimum_power_watts	rapl.h	/^    double minimum_power_watts;$/;"	m	struct:dram_rapl_parameters_t
+minimum_power_watts	rapl.h	/^    double minimum_power_watts;$/;"	m	struct:pkg_rapl_parameters_t
+msr_support_table	t_rapl.c	/^unsigned char *msr_support_table;$/;"	v
+num_core_threads	t_rapl.c	/^uint64_t num_core_threads = 0; \/\/ number of physical threads per core$/;"	v
+num_node	t_rapl.c	/^uint64_t      num_node = 0;$/;"	v
+num_nodes	t_rapl.c	/^uint64_t  num_nodes = 0;$/;"	v
+num_pkg_cores	t_rapl.c	/^uint64_t num_pkg_cores = 0;    \/\/ number of cores per package$/;"	v
+num_pkg_threads	t_rapl.c	/^uint64_t num_pkg_threads = 0;  \/\/ number of physical threads per package$/;"	v
+os_cpu_count	t_rapl.c	/^uint64_t os_cpu_count = 0;     \/\/ numbeer of OS cpus$/;"	v
+os_id	rapl.h	/^    uint64_t os_id;$/;"	m	struct:APIC_ID_t
+os_map	t_rapl.c	/^APIC_ID_t *os_map;$/;"	v
+parse_apic_id	t_rapl.c	/^parse_apic_id(cpuid_info_t info_l0, cpuid_info_t info_l1, APIC_ID_t *my_id){$/;"	f
+performance_throttling_status_msr_t	msr.h	/^typedef struct performance_throttling_status_msr_t {$/;"	s
+performance_throttling_status_msr_t	msr.h	/^} performance_throttling_status_msr_t;$/;"	t	typeref:struct:performance_throttling_status_msr_t
+pkg_energy_status_msr_t	msr.h	/^typedef energy_status_msr_t pkg_energy_status_msr_t;$/;"	t
+pkg_id	rapl.h	/^    uint64_t pkg_id;$/;"	m	struct:APIC_ID_t
+pkg_map	t_rapl.c	/^APIC_ID_t **pkg_map;$/;"	v
+pkg_node_to_cpu	t_rapl.c	/^pkg_node_to_cpu(uint64_t node)$/;"	f
+pkg_performance_throttling_status_msr_t	msr.h	/^typedef performance_throttling_status_msr_t pkg_performance_throttling_status_msr_t;$/;"	t
+pkg_rapl_parameters_msr_t	msr.h	/^typedef rapl_parameters_msr_t pkg_rapl_parameters_msr_t;$/;"	t
+pkg_rapl_parameters_t	rapl.h	/^typedef struct pkg_rapl_parameters_t {$/;"	s
+pkg_rapl_parameters_t	rapl.h	/^} pkg_rapl_parameters_t;$/;"	t	typeref:struct:pkg_rapl_parameters_t
+pkg_rapl_power_limit_control_msr_t	msr.h	/^typedef struct pkg_rapl_power_limit_control_msr_t {$/;"	s
+pkg_rapl_power_limit_control_msr_t	msr.h	/^} pkg_rapl_power_limit_control_msr_t;$/;"	t	typeref:struct:pkg_rapl_power_limit_control_msr_t
+pkg_rapl_power_limit_control_t	rapl.h	/^typedef struct pkg_rapl_power_limit_control_t {$/;"	s
+pkg_rapl_power_limit_control_t	rapl.h	/^} pkg_rapl_power_limit_control_t;$/;"	t	typeref:struct:pkg_rapl_power_limit_control_t
+power	msr.h	/^    uint64_t power  : 4;$/;"	m	struct:rapl_unit_multiplier_msr_t
+power	t_rapl.c	/^    double power;$/;"	m	struct:rapl_unit_multiplier_t	file:
+power_limit	msr.h	/^    uint64_t power_limit         : 15;$/;"	m	struct:rapl_power_limit_control_msr_t
+power_limit_1	msr.h	/^    uint64_t power_limit_1         : 15;$/;"	m	struct:pkg_rapl_power_limit_control_msr_t
+power_limit_2	msr.h	/^    uint64_t power_limit_2         : 15;$/;"	m	struct:pkg_rapl_power_limit_control_msr_t
+power_limit_watts	rapl.h	/^    double   power_limit_watts;$/;"	m	struct:dram_rapl_power_limit_control_t
+power_limit_watts	rapl.h	/^    double   power_limit_watts;$/;"	m	struct:pp0_rapl_power_limit_control_t
+power_limit_watts	rapl.h	/^    double   power_limit_watts;$/;"	m	struct:pp1_rapl_power_limit_control_t
+power_limit_watts_1	rapl.h	/^    double   power_limit_watts_1;$/;"	m	struct:pkg_rapl_power_limit_control_t
+power_limit_watts_2	rapl.h	/^    double   power_limit_watts_2;$/;"	m	struct:pkg_rapl_power_limit_control_t
+pp0_balance_policy_msr_t	msr.h	/^typedef balance_policy_msr_t pp0_balance_policy_msr_t;$/;"	t
+pp0_energy_status_msr_t	msr.h	/^typedef energy_status_msr_t pp0_energy_status_msr_t;$/;"	t
+pp0_node_to_cpu	t_rapl.c	/^pp0_node_to_cpu(uint64_t node)$/;"	f
+pp0_performance_throttling_status_msr_t	msr.h	/^typedef performance_throttling_status_msr_t pp0_performance_throttling_status_msr_t;$/;"	t
+pp0_rapl_power_limit_control_msr_t	msr.h	/^typedef rapl_power_limit_control_msr_t pp0_rapl_power_limit_control_msr_t;$/;"	t
+pp0_rapl_power_limit_control_t	rapl.h	/^typedef struct pp0_rapl_power_limit_control_t {$/;"	s
+pp0_rapl_power_limit_control_t	rapl.h	/^} pp0_rapl_power_limit_control_t;$/;"	t	typeref:struct:pp0_rapl_power_limit_control_t
+pp1_balance_policy_msr_t	msr.h	/^typedef balance_policy_msr_t pp1_balance_policy_msr_t;$/;"	t
+pp1_energy_status_msr_t	msr.h	/^typedef energy_status_msr_t pp1_energy_status_msr_t;$/;"	t
+pp1_node_to_cpu	t_rapl.c	/^pp1_node_to_cpu(uint64_t node)$/;"	f
+pp1_performance_throttling_status_msr_t	msr.h	/^typedef performance_throttling_status_msr_t pp1_performance_throttling_status_msr_t;$/;"	t
+pp1_rapl_power_limit_control_msr_t	msr.h	/^typedef rapl_power_limit_control_msr_t pp1_rapl_power_limit_control_msr_t;$/;"	t
+pp1_rapl_power_limit_control_t	rapl.h	/^typedef struct pp1_rapl_power_limit_control_t {$/;"	s
+pp1_rapl_power_limit_control_t	rapl.h	/^} pp1_rapl_power_limit_control_t;$/;"	t	typeref:struct:pp1_rapl_power_limit_control_t
+priority_level	msr.h	/^    uint64_t priority_level : 5;$/;"	m	struct:balance_policy_msr_t
+rapl_parameters_msr_t	msr.h	/^typedef struct rapl_parameters_msr_t {$/;"	s
+rapl_parameters_msr_t	msr.h	/^} rapl_parameters_msr_t;$/;"	t	typeref:struct:rapl_parameters_msr_t
+rapl_power_limit_control_msr_t	msr.h	/^typedef struct rapl_power_limit_control_msr_t {$/;"	s
+rapl_power_limit_control_msr_t	msr.h	/^} rapl_power_limit_control_msr_t;$/;"	t	typeref:struct:rapl_power_limit_control_msr_t
+rapl_unit_multiplier_msr_t	msr.h	/^typedef struct rapl_unit_multiplier_msr_t {$/;"	s
+rapl_unit_multiplier_msr_t	msr.h	/^} rapl_unit_multiplier_msr_t;$/;"	t	typeref:struct:rapl_unit_multiplier_msr_t
+rapl_unit_multiplier_t	t_rapl.c	/^typedef struct rapl_unit_multiplier_t {$/;"	s	file:
+rapl_unit_multiplier_t	t_rapl.c	/^} rapl_unit_multiplier_t;$/;"	t	typeref:struct:rapl_unit_multiplier_t	file:
+read_msr	t_rapl.c	/^read_msr(int       cpu,$/;"	f
+read_rapl_units	t_rapl.c	/^read_rapl_units()$/;"	f
+read_tsc	t_rapl.c	/^read_tsc(uint64_t *tsc)$/;"	f
+smt_id	rapl.h	/^    uint64_t smt_id;$/;"	m	struct:APIC_ID_t
+terminate_rapl	t_rapl.c	/^terminate_rapl()$/;"	f
+thermal_spec_power	msr.h	/^    uint64_t thermal_spec_power        : 15;$/;"	m	struct:rapl_parameters_msr_t
+thermal_spec_power_watts	rapl.h	/^    double thermal_spec_power_watts;$/;"	m	struct:dram_rapl_parameters_t
+thermal_spec_power_watts	rapl.h	/^    double thermal_spec_power_watts;$/;"	m	struct:pkg_rapl_parameters_t
+time	msr.h	/^    uint64_t time   : 4;$/;"	m	struct:rapl_unit_multiplier_msr_t
+time	t_rapl.c	/^    double time;$/;"	m	struct:rapl_unit_multiplier_t	file:
+total_energy_consumed	msr.h	/^    uint64_t total_energy_consumed : 32;$/;"	m	struct:energy_status_msr_t
+uint64_t	msr.h	/^    uint64_t                            : 32;$/;"	m	struct:performance_throttling_status_msr_t
+uint64_t	msr.h	/^    uint64_t                           : 10;$/;"	m	struct:rapl_parameters_msr_t
+uint64_t	msr.h	/^    uint64_t                           : 1;$/;"	m	struct:rapl_parameters_msr_t
+uint64_t	msr.h	/^    uint64_t                       : 32;$/;"	m	struct:energy_status_msr_t
+uint64_t	msr.h	/^    uint64_t                       : 7;$/;"	m	struct:pkg_rapl_power_limit_control_msr_t
+uint64_t	msr.h	/^    uint64_t                       : 8;$/;"	m	struct:pkg_rapl_power_limit_control_msr_t
+uint64_t	msr.h	/^    uint64_t                     : 32;$/;"	m	struct:rapl_power_limit_control_msr_t
+uint64_t	msr.h	/^    uint64_t                     : 7;$/;"	m	struct:rapl_power_limit_control_msr_t
+uint64_t	msr.h	/^    uint64_t                : 27;$/;"	m	struct:balance_policy_msr_t
+uint64_t	msr.h	/^    uint64_t                : 32;$/;"	m	struct:balance_policy_msr_t
+uint64_t	msr.h	/^    uint64_t        : 12;$/;"	m	struct:rapl_unit_multiplier_msr_t
+uint64_t	msr.h	/^    uint64_t        : 32;$/;"	m	struct:rapl_unit_multiplier_msr_t
+uint64_t	msr.h	/^    uint64_t        : 3;$/;"	m	struct:rapl_unit_multiplier_msr_t
+uint64_t	msr.h	/^    uint64_t        : 4;$/;"	m	struct:rapl_unit_multiplier_msr_t

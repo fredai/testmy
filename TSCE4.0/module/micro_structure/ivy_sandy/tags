@@ -1,0 +1,506 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AVXPackedDoublePrecision	pcm.h	/^  uint64 AVXPackedDoublePrecision;$/;"	m	struct:class_CoreEventPCM
+AVXPackedSinglePrecision	pcm.h	/^  uint64 AVXPackedSinglePrecision;$/;"	m	struct:class_CoreEventPCM
+AVX_PACKED_DOUBLE	types.h	190;"	d
+AVX_PACKED_SINGLE	types.h	191;"	d
+BandWidthRead	pcm.h	/^  uint64 BandWidthRead;$/;"	m	struct:class_UncoreEventPCM
+BandWidthWrite	pcm.h	/^  uint64 BandWidthWrite;$/;"	m	struct:class_UncoreEventPCM
+BaseAddr	devices.h	/^  uint64 BaseAddr;$/;"	m	struct:class_PciMC
+Buffers	teye.h	/^  unsigned long Buffers;$/;"	m	struct:c_mem
+C0_MSR_PMON_BOX_CTL	types.h	116;"	d
+C0_MSR_PMON_BOX_FILTER	types.h	114;"	d
+C0_MSR_PMON_BOX_FILTER1	types.h	115;"	d
+C0_MSR_PMON_CTL0	types.h	113;"	d
+C0_MSR_PMON_CTR0	types.h	112;"	d
+CAS_COUNT	types.h	199;"	d
+CAS_COUNT_RD	types.h	202;"	d
+CAS_COUNT_WR	types.h	203;"	d
+CBO_MSR_PMON_BOX_CTL_FRZ	types.h	121;"	d
+CBO_MSR_PMON_BOX_CTL_FRZ_EN	types.h	120;"	d
+CBO_MSR_PMON_BOX_CTL_RST_COUNTERS	types.h	122;"	d
+CBO_MSR_PMON_CTL_EN	types.h	139;"	d
+CBO_MSR_PMON_CTL_EVENT	types.h	140;"	d
+CBO_MSR_PMON_CTL_TID_EN	types.h	142;"	d
+CBO_MSR_PMON_CTL_UMASK	types.h	141;"	d
+CBO_MSR_STEP	types.h	117;"	d
+COMPANYINFO	teye.h	4;"	d
+CPUFamily	cpuinfo.h	/^  uint32 CPUFamily;$/;"	m	struct:class_cpuinfo
+CPUFamily	pcm.h	/^  uint32 CPUFamily;$/;"	m	struct:class_PCM
+CPUModel	cpuinfo.h	/^  uint32 CPUModel;$/;"	m	struct:class_cpuinfo
+CPUModel	pcm.h	/^  uint32 CPUModel;$/;"	m	struct:class_PCM
+CPUVendor	cpuinfo.h	/^  char CPUVendor[256];$/;"	m	struct:class_cpuinfo
+CPU_CLK_UNHALTED_REF_ADDR	types.h	78;"	d
+CPU_CLK_UNHALTED_THREAD_ADDR	types.h	77;"	d
+CRD	types.h	162;"	d
+CX_MSR_PMON_BOX_CTL	pcm.h	/^  uint32 (*CX_MSR_PMON_BOX_CTL)(struct class_UncoreMsrCBo *th, uint32 ICBo) ;$/;"	m	struct:class_UncoreMsrCBo
+CX_MSR_PMON_BOX_FILTER	pcm.h	/^  uint32 (*CX_MSR_PMON_BOX_FILTER)(struct class_UncoreMsrCBo *th, uint32 ICBo) ;$/;"	m	struct:class_UncoreMsrCBo
+CX_MSR_PMON_BOX_FILTER1	pcm.h	/^  uint32 (*CX_MSR_PMON_BOX_FILTER1)(struct class_UncoreMsrCBo *th, uint32 ICBo) ;$/;"	m	struct:class_UncoreMsrCBo
+CX_MSR_PMON_CTLY	pcm.h	/^  uint32 (*CX_MSR_PMON_CTLY)(struct class_UncoreMsrCBo *th, uint32 ICBo, uint32 CounterID) ;$/;"	m	struct:class_UncoreMsrCBo
+CX_MSR_PMON_CTRY	pcm.h	/^  uint32 (*CX_MSR_PMON_CTRY)(struct class_UncoreMsrCBo *th, uint32 ICBo, uint32 CounterID) ;$/;"	m	struct:class_UncoreMsrCBo
+Cached	teye.h	/^  unsigned long Cached;   $/;"	m	struct:c_mem
+CoreCounterValue	pcm.h	/^  uint64* CoreCounterValue;$/;"	m	struct:class_PCM
+CoreEventPCM	pcm.h	/^  void (*CoreEventPCM)(struct class_CoreEventPCM *th);$/;"	m	struct:class_CoreEventPCM
+CoreEventPCM	pcm.h	/^typedef struct class_CoreEventPCM CoreEventPCM ;$/;"	t	typeref:struct:class_CoreEventPCM
+CoreEventPCM_CoreEventPCM	pcm.c	/^void CoreEventPCM_CoreEventPCM(struct class_CoreEventPCM *th)$/;"	f
+CoreEventPCM_UCoreEventPCM	pcm.c	/^void  CoreEventPCM_UCoreEventPCM() {}$/;"	f
+CoreEventPCM_getAVXPackedDoublePrecisionGFlops	pcm.c	/^float CoreEventPCM_getAVXPackedDoublePrecisionGFlops(CoreEventPCM *th, const CoreEventPCM old) {$/;"	f
+CoreEventPCM_getAVXPackedSinglePrecisionGFlops	pcm.c	/^float CoreEventPCM_getAVXPackedSinglePrecisionGFlops(CoreEventPCM *th, const CoreEventPCM old) {$/;"	f
+CoreEventPCM_getCoreEvent	pcm.c	/^void CoreEventPCM_getCoreEvent(CoreEventPCM *th) {$/;"	f
+CoreEventPCM_getSSEPackedDoublePrecisionGFlops	pcm.c	/^float CoreEventPCM_getSSEPackedDoublePrecisionGFlops(CoreEventPCM *th, const CoreEventPCM old)  {$/;"	f
+CoreEventPCM_getSSEPackedSinglePrecisionGFlops	pcm.c	/^float CoreEventPCM_getSSEPackedSinglePrecisionGFlops(CoreEventPCM *th, const CoreEventPCM old) {$/;"	f
+CoreEventPCM_getSSEScalarDoublePrecisionGFlops	pcm.c	/^float CoreEventPCM_getSSEScalarDoublePrecisionGFlops(CoreEventPCM *th, const CoreEventPCM old) {$/;"	f
+CoreEventPCM_getSSEScalarSinglePrecisionGFlops	pcm.c	/^float CoreEventPCM_getSSEScalarSinglePrecisionGFlops(CoreEventPCM *th, const CoreEventPCM old) {$/;"	f
+CoreEventPCM_getX87DoublePrecisionGFlops	pcm.c	/^float CoreEventPCM_getX87DoublePrecisionGFlops(CoreEventPCM *th, const CoreEventPCM old)  {$/;"	f
+CoreEventPCM_init	pcm.c	/^void CoreEventPCM_init(CoreEventPCM *th)$/;"	f
+CoreEventPCM_setCoreEventSelectRegister	pcm.c	/^void CoreEventPCM_setCoreEventSelectRegister(CoreEventPCM *th) {$/;"	f
+CoreFixedCounterValue	pcm.h	/^  uint64* CoreFixedCounterValue;$/;"	m	struct:class_PCM
+CoreFixedCounterWidth	cpuinfo.h	/^  uint32 CoreFixedCounterWidth;$/;"	m	struct:class_cpuinfo
+CoreFixedCounterWidth	pcm.h	/^  uint32 CoreFixedCounterWidth;$/;"	m	struct:class_PCM
+CoreFixedEventPCM	pcm.h	/^  void (*CoreFixedEventPCM)(struct class_CoreFixedEventPCM *th);$/;"	m	struct:class_CoreFixedEventPCM
+CoreFixedEventPCM	pcm.h	/^typedef struct class_CoreFixedEventPCM  CoreFixedEventPCM ;$/;"	t	typeref:struct:class_CoreFixedEventPCM
+CoreFixedEventPCM_CoreFixedEventPCM	pcm.c	/^void CoreFixedEventPCM_CoreFixedEventPCM(struct class_CoreFixedEventPCM *th)$/;"	f
+CoreFixedEventPCM_UCoreFixedEventPCM	pcm.c	/^void CoreFixedEventPCM_UCoreFixedEventPCM() {}$/;"	f
+CoreFixedEventPCM_getCPI	pcm.c	/^float CoreFixedEventPCM_getCPI(CoreFixedEventPCM *th, const CoreFixedEventPCM old)  {$/;"	f
+CoreFixedEventPCM_getCoreFixedEvent	pcm.c	/^void CoreFixedEventPCM_getCoreFixedEvent(CoreFixedEventPCM *th) {$/;"	f
+CoreFixedEventPCM_getCpuClockUnhaltedRef	pcm.c	/^uint64 CoreFixedEventPCM_getCpuClockUnhaltedRef(CoreFixedEventPCM *th, const CoreFixedEventPCM old) {$/;"	f
+CoreFixedEventPCM_getCpuClockUnhaltedThread	pcm.c	/^uint64 CoreFixedEventPCM_getCpuClockUnhaltedThread(CoreFixedEventPCM *th, const CoreFixedEventPCM old) {$/;"	f
+CoreFixedEventPCM_getInstructionRetiredAny	pcm.c	/^uint64 CoreFixedEventPCM_getInstructionRetiredAny(CoreFixedEventPCM *th, const CoreFixedEventPCM old) {$/;"	f
+CoreFixedEventPCM_init	pcm.c	/^void CoreFixedEventPCM_init(CoreFixedEventPCM *th)$/;"	f
+CoreGeneralCounterWidth	cpuinfo.h	/^  uint32 CoreGeneralCounterWidth;$/;"	m	struct:class_cpuinfo
+CoreGeneralCounterWidth	pcm.h	/^  uint32 CoreGeneralCounterWidth;$/;"	m	struct:class_PCM
+CpuClockUnhaltedRef	pcm.h	/^  uint64 CpuClockUnhaltedRef;$/;"	m	struct:class_CoreFixedEventPCM
+CpuClockUnhaltedThread	pcm.h	/^  uint64 CpuClockUnhaltedThread;$/;"	m	struct:class_CoreFixedEventPCM
+DRD	types.h	163;"	d
+EventAndUmask	pcm.h	/^typedef struct EventAndUmask EventAndUmask; $/;"	t	typeref:struct:EventAndUmask
+EventAndUmask	types.h	/^struct EventAndUmask {$/;"	s
+FP_COMP_OPS_EXE	types.h	179;"	d
+FixedEventControlRegister	types.h	/^union FixedEventControlRegister {$/;"	u
+GETCPUID	cpuinfo.h	22;"	d
+GeneralEventSelectRegister	types.h	/^union GeneralEventSelectRegister {$/;"	u
+GetTeyeData	client.c	/^struct teye_st GetTeyeData() {$/;"	f
+HASWELL_E5	types.h	/^  HASWELL_E5 = 0x3F$/;"	e	enum:supportcpumodels
+HASWELL_E5_CBO_MSR_PMON_BOX_FILTER1_OPCODE	types.h	148;"	d
+HSW_C0_MSR_PMON_BOX_CTL	types.h	132;"	d
+HSW_C0_MSR_PMON_BOX_FILTER	types.h	130;"	d
+HSW_C0_MSR_PMON_BOX_FILTER1	types.h	131;"	d
+HSW_C0_MSR_PMON_CTL0	types.h	129;"	d
+HSW_C0_MSR_PMON_CTR0	types.h	128;"	d
+HSW_CBO_MSR_STEP	types.h	133;"	d
+IA32_CR_FIXED_CTR_CTRL	types.h	49;"	d
+IA32_CR_PERF_GLOBAL_CTRL	types.h	48;"	d
+IA32_PERFEVTSEL0_ADDR	types.h	52;"	d
+IA32_PERFEVTSEL1_ADDR	types.h	53;"	d
+IA32_PERFEVTSEL2_ADDR	types.h	54;"	d
+IA32_PERFEVTSEL3_ADDR	types.h	55;"	d
+IA32_PERFEVTSEL4_ADDR	types.h	58;"	d
+IA32_PERFEVTSEL5_ADDR	types.h	59;"	d
+IA32_PERFEVTSEL6_ADDR	types.h	60;"	d
+IA32_PERFEVTSEL7_ADDR	types.h	61;"	d
+IA32_PMC0	types.h	64;"	d
+IA32_PMC1	types.h	65;"	d
+IA32_PMC2	types.h	66;"	d
+IA32_PMC3	types.h	67;"	d
+IA32_PMC4	types.h	70;"	d
+IA32_PMC5	types.h	71;"	d
+IA32_PMC6	types.h	72;"	d
+IA32_PMC7	types.h	73;"	d
+INST_RETIRED_ANY_ADDR	types.h	76;"	d
+ITOM	types.h	164;"	d
+ITOMTID	types.h	171;"	d
+IVYBRIDGE_E5	types.h	/^  IVYBRIDGE_E5 = 0x3E,$/;"	e	enum:supportcpumodels
+IVYBRIDGE_E5_CBO_MSR_PMON_BOX_FILTER1_OPCODE	types.h	146;"	d
+InstructionRetiredAny	pcm.h	/^  uint64 InstructionRetiredAny;$/;"	m	struct:class_CoreFixedEventPCM
+IvySandy_MODULE_COL_NUM	client.c	33;"	d	file:
+IvySandy_mod_info	client.c	/^static struct mod_info IvySandy_mod_info[] = {$/;"	v	typeref:struct:mod_info	file:
+IvySandy_pcie_sem_get	cpuinfo.h	/^sem_t IvySandy_pcie_sem_get;$/;"	v
+IvySandy_pcie_sem_put	cpuinfo.h	/^sem_t IvySandy_pcie_sem_put;$/;"	v
+IvySandy_read	client.c	/^void IvySandy_read(struct module *mod)$/;"	f
+MACHINE_MAX	teye.h	16;"	d
+MCChannelControlRegister	types.h	/^union MCChannelControlRegister {$/;"	u
+MC_CH_PCI_PMON_BOX_CTL	types.h	89;"	d
+MC_CH_PCI_PMON_CTL0	types.h	95;"	d
+MC_CH_PCI_PMON_CTL1	types.h	94;"	d
+MC_CH_PCI_PMON_CTL2	types.h	93;"	d
+MC_CH_PCI_PMON_CTL3	types.h	92;"	d
+MC_CH_PCI_PMON_CTR0	types.h	101;"	d
+MC_CH_PCI_PMON_CTR1	types.h	100;"	d
+MC_CH_PCI_PMON_CTR2	types.h	99;"	d
+MC_CH_PCI_PMON_CTR3	types.h	98;"	d
+MemTotal	teye.h	/^  unsigned long MemTotal;$/;"	m	struct:c_mem
+MemUsed	teye.h	/^  unsigned long MemUsed;    $/;"	m	struct:c_mem
+MicroStructureInit	t_MicroStructure.h	/^    int (*MicroStructureInit)(struct classtMicroStructure *th);$/;"	m	struct:classtMicroStructure
+MicroStructureRead	t_MicroStructure.h	/^    int (*MicroStructureRead)(struct classtMicroStructure *th);$/;"	m	struct:classtMicroStructure
+MicroStructureStart	t_MicroStructure.h	/^    int (*MicroStructureStart)(struct classtMicroStructure *th);$/;"	m	struct:classtMicroStructure
+MsrDevice	pcm.h	/^  msr** MsrDevice;$/;"	m	struct:class_PCM
+NET_MAX	teye.h	17;"	d
+NumCBoxes	pcm.h	/^  uint32 NumCBoxes;$/;"	m	struct:class_UncoreMsrCBo
+NumCoreFixedCounters	cpuinfo.h	/^  uint32 NumCoreFixedCounters;$/;"	m	struct:class_cpuinfo
+NumCoreFixedCounters	pcm.h	/^  uint32 NumCoreFixedCounters;$/;"	m	struct:class_PCM
+NumCoreGeneralCounters	cpuinfo.h	/^  uint32 NumCoreGeneralCounters;$/;"	m	struct:class_cpuinfo
+NumCoreGeneralCounters	pcm.h	/^  uint32 NumCoreGeneralCounters;$/;"	m	struct:class_PCM
+NumCores	cpuinfo.h	/^  uint32 NumCores;$/;"	m	struct:class_cpuinfo
+NumCores	pcm.h	/^  uint32 NumCores;$/;"	m	struct:class_PCM
+NumImcChannels	pcm.h	/^  uint32 NumImcChannels;$/;"	m	struct:class_UncorePciMC
+NumSockets	cpuinfo.h	/^  uint32 NumSockets;$/;"	m	struct:class_cpuinfo
+NumSockets	pcm.h	/^  uint32 NumSockets;$/;"	m	struct:class_PCM
+PCIITOM	types.h	156;"	d
+PCINSRD	types.h	154;"	d
+PCINSWR	types.h	157;"	d
+PCINSWRF	types.h	158;"	d
+PCIPRD	types.h	152;"	d
+PCIRDCUR	types.h	153;"	d
+PCIWILF	types.h	155;"	d
+PCIeBandWidth	pcm.h	/^  uint64* PCIeBandWidth;$/;"	m	struct:class_UncoreEventPCM
+PCIeBandWidthRead	pcm.h	/^  uint64 PCIeBandWidthRead;$/;"	m	struct:class_UncoreEventPCM
+PCIeBandWidthWrite	pcm.h	/^  uint64 PCIeBandWidthWrite;$/;"	m	struct:class_UncoreEventPCM
+PCM	pcm.h	/^  void (*PCM)(struct class_PCM *th);$/;"	m	struct:class_PCM
+PCM	pcm.h	/^ typedef struct class_PCM PCM;$/;"	t	typeref:struct:class_PCM
+PCM_PCM	pcm.c	/^void PCM_PCM(struct class_PCM *th)$/;"	f
+PCM_UPCM	pcm.c	/^void PCM_UPCM(PCM *th) {$/;"	f
+PCM_extractBits	pcm.c	/^uint64 PCM_extractBits(PCM *th, uint64 bitvalue, uint32 begin, uint32 end)$/;"	f
+PCM_extractCoreFixedCounterValue	pcm.c	/^uint64 PCM_extractCoreFixedCounterValue(PCM *th, uint64 bitvalue) {$/;"	f
+PCM_extractCoreGeneralCounterValue	pcm.c	/^uint64 PCM_extractCoreGeneralCounterValue(PCM *th, uint64 bitvalue) {$/;"	f
+PCM_extractUncoreCBoCounterValue	pcm.c	/^uint64 PCM_extractUncoreCBoCounterValue(PCM *th, uint64 bitvalue) {$/;"	f
+PCM_extractUncoreGeneralCounterValue	pcm.c	/^uint64 PCM_extractUncoreGeneralCounterValue(PCM *th, uint64 bitvalue) {$/;"	f
+PCM_getCPUModel	pcm.c	/^uint32 PCM_getCPUModel(PCM *th) {$/;"	f
+PCM_getCounterValue	pcm.c	/^void PCM_getCounterValue(PCM *th, msr* CpuMsr) {$/;"	f
+PCM_getFixedCounterValue	pcm.c	/^void PCM_getFixedCounterValue(PCM *th, uint32 CoreId) {$/;"	f
+PCM_getInstance	pcm.c	/^PCM* PCM_getInstance() {$/;"	f
+PCM_getNumCoreFixedCounters	pcm.c	/^uint32 PCM_getNumCoreFixedCounters(PCM *th)  {$/;"	f
+PCM_getNumCoreGeneralCounters	pcm.c	/^uint32 PCM_getNumCoreGeneralCounters(PCM *th)  {$/;"	f
+PCM_getNumCores	pcm.c	/^uint32 PCM_getNumCores(PCM *th) {$/;"	f
+PCM_getNumSockets	pcm.c	/^uint32 PCM_getNumSockets(PCM *th) {$/;"	f
+PCM_getThreadsPerCore	pcm.c	/^uint32 PCM_getThreadsPerCore(PCM *th) {$/;"	f
+PCM_getUncoreCBoCounterValue	pcm.c	/^void PCM_getUncoreCBoCounterValue(PCM *th, uint32 SocketId) {$/;"	f
+PCM_getUncoreCounterValue	pcm.c	/^void PCM_getUncoreCounterValue(PCM *th, uint32 SocketId) {$/;"	f
+PCM_resetPMU	pcm.c	/^void PCM_resetPMU(PCM *th) {$/;"	f
+PCM_setBit	pcm.c	/^uint64 PCM_setBit(PCM *th, uint32 begin, uint32 end)$/;"	f
+PCM_setEventRegister	pcm.c	/^void PCM_setEventRegister(PCM *th, EventAndUmask* parameters)  {$/;"	f
+PCM_setUncoreCBoEventRegister	pcm.c	/^void PCM_setUncoreCBoEventRegister(PCM *th, uint32 SocketId, uint64 Opcode, uint64 TidField)  {$/;"	f
+PCM_setUncoreEventRegister	pcm.c	/^void PCM_setUncoreEventRegister(PCM *th, uint32 SocketId)  {$/;"	f
+PRD	types.h	165;"	d
+PRDTID	types.h	170;"	d
+PciMC	devices.h	/^  void (*PciMC)(struct class_PciMC *th, uint32 bus_, uint32 device_, uint32 function_);$/;"	m	struct:class_PciMC
+PciMC	devices.h	/^typedef struct class_PciMC PciMC;$/;"	t	typeref:struct:class_PciMC
+PciMCDevices	pcm.h	/^  PciMC** PciMCDevices;$/;"	m	struct:class_UncorePciMC
+PciMC_PciMC	devices.c	/^void PciMC_PciMC(PciMC *th, uint32 bus_, uint32 device_, uint32 function_)$/;"	f
+PciMC_UPciMC	devices.c	/^void PciMC_UPciMC(PciMC *th) {$/;"	f
+PciMC_existsPci	devices.c	/^bool PciMC_existsPci(uint32 bus_, uint32 device_, uint32 function_) {$/;"	f
+PciMC_init	devices.c	/^void PciMC_init(PciMC *th)$/;"	f
+PciMC_read32	devices.c	/^int32 PciMC_read32(PciMC *th, uint64 event, uint32 * value) {$/;"	f
+PciMC_read64	devices.c	/^int32 PciMC_read64(PciMC *th, uint64 event, uint64 * value) {$/;"	f
+PciMC_write32	devices.c	/^int32 PciMC_write32(PciMC *th, uint64 event, uint32 value) {$/;"	f
+PciMC_write64	devices.c	/^int32 PciMC_write64(PciMC *th, uint64 event, uint64 value) {$/;"	f
+PerformanceMonitorVersion	cpuinfo.h	/^  uint32 PerformanceMonitorVersion;$/;"	m	struct:class_cpuinfo
+PerformanceMonitorVersion	pcm.h	/^  uint32 PerformanceMonitorVersion;$/;"	m	struct:class_PCM
+RFO	types.h	161;"	d
+RcvData	teye.h	/^  float RcvData;  \/\/MBs$/;"	m	struct:c_ib
+RcvPktsize	teye.h	/^  float RcvPktsize;$/;"	m	struct:c_ib
+RelatedMsrOfSocket	pcm.h	/^  uint32 RelatedMsrOfSocket;$/;"	m	struct:class_UncoreMsrCBo
+SANDYBRIDGE_E5	types.h	/^  SANDYBRIDGE_E5 = 0x2D,$/;"	e	enum:supportcpumodels
+SANDYBRIDGE_E5_CBO_MSR_PMON_BOX_FILTER_OPCODE	types.h	145;"	d
+SIMD_FP_256	types.h	181;"	d
+SI_CHECK	teye.h	9;"	d
+SI_END	teye.h	14;"	d
+SI_READ	teye.h	12;"	d
+SI_START	teye.h	11;"	d
+SI_STOP	teye.h	13;"	d
+SSEPackedDoublePrecision	pcm.h	/^  uint64 SSEPackedDoublePrecision;$/;"	m	struct:class_CoreEventPCM
+SSEPackedSinglePrecision	pcm.h	/^  uint64 SSEPackedSinglePrecision;$/;"	m	struct:class_CoreEventPCM
+SSEScalarDoublePrecision	pcm.h	/^  uint64 SSEScalarDoublePrecision;$/;"	m	struct:class_CoreEventPCM
+SSEScalarSinglePrecision	pcm.h	/^  uint64 SSEScalarSinglePrecision;$/;"	m	struct:class_CoreEventPCM
+SSE_FP_PACKED_DOUBLE	types.h	185;"	d
+SSE_FP_PACKED_SINGLE	types.h	187;"	d
+SSE_SCALAR_DOUBLE	types.h	186;"	d
+SSE_SCALAR_SINGLE	types.h	188;"	d
+TPORT	teye.h	7;"	d
+TeyeErrorCode	client.c	/^short int TeyeErrorCode = 0;$/;"	v
+TeyeInit	client.c	/^int TeyeInit() {$/;"	f
+TeyeStop	client.c	/^void TeyeStop() {$/;"	f
+ThreadsPerCore	cpuinfo.h	/^  uint32 ThreadsPerCore;$/;"	m	struct:class_cpuinfo
+ThreadsPerCore	pcm.h	/^  uint32 ThreadsPerCore;$/;"	m	struct:class_PCM
+UCoreEventPCM	pcm.h	/^  void (*UCoreEventPCM)();$/;"	m	struct:class_CoreEventPCM
+UCoreFixedEventPCM	pcm.h	/^  void (*UCoreFixedEventPCM)();$/;"	m	struct:class_CoreFixedEventPCM
+UNCORE_PMON_BOX_CTL_VALID_BITS_MASK	types.h	135;"	d
+UPCM	pcm.h	/^  void (*UPCM)(struct class_PCM *th);$/;"	m	struct:class_PCM
+UPciMC	devices.h	/^  void (*UPciMC)(struct class_PciMC *th);$/;"	m	struct:class_PciMC
+UUncoreEventPCM	pcm.h	/^  void (*UUncoreEventPCM)(struct class_UncoreEventPCM *th);$/;"	m	struct:class_UncoreEventPCM
+UUncoreMsrCBo	pcm.h	/^  void (*UUncoreMsrCBo)(struct class_UncoreMsrCBo *th);$/;"	m	struct:class_UncoreMsrCBo
+UUncorePciMC	pcm.h	/^  void (*UUncorePciMC)(struct class_UncorePciMC *th);$/;"	m	struct:class_UncorePciMC
+Ucpuinfo	cpuinfo.h	/^  void (*Ucpuinfo)(struct class_cpuinfo *th);$/;"	m	struct:class_cpuinfo
+Umsr	devices.h	/^  void (*Umsr)(struct class_msr *th);$/;"	m	struct:class_msr
+UncoreCBoCounterWidth	pcm.h	/^  uint32 UncoreCBoCounterWidth;$/;"	m	struct:class_PCM
+UncoreEventPCM	pcm.h	/^  void (*UncoreEventPCM)(struct class_UncoreEventPCM *th);$/;"	m	struct:class_UncoreEventPCM
+UncoreEventPCM	pcm.h	/^typedef struct class_UncoreEventPCM UncoreEventPCM;$/;"	t	typeref:struct:class_UncoreEventPCM
+UncoreEventPCM_UUncoreEventPCM	pcm.c	/^void UncoreEventPCM_UUncoreEventPCM(struct class_UncoreEventPCM *th) $/;"	f
+UncoreEventPCM_UncoreEventPCM	pcm.c	/^void UncoreEventPCM_UncoreEventPCM(struct class_UncoreEventPCM *th)$/;"	f
+UncoreEventPCM_getBandWidthRead	pcm.c	/^float UncoreEventPCM_getBandWidthRead(UncoreEventPCM *th, const UncoreEventPCM old) {$/;"	f
+UncoreEventPCM_getBandWidthWrite	pcm.c	/^float UncoreEventPCM_getBandWidthWrite(UncoreEventPCM *th, const UncoreEventPCM old)  {$/;"	f
+UncoreEventPCM_getPCIeBWEvent	pcm.c	/^void *UncoreEventPCM_getPCIeBWEvent(void *th) {$/;"	f
+UncoreEventPCM_getPCIeBandWidthRead	pcm.c	/^float UncoreEventPCM_getPCIeBandWidthRead(UncoreEventPCM *th) {$/;"	f
+UncoreEventPCM_getPCIeBandWidthWrite	pcm.c	/^float UncoreEventPCM_getPCIeBandWidthWrite(UncoreEventPCM *th) {$/;"	f
+UncoreEventPCM_getUncoreCBoEvent	pcm.c	/^uint64 UncoreEventPCM_getUncoreCBoEvent(UncoreEventPCM *th, uint64 Opcode,  $/;"	f
+UncoreEventPCM_getUncoreEvent	pcm.c	/^void UncoreEventPCM_getUncoreEvent(UncoreEventPCM *th) {$/;"	f
+UncoreEventPCM_init	pcm.c	/^void UncoreEventPCM_init(UncoreEventPCM *th)$/;"	f
+UncoreMCCounterWidth	pcm.h	/^  uint32 UncoreMCCounterWidth;$/;"	m	struct:class_PCM
+UncoreMsrCBo	pcm.h	/^  void (*UncoreMsrCBo)(struct class_UncoreMsrCBo *th, uint32 SocketId, uint32 NumCores, \\$/;"	m	struct:class_UncoreMsrCBo
+UncoreMsrCBo	pcm.h	/^typedef struct class_UncoreMsrCBo UncoreMsrCBo;$/;"	t	typeref:struct:class_UncoreMsrCBo
+UncoreMsrCBoPMON	pcm.h	/^  UncoreMsrCBo** UncoreMsrCBoPMON;$/;"	m	struct:class_PCM
+UncoreMsrCBo_CX_MSR_PMON_BOX_CTL	pcm.c	/^uint32 UncoreMsrCBo_CX_MSR_PMON_BOX_CTL(UncoreMsrCBo *th, uint32 ICBo){$/;"	f
+UncoreMsrCBo_CX_MSR_PMON_BOX_FILTER	pcm.c	/^uint32 UncoreMsrCBo_CX_MSR_PMON_BOX_FILTER(UncoreMsrCBo *th, uint32 ICBo) {$/;"	f
+UncoreMsrCBo_CX_MSR_PMON_BOX_FILTER1	pcm.c	/^uint32 UncoreMsrCBo_CX_MSR_PMON_BOX_FILTER1(UncoreMsrCBo *th, uint32 ICBo)  {$/;"	f
+UncoreMsrCBo_CX_MSR_PMON_CTLY	pcm.c	/^uint32 UncoreMsrCBo_CX_MSR_PMON_CTLY(UncoreMsrCBo *th, uint32 ICBo, uint32 CounterID)  {$/;"	f
+UncoreMsrCBo_CX_MSR_PMON_CTRY	pcm.c	/^uint32 UncoreMsrCBo_CX_MSR_PMON_CTRY(UncoreMsrCBo *th, uint32 ICBo, uint32 CounterID) $/;"	f
+UncoreMsrCBo_UUncoreMsrCBo	pcm.c	/^void UncoreMsrCBo_UUncoreMsrCBo(UncoreMsrCBo *th) {}$/;"	f
+UncoreMsrCBo_UncoreMsrCBo	pcm.c	/^void UncoreMsrCBo_UncoreMsrCBo(UncoreMsrCBo *th, uint32 SocketId, uint32 NumCores, $/;"	f
+UncoreMsrCBo_getCBoCounterValue	pcm.c	/^uint64 UncoreMsrCBo_getCBoCounterValue(UncoreMsrCBo *th) {$/;"	f
+UncoreMsrCBo_init	pcm.c	/^void UncoreMsrCBo_init(UncoreMsrCBo *th)$/;"	f
+UncoreMsrCBo_setCBoFilterRegister	pcm.c	/^void UncoreMsrCBo_setCBoFilterRegister(UncoreMsrCBo *th, uint32 ICBo, $/;"	f
+UncoreMsrCBo_setCounterValue	pcm.c	/^void UncoreMsrCBo_setCounterValue(UncoreMsrCBo *th, uint64 Opcode, uint64 TidField) {$/;"	f
+UncoreMsrCounterValue	pcm.h	/^  uint64* UncoreMsrCounterValue;$/;"	m	struct:class_PCM
+UncorePciCounterValue	pcm.h	/^  uint64* UncorePciCounterValue;$/;"	m	struct:class_PCM
+UncorePciMC	pcm.h	/^  void (*UncorePciMC)(struct class_UncorePciMC *th, uint32 SocketId, uint32 MaxSockets, $/;"	m	struct:class_UncorePciMC
+UncorePciMC	pcm.h	/^typedef struct class_UncorePciMC UncorePciMC;$/;"	t	typeref:struct:class_UncorePciMC
+UncorePciMCPMON	pcm.h	/^  UncorePciMC** UncorePciMCPMON;$/;"	m	struct:class_PCM
+UncorePciMC_UUncorePciMC	pcm.c	/^void UncorePciMC_UUncorePciMC(UncorePciMC *th) $/;"	f
+UncorePciMC_UncorePciMC	pcm.c	/^void UncorePciMC_UncorePciMC(UncorePciMC *th, uint32 SocketId, uint32 MaxSockets, \\$/;"	f
+UncorePciMC_getMCCounterRead	pcm.c	/^uint64 UncorePciMC_getMCCounterRead(UncorePciMC *th) {$/;"	f
+UncorePciMC_getMCCounterWrite	pcm.c	/^uint64 UncorePciMC_getMCCounterWrite(UncorePciMC *th) {$/;"	f
+UncorePciMC_init	pcm.c	/^void UncorePciMC_init(UncorePciMC *th)$/;"	f
+UncorePciMC_setCounterValue	pcm.c	/^void UncorePciMC_setCounterValue(UncorePciMC *th) {$/;"	f
+UtMicroStructure	t_MicroStructure.h	/^    void (*UtMicroStructure)(struct classtMicroStructure *th);$/;"	m	struct:classtMicroStructure
+VER_ID	teye.h	5;"	d
+WIL	types.h	166;"	d
+X87	types.h	184;"	d
+X87DoublePrecision	pcm.h	/^  uint64 X87DoublePrecision;$/;"	m	struct:class_CoreEventPCM
+XmitData	teye.h	/^  float XmitData; \/\/MBs$/;"	m	struct:c_ib
+XmitPktsize	teye.h	/^  float XmitPktsize;$/;"	m	struct:c_ib
+_CPUINFO_H_	cpuinfo.h	15;"	d
+_DEVICE_H_	devices.h	15;"	d
+_PCM_H_	pcm.h	14;"	d
+_TEYE_H_	teye.h	2;"	d
+_TYPES_H_	types.h	13;"	d
+_T_MICROSTRUCTURE_H_	t_MicroStructure.h	8;"	d
+any_thread	types.h	/^    uint64 any_thread : 1;$/;"	m	struct:GeneralEventSelectRegister::__anon1
+any_thread0	types.h	/^    uint64 any_thread0 : 1;$/;"	m	struct:FixedEventControlRegister::__anon2
+any_thread1	types.h	/^    uint64 any_thread1 : 1;$/;"	m	struct:FixedEventControlRegister::__anon2
+any_thread2	types.h	/^    uint64 any_thread2 : 1;$/;"	m	struct:FixedEventControlRegister::__anon2
+apic_int	types.h	/^    uint64 apic_int : 1;$/;"	m	struct:GeneralEventSelectRegister::__anon1
+bus	devices.h	/^  uint32 bus;$/;"	m	struct:class_PciMC
+c_cpu	teye.h	/^struct  c_cpu$/;"	s
+c_disk	teye.h	/^struct  c_disk$/;"	s
+c_ib	teye.h	/^struct  c_ib$/;"	s
+c_init	client.c	/^void c_init(tMicroStructure* tms)$/;"	f
+c_mem	teye.h	/^struct  c_mem$/;"	s
+c_net	teye.h	/^struct  c_net$/;"	s
+c_nfs	teye.h	/^struct  c_nfs$/;"	s
+c_read	client.c	/^void c_read(tMicroStructure* tms)$/;"	f
+c_sock	teye.h	/^struct  c_sock$/;"	s
+c_start	client.c	/^void c_start(tMicroStructure* tms)$/;"	f
+c_stop	client.c	/^void c_stop(void)$/;"	f
+cache_line_size	teye.h	/^  int cache_line_size;$/;"	m	struct:teye_st
+cevent1	t_MicroStructure.h	/^    CoreEventPCM * cevent1;$/;"	m	struct:classtMicroStructure
+cevent2	t_MicroStructure.h	/^    CoreEventPCM * cevent2;$/;"	m	struct:classtMicroStructure
+check	teye.h	/^  int check;$/;"	m	struct:c_sock
+class_CoreEventPCM	pcm.h	/^struct class_CoreEventPCM {$/;"	s
+class_CoreFixedEventPCM	pcm.h	/^struct class_CoreFixedEventPCM {$/;"	s
+class_PCM	pcm.h	/^struct class_PCM {$/;"	s
+class_PciMC	devices.h	/^struct class_PciMC {$/;"	s
+class_UncoreEventPCM	pcm.h	/^struct class_UncoreEventPCM {$/;"	s
+class_UncoreMsrCBo	pcm.h	/^struct class_UncoreMsrCBo {$/;"	s
+class_UncorePciMC	pcm.h	/^struct class_UncorePciMC {$/;"	s
+class_cpuinfo	cpuinfo.h	/^struct class_cpuinfo {$/;"	s
+class_msr	devices.h	/^struct class_msr {$/;"	s
+classtMicroStructure	t_MicroStructure.h	/^struct classtMicroStructure {$/;"	s
+cmask	types.h	/^    uint64 cmask : 8;$/;"	m	struct:GeneralEventSelectRegister::__anon1
+cpu	teye.h	/^  struct c_cpu cpu;$/;"	m	struct:teye_st	typeref:struct:teye_st::c_cpu
+cpu_id	devices.h	/^  int cpu_id;$/;"	m	struct:class_msr
+cpu_num	teye.h	/^  int cpu_num;$/;"	m	struct:teye_st
+cpuinfo	cpuinfo.h	/^  void (*cpuinfo)(struct class_cpuinfo *th);$/;"	m	struct:class_cpuinfo
+cpuinfo	cpuinfo.h	/^typedef struct class_cpuinfo cpuinfo;$/;"	t	typeref:struct:class_cpuinfo
+cpuinfo_Ucpuinfo	cpuinfo.c	/^void cpuinfo_Ucpuinfo(cpuinfo *th) {}$/;"	f
+cpuinfo_cpuinfo	cpuinfo.c	/^void cpuinfo_cpuinfo(cpuinfo *th)$/;"	f
+cpuinfo_extractBits	cpuinfo.c	/^uint64 cpuinfo_extractBits(uint64 value, uint32 begin, uint32 end) {$/;"	f
+cpuinfo_getCPUFamily	cpuinfo.c	/^uint32 cpuinfo_getCPUFamily(cpuinfo *th)  {$/;"	f
+cpuinfo_getCPUInfo	cpuinfo.c	/^void cpuinfo_getCPUInfo(cpuinfo *th) {$/;"	f
+cpuinfo_getCPUModel	cpuinfo.c	/^uint32 cpuinfo_getCPUModel(cpuinfo *th)  {$/;"	f
+cpuinfo_getCPUVendor	cpuinfo.c	/^char * cpuinfo_getCPUVendor(cpuinfo *th)  {$/;"	f
+cpuinfo_getCoreFixedCounterWidth	cpuinfo.c	/^uint32 cpuinfo_getCoreFixedCounterWidth(cpuinfo *th)  {$/;"	f
+cpuinfo_getCoreGeneralCounterWidth	cpuinfo.c	/^uint32 cpuinfo_getCoreGeneralCounterWidth(cpuinfo *th)  {$/;"	f
+cpuinfo_getNumCoreFixedCounters	cpuinfo.c	/^uint32 cpuinfo_getNumCoreFixedCounters(cpuinfo *th)  {$/;"	f
+cpuinfo_getNumCoreGeneralCounters	cpuinfo.c	/^uint32 cpuinfo_getNumCoreGeneralCounters(cpuinfo *th)  {$/;"	f
+cpuinfo_getNumCores	cpuinfo.c	/^uint32 cpuinfo_getNumCores(cpuinfo *th) {$/;"	f
+cpuinfo_getNumSockets	cpuinfo.c	/^uint32 cpuinfo_getNumSockets(cpuinfo *th)  {$/;"	f
+cpuinfo_getPerformanceMonitorVersion	cpuinfo.c	/^uint32 cpuinfo_getPerformanceMonitorVersion(cpuinfo *th) {$/;"	f
+cpuinfo_getThreadsPerCore	cpuinfo.c	/^uint32 cpuinfo_getThreadsPerCore(cpuinfo *th)  {$/;"	f
+dev_name	teye.h	/^  char dev_name[32];$/;"	m	struct:c_net
+device	devices.h	/^  uint32 device;$/;"	m	struct:class_PciMC
+disk	teye.h	/^  struct c_disk disk;$/;"	m	struct:teye_st	typeref:struct:teye_st::c_disk
+disk_name	teye.h	/^  char disk_name[32];$/;"	m	struct:c_disk
+edge	types.h	/^    uint32 edge : 1;$/;"	m	struct:MCChannelControlRegister::__anon3
+edge	types.h	/^    uint64 edge : 1;$/;"	m	struct:GeneralEventSelectRegister::__anon1
+enable	types.h	/^    uint32 enable : 1;$/;"	m	struct:MCChannelControlRegister::__anon3
+enable	types.h	/^    uint64 enable : 1;$/;"	m	struct:GeneralEventSelectRegister::__anon1
+enable_pmi0	types.h	/^    uint64 enable_pmi0 : 1;$/;"	m	struct:FixedEventControlRegister::__anon2
+enable_pmi1	types.h	/^    uint64 enable_pmi1 : 1;$/;"	m	struct:FixedEventControlRegister::__anon2
+enable_pmi2	types.h	/^    uint64 enable_pmi2 : 1;$/;"	m	struct:FixedEventControlRegister::__anon2
+event	types.h	/^  uint32 event;$/;"	m	struct:EventAndUmask
+event_select	types.h	/^    uint32 event_select : 8;$/;"	m	struct:MCChannelControlRegister::__anon3
+event_select	types.h	/^    uint64 event_select : 8;$/;"	m	struct:GeneralEventSelectRegister::__anon1
+existsPci	devices.h	/^  bool (*existsPci)(uint32 bus_, uint32 device_, uint32 function_);$/;"	m	struct:class_PciMC
+extractBits	cpuinfo.h	/^  uint64 (*extractBits)(uint64 value, uint32 begin, uint32 end);$/;"	m	struct:class_cpuinfo
+extractBits	pcm.h	/^  uint64 (*extractBits)(struct class_PCM *th, uint64 bitvalue, uint32 begin, uint32 end);$/;"	m	struct:class_PCM
+extractCoreFixedCounterValue	pcm.h	/^  uint64 (*extractCoreFixedCounterValue)(struct class_PCM *th, uint64 bitvalue);$/;"	m	struct:class_PCM
+extractCoreGeneralCounterValue	pcm.h	/^  uint64 (*extractCoreGeneralCounterValue)(struct class_PCM *th, uint64 bitvalue);$/;"	m	struct:class_PCM
+extractUncoreCBoCounterValue	pcm.h	/^  uint64 (*extractUncoreCBoCounterValue)(struct class_PCM *th, uint64 bitvalue);$/;"	m	struct:class_PCM
+extractUncoreGeneralCounterValue	pcm.h	/^  uint64 (*extractUncoreGeneralCounterValue)(struct class_PCM *th, uint64 bitvalue);$/;"	m	struct:class_PCM
+fd	devices.h	/^  int fd;$/;"	m	struct:class_msr
+fd	devices.h	/^  int32 fd;$/;"	m	struct:class_PciMC
+fevent1	t_MicroStructure.h	/^    CoreFixedEventPCM * fevent1;$/;"	m	struct:classtMicroStructure
+fevent2	t_MicroStructure.h	/^    CoreFixedEventPCM * fevent2;$/;"	m	struct:classtMicroStructure
+fields	types.h	/^  } fields;$/;"	m	union:FixedEventControlRegister	typeref:struct:FixedEventControlRegister::__anon2
+fields	types.h	/^  } fields;$/;"	m	union:GeneralEventSelectRegister	typeref:struct:GeneralEventSelectRegister::__anon1
+fields	types.h	/^  } fields;$/;"	m	union:MCChannelControlRegister	typeref:struct:MCChannelControlRegister::__anon3
+function	devices.h	/^  uint32 function;$/;"	m	struct:class_PciMC
+getAVXPackedDoublePrecisionGFlops	pcm.h	/^  float (*getAVXPackedDoublePrecisionGFlops)(struct class_CoreEventPCM *th, const CoreEventPCM old) ;$/;"	m	struct:class_CoreEventPCM
+getAVXPackedSinglePrecisionGFlops	pcm.h	/^  float (*getAVXPackedSinglePrecisionGFlops)(struct class_CoreEventPCM *th, const CoreEventPCM old) ;$/;"	m	struct:class_CoreEventPCM
+getBandWidthRead	pcm.h	/^  float (*getBandWidthRead)(struct class_UncoreEventPCM *th, const UncoreEventPCM old) ;$/;"	m	struct:class_UncoreEventPCM
+getBandWidthWrite	pcm.h	/^  float (*getBandWidthWrite)(struct class_UncoreEventPCM *th, const UncoreEventPCM old) ;$/;"	m	struct:class_UncoreEventPCM
+getCBoCounterValue	pcm.h	/^  uint64 (*getCBoCounterValue)(struct class_UncoreMsrCBo *th);$/;"	m	struct:class_UncoreMsrCBo
+getCPI	pcm.h	/^  float (*getCPI)(struct class_CoreFixedEventPCM *th, const CoreFixedEventPCM old) ;$/;"	m	struct:class_CoreFixedEventPCM
+getCPUFamily	cpuinfo.h	/^  uint32 (*getCPUFamily)(struct class_cpuinfo *th) ;$/;"	m	struct:class_cpuinfo
+getCPUInfo	cpuinfo.h	/^  void (*getCPUInfo)(struct class_cpuinfo *th);$/;"	m	struct:class_cpuinfo
+getCPUModel	cpuinfo.h	/^  uint32 (*getCPUModel)(struct class_cpuinfo *th) ;$/;"	m	struct:class_cpuinfo
+getCPUModel	pcm.h	/^  uint32 (*getCPUModel)(struct class_PCM *th) ;$/;"	m	struct:class_PCM
+getCPUVendor	cpuinfo.h	/^  char * (*getCPUVendor)(struct class_cpuinfo *th) ;$/;"	m	struct:class_cpuinfo
+getCoreEvent	pcm.h	/^  void (*getCoreEvent)(struct class_CoreEventPCM *th);$/;"	m	struct:class_CoreEventPCM
+getCoreFixedCounterWidth	cpuinfo.h	/^  uint32 (*getCoreFixedCounterWidth)(struct class_cpuinfo *th) ;$/;"	m	struct:class_cpuinfo
+getCoreFixedEvent	pcm.h	/^  void (*getCoreFixedEvent)(struct class_CoreFixedEventPCM *th);$/;"	m	struct:class_CoreFixedEventPCM
+getCoreGeneralCounterWidth	cpuinfo.h	/^  uint32 (*getCoreGeneralCounterWidth)(struct class_cpuinfo *th) ;$/;"	m	struct:class_cpuinfo
+getCounterValue	pcm.h	/^  void (*getCounterValue)(struct class_PCM *th, msr* CpuMsr);$/;"	m	struct:class_PCM
+getCpuClockUnhaltedRef	pcm.h	/^  uint64 (*getCpuClockUnhaltedRef)(struct class_CoreFixedEventPCM *th, const CoreFixedEventPCM old) ;$/;"	m	struct:class_CoreFixedEventPCM
+getCpuClockUnhaltedThread	pcm.h	/^  uint64 (*getCpuClockUnhaltedThread)(struct class_CoreFixedEventPCM *th, const CoreFixedEventPCM old) ;$/;"	m	struct:class_CoreFixedEventPCM
+getFixedCounterValue	pcm.h	/^  void (*getFixedCounterValue)(struct class_PCM *th, uint32 CoreId);$/;"	m	struct:class_PCM
+getInstructionRetiredAny	pcm.h	/^  uint64 (*getInstructionRetiredAny)(struct class_CoreFixedEventPCM *th, const CoreFixedEventPCM old) ;$/;"	m	struct:class_CoreFixedEventPCM
+getMCCounterRead	pcm.h	/^  uint64 (*getMCCounterRead)(struct class_UncorePciMC *th);$/;"	m	struct:class_UncorePciMC
+getMCCounterWrite	pcm.h	/^  uint64 (*getMCCounterWrite)(struct class_UncorePciMC *th);$/;"	m	struct:class_UncorePciMC
+getNumCoreFixedCounters	cpuinfo.h	/^  uint32 (*getNumCoreFixedCounters)(struct class_cpuinfo *th) ;$/;"	m	struct:class_cpuinfo
+getNumCoreFixedCounters	pcm.h	/^  uint32 (*getNumCoreFixedCounters)(struct class_PCM *th) ;$/;"	m	struct:class_PCM
+getNumCoreGeneralCounters	cpuinfo.h	/^  uint32 (*getNumCoreGeneralCounters)(struct class_cpuinfo *th) ;$/;"	m	struct:class_cpuinfo
+getNumCoreGeneralCounters	pcm.h	/^  uint32 (*getNumCoreGeneralCounters)(struct class_PCM *th) ;$/;"	m	struct:class_PCM
+getNumCores	cpuinfo.h	/^  uint32 (*getNumCores)(struct class_cpuinfo *th);$/;"	m	struct:class_cpuinfo
+getNumCores	pcm.h	/^  uint32 (*getNumCores)(struct class_PCM *th) ;$/;"	m	struct:class_PCM
+getNumSockets	cpuinfo.h	/^  uint32 (*getNumSockets)(struct class_cpuinfo *th);$/;"	m	struct:class_cpuinfo
+getNumSockets	pcm.h	/^  uint32 (*getNumSockets)(struct class_PCM *th) ;$/;"	m	struct:class_PCM
+getPCIeBWEvent	pcm.h	/^  void *(*getPCIeBWEvent)(void *th);$/;"	m	struct:class_UncoreEventPCM
+getPCIeBandWidthRead	pcm.h	/^  float (*getPCIeBandWidthRead)(struct class_UncoreEventPCM *th) ;$/;"	m	struct:class_UncoreEventPCM
+getPCIeBandWidthWrite	pcm.h	/^  float (*getPCIeBandWidthWrite)(struct class_UncoreEventPCM *th) ;$/;"	m	struct:class_UncoreEventPCM
+getPerformanceMonitorVersion	cpuinfo.h	/^  uint32 (*getPerformanceMonitorVersion)(struct class_cpuinfo *th) ;$/;"	m	struct:class_cpuinfo
+getSSEPackedDoublePrecisionGFlops	pcm.h	/^  float (*getSSEPackedDoublePrecisionGFlops)(struct class_CoreEventPCM *th, const CoreEventPCM old) ;$/;"	m	struct:class_CoreEventPCM
+getSSEPackedSinglePrecisionGFlops	pcm.h	/^  float (*getSSEPackedSinglePrecisionGFlops)(struct class_CoreEventPCM *th, const CoreEventPCM old) ;$/;"	m	struct:class_CoreEventPCM
+getSSEScalarDoublePrecisionGFlops	pcm.h	/^  float (*getSSEScalarDoublePrecisionGFlops)(struct class_CoreEventPCM *th, const CoreEventPCM old) ;$/;"	m	struct:class_CoreEventPCM
+getSSEScalarSinglePrecisionGFlops	pcm.h	/^  float (*getSSEScalarSinglePrecisionGFlops)(struct class_CoreEventPCM *th, const CoreEventPCM old) ;$/;"	m	struct:class_CoreEventPCM
+getThreadsPerCore	cpuinfo.h	/^  uint32 (*getThreadsPerCore)(struct class_cpuinfo *th);$/;"	m	struct:class_cpuinfo
+getThreadsPerCore	pcm.h	/^  uint32 (*getThreadsPerCore)(struct class_PCM *th) ;$/;"	m	struct:class_PCM
+getUncoreCBoCounterValue	pcm.h	/^  void (*getUncoreCBoCounterValue)(struct class_PCM *th, uint32 SocketId);$/;"	m	struct:class_PCM
+getUncoreCBoEvent	pcm.h	/^ uint64 (*getUncoreCBoEvent)(struct class_UncoreEventPCM *th, uint64 Opcode, uint32 TimeInterval, \\$/;"	m	struct:class_UncoreEventPCM
+getUncoreCounterValue	pcm.h	/^  void (*getUncoreCounterValue)(struct class_PCM *th, uint32 SocketId);$/;"	m	struct:class_PCM
+getUncoreEvent	pcm.h	/^  void (*getUncoreEvent)(struct class_UncoreEventPCM *th);$/;"	m	struct:class_UncoreEventPCM
+getX87DoublePrecisionGFlops	pcm.h	/^  float (*getX87DoublePrecisionGFlops)(struct class_CoreEventPCM *th, const CoreEventPCM old) ;$/;"	m	struct:class_CoreEventPCM
+hostname	teye.h	/^  char hostname[225];$/;"	m	struct:teye_st
+ib	teye.h	/^  struct c_ib  ib;  $/;"	m	struct:teye_st	typeref:struct:teye_st::c_ib
+id	teye.h	/^  unsigned long long id;$/;"	m	struct:teye_st
+idle	teye.h	/^  float idle;$/;"	m	struct:c_cpu
+instance	pcm.c	/^PCM* instance = NULL;$/;"	v
+int32	types.h	/^typedef signed int int32;$/;"	t
+int64	types.h	/^typedef signed long long int64;$/;"	t
+invert	types.h	/^    uint32 invert : 1;$/;"	m	struct:MCChannelControlRegister::__anon3
+invert	types.h	/^    uint64 invert : 1;$/;"	m	struct:GeneralEventSelectRegister::__anon1
+iowait	teye.h	/^  float iowait;$/;"	m	struct:c_cpu
+mem	teye.h	/^  struct c_mem mem;$/;"	m	struct:teye_st	typeref:struct:teye_st::c_mem
+microstructure_values	teye.h	/^  float microstructure_values[19];$/;"	m	struct:teye_st
+msr	devices.h	/^  void (*msr)(struct class_msr *th, int cpu);$/;"	m	struct:class_msr
+msr	devices.h	/^typedef struct class_msr msr;$/;"	t	typeref:struct:class_msr
+msr_Umsr	devices.c	/^void msr_Umsr(msr *th) $/;"	f
+msr_init	devices.c	/^void msr_init(msr *th)$/;"	f
+msr_msr	devices.c	/^void msr_msr(msr *th, int cpu) $/;"	f
+msr_read	devices.c	/^int msr_read(msr *th, uint64 event, uint64* value)$/;"	f
+msr_write	devices.c	/^int msr_write(msr *th, uint64 event, uint64 value)$/;"	f
+name	teye.h	/^  char name[256];$/;"	m	struct:c_sock
+net	teye.h	/^  struct c_net net[3];$/;"	m	struct:teye_st	typeref:struct:teye_st::c_net
+nfs	teye.h	/^  struct c_nfs nfs; $/;"	m	struct:teye_st	typeref:struct:teye_st::c_nfs
+os	types.h	/^    uint64 os : 1;$/;"	m	struct:GeneralEventSelectRegister::__anon1
+os0	types.h	/^    uint64 os0 : 1;$/;"	m	struct:FixedEventControlRegister::__anon2
+os1	types.h	/^    uint64 os1 : 1;$/;"	m	struct:FixedEventControlRegister::__anon2
+os2	types.h	/^    uint64 os2 : 1;$/;"	m	struct:FixedEventControlRegister::__anon2
+pcm_init	pcm.c	/^void pcm_init(PCM *th)$/;"	f
+pin_control	types.h	/^    uint64 pin_control : 1;$/;"	m	struct:GeneralEventSelectRegister::__anon1
+printf_debug	types.h	25;"	d
+printf_debug	types.h	27;"	d
+r_size	teye.h	/^  float r_size;    $/;"	m	struct:c_disk
+read	devices.h	/^  int (*read)(struct class_msr *th, uint64 event, uint64* value);$/;"	m	struct:class_msr
+read	teye.h	/^  unsigned long long read;$/;"	m	struct:c_nfs
+read32	devices.h	/^  int32 (*read32)(struct class_PciMC *th, uint64 event, uint32 * value);$/;"	m	struct:class_PciMC
+read64	devices.h	/^  int32 (*read64)(struct class_PciMC *th, uint64 event, uint64 * value);$/;"	m	struct:class_PciMC
+read_nfsd	teye.h	/^  float read_nfsd;  \/\/ MB\/s$/;"	m	struct:c_nfs
+reads	teye.h	/^  float reads;$/;"	m	struct:c_disk
+receive	teye.h	/^  float receive;$/;"	m	struct:c_net
+receive_packet_size	teye.h	/^  float receive_packet_size;$/;"	m	struct:c_net
+reserved1	types.h	/^    uint32 reserved1 : 2;$/;"	m	struct:MCChannelControlRegister::__anon3
+reserved1	types.h	/^    uint64 reserved1 : 32;$/;"	m	struct:GeneralEventSelectRegister::__anon1
+reserved1	types.h	/^    uint64 reserved1 : 52;$/;"	m	struct:FixedEventControlRegister::__anon2
+reserved2	types.h	/^    uint32 reserved2 : 1;$/;"	m	struct:MCChannelControlRegister::__anon3
+reserved3	types.h	/^    uint32 reserved3 : 2;$/;"	m	struct:MCChannelControlRegister::__anon3
+resetPMU	pcm.h	/^  void (*resetPMU)(struct class_PCM *th);$/;"	m	struct:class_PCM
+s_milliseconds	t_MicroStructure.c	/^static unsigned long long s_milliseconds = 0;$/;"	v	file:
+s_teye	client.c	/^struct  teye_st s_teye;$/;"	v	typeref:struct:teye_st
+send	teye.h	/^  float send;$/;"	m	struct:c_net
+send_packet_size	teye.h	/^  float send_packet_size;$/;"	m	struct:c_net
+setBit	pcm.h	/^  uint64 (*setBit)(struct class_PCM *th, uint32 begin, uint32 end);$/;"	m	struct:class_PCM
+setCBoFilterRegister	pcm.h	/^  void (*setCBoFilterRegister)(struct class_UncoreMsrCBo *th, uint32 ICBo, msr* MsrDevices, $/;"	m	struct:class_UncoreMsrCBo
+setCoreEventSelectRegister	pcm.h	/^  void (*setCoreEventSelectRegister)(struct class_CoreEventPCM *th);$/;"	m	struct:class_CoreEventPCM
+setCounterValue	pcm.h	/^  void (*setCounterValue)(struct class_UncoreMsrCBo *th, uint64 Opcode, uint64 TidField);$/;"	m	struct:class_UncoreMsrCBo
+setCounterValue	pcm.h	/^  void (*setCounterValue)(struct class_UncorePciMC *th);$/;"	m	struct:class_UncorePciMC
+setEventRegister	pcm.h	/^  void (*setEventRegister)(struct class_PCM *th, EventAndUmask* parameters) ;$/;"	m	struct:class_PCM
+setUncoreCBoEventRegister	pcm.h	/^  void (*setUncoreCBoEventRegister)(struct class_PCM *th, uint32 SocketId, uint64 Opcode, $/;"	m	struct:class_PCM
+setUncoreEventRegister	pcm.h	/^  void (*setUncoreEventRegister)(struct class_PCM *th, uint32 SocketId) ;$/;"	m	struct:class_PCM
+single	teye.h	/^  int single;$/;"	m	struct:teye_st
+sockfd	teye.h	/^  int sockfd;$/;"	m	struct:c_sock
+std_swap	t_MicroStructure.c	/^int std_swap(int *obj1, int *obj2)$/;"	f
+supportcpumodels	types.h	/^enum supportcpumodels {$/;"	g
+sys	teye.h	/^  float sys;$/;"	m	struct:c_cpu
+tMicroStructure	t_MicroStructure.h	/^    void (*tMicroStructure)(struct classtMicroStructure *th);$/;"	m	struct:classtMicroStructure
+tMicroStructure	t_MicroStructure.h	/^typedef struct classtMicroStructure tMicroStructure;$/;"	t	typeref:struct:classtMicroStructure
+tMicroStructure_MicroStructureInit	t_MicroStructure.c	/^int tMicroStructure_MicroStructureInit(tMicroStructure *th) {$/;"	f
+tMicroStructure_MicroStructureRead	t_MicroStructure.c	/^int tMicroStructure_MicroStructureRead(tMicroStructure *th) {$/;"	f
+tMicroStructure_MicroStructureStart	t_MicroStructure.c	/^int tMicroStructure_MicroStructureStart(tMicroStructure *th) {$/;"	f
+tMicroStructure_UtMicroStructure	t_MicroStructure.c	/^void tMicroStructure_UtMicroStructure(tMicroStructure *th) {$/;"	f
+teye_st	teye.h	/^struct  teye_st$/;"	s
+th_pcie	t_MicroStructure.c	/^static UncoreEventPCM *th_pcie;$/;"	v	file:
+thresh	types.h	/^    uint32 thresh : 8;$/;"	m	struct:MCChannelControlRegister::__anon3
+tms	client.c	/^tMicroStructure* tms;$/;"	v
+uevent1	t_MicroStructure.h	/^    UncoreEventPCM * uevent1;$/;"	m	struct:classtMicroStructure
+uevent2	t_MicroStructure.h	/^    UncoreEventPCM * uevent2;$/;"	m	struct:classtMicroStructure
+umask	types.h	/^    uint32 umask : 8;$/;"	m	struct:MCChannelControlRegister::__anon3
+umask	types.h	/^    uint64 umask : 8;$/;"	m	struct:GeneralEventSelectRegister::__anon1
+umask	types.h	/^  uint32 umask;$/;"	m	struct:EventAndUmask
+user	teye.h	/^  float user;$/;"	m	struct:c_cpu
+usr	types.h	/^    uint64 usr : 1;$/;"	m	struct:GeneralEventSelectRegister::__anon1
+usr0	types.h	/^    uint64 usr0 : 1;$/;"	m	struct:FixedEventControlRegister::__anon2
+usr1	types.h	/^    uint64 usr1 : 1;$/;"	m	struct:FixedEventControlRegister::__anon2
+usr2	types.h	/^    uint64 usr2 : 1;$/;"	m	struct:FixedEventControlRegister::__anon2
+value	types.h	/^  uint32 value;$/;"	m	union:MCChannelControlRegister
+value	types.h	/^  uint64 value;$/;"	m	union:FixedEventControlRegister
+value	types.h	/^  uint64 value;$/;"	m	union:GeneralEventSelectRegister
+w_size	teye.h	/^  float w_size;   \/\/MB$/;"	m	struct:c_disk
+write	devices.h	/^  int (*write)(struct class_msr *th, uint64 event, uint64 value);$/;"	m	struct:class_msr
+write	teye.h	/^  unsigned long long write;$/;"	m	struct:c_nfs
+write32	devices.h	/^  int32 (*write32)(struct class_PciMC *th, uint64 event, uint32 value);$/;"	m	struct:class_PciMC
+write64	devices.h	/^  int32 (*write64)(struct class_PciMC *th, uint64 event, uint64 value);$/;"	m	struct:class_PciMC
+write_nfsd	teye.h	/^  float write_nfsd; \/\/ MB\/s$/;"	m	struct:c_nfs
+writes	teye.h	/^  float writes;     \/\/MB$/;"	m	struct:c_disk

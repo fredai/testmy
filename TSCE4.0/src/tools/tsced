@@ -1,0 +1,47 @@
+#!/bin/sh
+#
+# maui	This script will start and stop the MAUI Scheduler
+#
+# chkconfig: 345 85 85
+# description: maui
+#
+ulimit -n 32768
+# Source the library functions
+. /etc/rc.d/init.d/functions
+
+#TSCE_HOME=/opt/tsce/share/tsmmc
+TSCE_HOME=/opt/TSCE4.0/src/tools
+TSCE_DAEMON_START=$TSCE_HOME/tsce_start
+TSCE_DAEMON_STOP=$TSCE_HOME/tsce_stop
+export TSCE_DAEMON_START
+export TSCE_DAEMON_STOP
+export LD_LIBRARY_PATH=$TSCE_HOME/lib:$LD_LIBRARY_PATH
+
+# let see how we were called
+case "$1" in
+	start) 
+		echo -n "Starting tsce: "
+		cd $TSCE_HOME
+		daemon $TSCE_DAEMON_START $2 $3 
+#		daemon $TSCE_DAEMON_START &>/dev/null &
+		echo
+		;;
+	stop)
+		echo -n "Shutting down tsce: "
+		cd $TSCE_HOME
+#		killproc c_client
+		daemon $TSCE_DAEMON_STOP $2 $3 
+#		daemon $TSCE_DAEMON_DOWN &>/dev/null &
+		echo
+		;;
+	status)
+		status tscesd
+		;;
+	restart)
+		$0 stop
+		$0 start
+		;;
+	*)
+		echo "Usage: ajaxshell {start|stop|restart|status}"
+		exit 1
+esac

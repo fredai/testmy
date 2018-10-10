@@ -1,0 +1,205 @@
+#!/bin/sh
+#################################
+#./export.sh -u root -p 111111 -t w4 -n hpc2,hpc3,hpc4,hpc5,hpc6 -s 2015-05-28 -e 2015-05-28 -i cpu,mem,diskRate
+#$1 -t table:vasp                        *
+#$2 -u mysql user:-u root                *
+#$3 -p mysql password: -p 111111         *
+#$4 -n nodename:node01,node02,node03
+#$5 -s start date:2015-01-01
+#$6 -e end time:2015-01-05
+#$7 -i cpu,mem,diskRate
+#################################
+MYSQL_PASSWD=111111
+MYSQL_USER=root
+DATABASE=tsce
+TOMCAT_HOME=/usr/local/inspur/tomcat6_teye/
+TEYE_HOME=../..
+#################################
+items=ALL
+starttime=-
+endtime=-
+nodes=-
+
+ARGS=`getopt -o "u:p:t:s:e:n:i:"  -- "$@"`
+eval set -- "${ARGS}"
+while [ $# -ne 0 ]
+do
+        if [ $1 = "-t" ];then
+                shift
+                table=$1
+        elif [ $1 = "-n" ];then
+                shift
+                nodes=$1
+        elif [ $1 = "-s" ];then
+                shift
+                starttime=$1
+        elif [ $1 = "-e" ];then
+                shift
+                endtime=$1
+        elif [ $1 = '-i' ];then
+                shift
+                items=$1
+        elif [ $1 = "-u" ];then
+                shift
+                MYSQL_USER=$1
+        elif [ $1 = "-p" ];then
+                shift
+                MYSQL_PASSWD=$1
+        fi
+        shift
+done
+#echo table:$table
+#echo nodes:$nodes
+#echo starttime:$starttime
+#echo endtime:$endtime
+#echo ..................................................
+
+if [ "$endtime" == "-" ]
+then
+    endtime=`mysql -u${MYSQL_USER} -p${MYSQL_PASSWD} --database=$DATABASE -e "select max(date_time) from $table"  | sed -n '2p' | cut -d" " -f1`
+fi
+if [ "$starttime" == "-" ]
+then
+    starttime=`mysql -u${MYSQL_USER} -p${MYSQL_PASSWD} --database=$DATABASE -e "select min(date_time) from $table"  | sed -n '2p' | cut -d" " -f1`
+fi
+if [ "$nodes" == "-" ]
+then
+    nodes=`mysql -u${MYSQL_USER} -p${MYSQL_PASSWD} --database=$DATABASE -e "select distinct node_name from $table"  | sed '1d'|sed -e :a -e 'N;s/\n/,/;ta'`
+fi
+
+dataset_dir=/tmp/tsce_tmp/$table
+item_xml=$TEYE_HOME/config/default/base_xml.conf
+
+sql="select table_colums from "$table" where node_name='node01' and date_time between 'time1 00:00:00' and 'time1 23:59:59' into outfile '"$dataset_dir"/node01/node01-item-day2.csv' FIELDS TERMINATED BY ',';";
+sql_sysinfo="select CONCAT('cpu_type,',cpu_type),CONCAT('cpu_cores,',cpu_cores),CONCAT('os_type,',os_type),CONCAT('disk_volume,',disk_volume) from "$table"  where node_name='node01' limit 1 into outfile '"$dataset_dir"/node01/node01-sysinfo' FIELDS TERMINATED BY '\n';";
+
+getdatelist() {
+	st=$1
+	et=$2
+
+	sts=`date -d $st +%s`
+	ets=`date -d $et +%s`
+
+	echo -n $st
+	while [ $sts -lt $ets ]
+	do
+		sts=$((sts+86400))
+		echo -n  " "`date -d @$sts +%Y-%m-%d`;
+	done
+}
+
+test -e  export.sql.$$ && rm -fr export.sql.$$
+test -e /tmp/tsce_tmp/$table && rm -fr /tmp/tsce_tmp/$table
+for node in `echo $nodes | sed 's/,/ /g'`
+do
+	mkdir -p /tmp/tsce_tmp/$table/$node && chown -R mysql:mysql /tmp/tsce_tmp/$table/$node
+        echo $sql_sysinfo | sed "s/node01/$node/g" >> export.sql.$$
+
+        for day in `getdatelist $starttime $endtime`
+        do
+              day2=`echo $day|sed 's/-//g'|cut -c3-`
+              if [ "$items" = "ALL" ];then
+                  for item in `sed -r '/^#/d;/^\s*$/d;s/ +/ /g' $item_xml | cut -d" " -f1`
+                  do
+                     if [ "$item" != "staticinfo" ];then
+                       table_colums=`grep "^$item " $item_xml | sed -r 's/ +/,/g;2,$d'|cut -d',' -f2-`
+                       if [ "$table_colums" != "" ];then
+                         table_colums='DATE_FORMAT(date_time,"%Y/%m/%d %T"),'$table_colums
+                         echo $sql | sed "s|table_colums|$table_colums|;s/node01/$node/g;s|time1|$day|g;s/item/$item/;s/day2/$day2/">>export.sql.$$
+                       fi
+                     fi
+                  done
+              else
+                 for item in `echo $items | sed 's/,/ /g'`
+                 do
+                     if [ "$item" != "staticinfo" ];then
+                       table_colums=`grep "^$item " $item_xml | sed -r 's/ +/,/g;2,$d'|cut -d',' -f2-`
+                       if [ "$table_colums" != "" ];then
+                         table_colums='DATE_FORMAT(date_time,"%Y/%m/%d %T"),'$table_colums
+                         echo $sql | sed "s|table_colums|$table_colums|;s/node01/$node/g;s|time1|$day|g;s/item/$item/;s/day2/$day2/">>export.sql.$$
+                       fi
+                     fi
+                 done
+              fi
+        done
+done
+#####edit record-information
+echo RecordName,$table >> /tmp/tsce_tmp/$table/record-information
+echo StartTime,`echo $starttime|sed 's|-|/|g'` 00:00:00 >> /tmp/tsce_tmp/$table/record-information
+echo EndTime,`echo $endtime|sed 's|-|/|g'` 23:59:59 >> /tmp/tsce_tmp/$table/record-information
+echo NodeList,`echo $nodes | sed 's/,/ /g'` >> /tmp/tsce_tmp/$table/record-information
+#echo ItemList,cpu mem eth0_speed eth1_speed eth0_psize eth1_psize disk_speed disk_psize cpi ib_speed ib_pktsize mem_bw nfs_speed nfs_server pcie  >> /tmp/tsce_tmp/$table/record-information
+#item_list="ItemList,"
+#for item in `echo $items | sed 's/,/ /g'`
+#do
+#      table_colums=`grep "^$item " $item_xml | sed -r 's/ +/ /g;2,$d'|cut -d' ' -f2-`
+#      if [ "$table_colums" != "" ];then
+#             item_list=$item_list""$table_colums" "
+#      fi
+#done
+#echo $item_list >> /tmp/tsce_tmp/$table/record-information
+if [ "$items" = "ALL" ];then
+    item_list=`sed -r '/^#/d;/^\s*$/d;/staticinfo/d;s/ +/ /g' $item_xml | cut -d" " -f1`
+    item_list="ItemList,"$item_list
+    echo -n $item_list >> /tmp/tsce_tmp/$table/record-information
+else
+    item_list="ItemList,"`echo $items | sed 's/,/ /g;s/staticinfo//'|sed -r 's/ +/ /g'`
+    echo -n $item_list >> /tmp/tsce_tmp/$table/record-information
+fi
+#####excute sql
+mysql -u${MYSQL_USER} -p${MYSQL_PASSWD} --database=$DATABASE < export.sql.$$ &> /dev/null
+if [ $? -ne "0" ] ; then echo "mysql failed" ; exit 1 ;fi
+rm -f export.sql.$$
+
+#####add table colum name
+for node in `echo $nodes | sed 's/,/ /g'`
+do
+        ####delete sysinfo last charactor
+        sysinfo=/tmp/tsce_tmp/$table/$node/$node-sysinfo
+        if [ -e $sysinfo ] ; then
+		echo -n `tail -n1 $sysinfo` >> $sysinfo ; sed -i -n '1{h;n};$!{x;p};$p' $sysinfo
+        fi
+
+        #####add table colum name
+        for day in `getdatelist $starttime $endtime`
+        do
+            day2=`echo $day|sed 's/-//g'|cut -c3-`
+            if [ "$items" = "ALL" ];then
+              for item in `sed -r '/^#/d;/^\s*$/d;s/ +/ /g' $item_xml | cut -d" " -f1`
+              do
+                    if [ "$item" != "staticinfo" ];then
+                      table_colums=`grep "^$item " $item_xml | sed -r 's/ +/,/g;2,$d'|cut -d',' -f2-`
+                      if [ "$table_colums" != "" ];then
+                         table_colums="date_time,"$table_colums
+                         filename=/tmp/tsce_tmp/$table/$node/$node-$item-$day2.csv
+                         test -e $filenmae && sed -i "1i$table_colums" $filename
+                      fi
+                    fi
+              done
+            else
+              for item in `echo $items | sed 's/,/ /g'`
+              do
+                    if [ "$item" != "staticinfo" ];then
+                      table_colums=`grep "^$item " $item_xml | sed -r 's/ +/,/g;2,$d'|cut -d',' -f2-`
+                      if [ "$table_colums" != "" ];then
+                         table_colums="date_time,"$table_colums
+                         filename=/tmp/tsce_tmp/$table/$node/$node-$item-$day2.csv
+                         test -e $filenmae && sed -i "1i$table_colums" $filename
+                      fi
+                    fi
+              done
+            fi
+        done
+        touch /tmp/tsce_tmp/$table/$node/$node-static
+done
+
+currentdir=`pwd`
+cd /tmp/tsce_tmp/$table
+find . -type f | xargs sed -i -r '$!s/$/\r/'
+if [ -e $table.zip ] ; then rm -f $table.zip ;fi
+zip -r $table.zip ./* &> /dev/null
+if [ $? -ne "0" ] ; then echo "zip failed" ; exit 1 ; fi
+/bin/cp $table.zip $currentdir/$table.zip
+if [ $? -ne "0" ] ; then echo "cp failed" ; exit 1 ;fi
+cd .. ; rm -fr /tmp/tsce_tmp/$table
+echo "success"

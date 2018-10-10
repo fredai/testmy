@@ -1,0 +1,22 @@
+[global]
+
+port = /dev/ttyS0
+
+model = AT
+
+initlength = default
+
+connection = serial
+
+serial_baudrate = 115200
+
+handshake = software
+
+serial_write_usleep = 5000
+
+rfcomm_channel = 0
+
+use_locking = yes
+
+smsc_timeout = 10
+

@@ -1,0 +1,584 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AR	../util/Makefile	/^AR = ar$/;"	m
+ARFLAGS	../util/Makefile	/^ARFLAGS = -rcs$/;"	m
+CC	../collector/Makefile	/^CC = gcc$/;"	m
+CC	../collectord/Makefile	/^CC = gcc$/;"	m
+CC	../collectord/tools/Makefile	/^CC = gcc$/;"	m
+CC	../util/Makefile	/^CC = gcc$/;"	m
+CFLAGS	../collector/Makefile	/^CFLAGS = -g -Wall -D_REENTRANT$/;"	m
+CFLAGS	../collectord/Makefile	/^CFLAGS = -g -Wall -O0 -D_REENTRANT$/;"	m
+CFLAGS	../collectord/tools/Makefile	/^CFLAGS = -g -Wall -D_REENTRANT$/;"	m
+CFLAGS	../util/Makefile	/^CFLAGS = -g -Wall -I ..\/..\/libs\/include$/;"	m
+CF_DEFAULT_DB_NAME	../collectord/d_config.c	30;"	d	file:
+CF_STR_CLRD_IP	../collector/c_config.c	19;"	d	file:
+CF_STR_CLRD_PORT	../collector/c_config.c	20;"	d	file:
+CF_STR_CLR_CMD_PORT	../collectord/tools/t_send_cmd.c	31;"	d	file:
+CF_STR_CL_INTERVAL	../collector/c_config.c	21;"	d	file:
+CF_STR_CMD_PORT	../collector/c_config.c	22;"	d	file:
+CF_STR_CMD_TIMEOUT	../collector/c_config.c	23;"	d	file:
+CF_STR_COLLECTORD_IP	../collectord/d_config.c	27;"	d	file:
+CF_STR_COLLECTORD_PORT	../collectord/d_config.c	28;"	d	file:
+CF_STR_COLLECTOR_PORT	../collectord/d_config.c	29;"	d	file:
+CF_STR_DB_INSERT_INTERVAL	../collectord/d_config.c	26;"	d	file:
+CF_STR_DB_NAME	../collectord/d_config.c	23;"	d	file:
+CF_STR_DB_PASSWORD	../collectord/d_config.c	25;"	d	file:
+CF_STR_DB_SERVER_IP	../collectord/d_config.c	21;"	d	file:
+CF_STR_DB_SERVER_PORT	../collectord/d_config.c	22;"	d	file:
+CF_STR_DB_USER_NAME	../collectord/d_config.c	24;"	d	file:
+CF_STR_LOG_LEVEL	../collector/c_config.c	24;"	d	file:
+CF_STR_LOG_LEVEL	../collectord/d_config.c	31;"	d	file:
+CHECK_FILE_INTERVAL	../collectord/d_config.h	15;"	d
+CHECK_PID_BUF_LEN	../util/u_util.c	466;"	d	file:
+CLRD_ERRMSG_LEN	../collectord/d_define.h	19;"	d
+CLRD_INIT_ERROR_MSG_LEN	../collectord/d_config.h	16;"	d
+CLRD_LOG_PATH	../collectord/d_define.h	12;"	d
+CLRD_PID_FILE_PATH	../collectord/d_define.h	14;"	d
+CLRD_RUN_DIR	../collectord/d_define.h	13;"	d
+CLRD_SEM_KEY	../collectord/d_define.h	18;"	d
+CLRD_SHM_KEY	../collectord/d_define.h	17;"	d
+CLRD_T_LOG_PATH	../collectord/tools/t_define.h	14;"	d
+CLRD_T_SNDCMD_CONFIG_FILE_PATH	../collectord/tools/t_define.h	15;"	d
+CLR_CONFIG_FILE_PATH	../collector/c_define.h	13;"	d
+CLR_ERRMSG_LEN	../collector/c_define.h	11;"	d
+CLR_LOG_CMD_PATH	../collector/c_define.h	15;"	d
+CLR_LOG_SCT_PATH	../collector/c_define.h	14;"	d
+CLR_NETWORK_RECOVERY_RETRY_INTERVAL	../collector/c_define.h	27;"	d
+CLR_RECV_TIMEOUT	../collector/c_define.h	20;"	d
+CLR_SEND_TIMEOUT	../collector/c_define.h	19;"	d
+COIS_DEBUG_PRINT	../collector/c_debug_log.h	42;"	d
+CS_LOG_PATH	../collector/c_collector.c	21;"	d	file:
+CS_LOG_PATH	../collector/c_config.c	18;"	d	file:
+CS_LOG_PATH	../collector/c_proc_cmd.c	25;"	d	file:
+CS_LOG_PATH	../collector/c_proc_sct.c	32;"	d	file:
+CS_LOG_PATH	../collector/c_script.c	18;"	d	file:
+DATA_BUFFER_FILE	../collector/c_define.h	16;"	d
+DATA_BUFFER_ITEM_NUM	../collectord/d_datas.h	17;"	d
+DATA_PROTOCOL_HEAD_LEN	../common/e_define.h	38;"	d
+DB_CONN_TIMEOUT_VALUE	../collectord/d_db.h	20;"	d
+DB_INSERT_SQL_FMT	../collectord/d_db.h	43;"	d
+DB_INSERT_SQL_PREFIX	../collectord/d_db.h	42;"	d
+DCONFIG_FILE_PATH	../collectord/d_define.h	11;"	d
+DELIMITER_PER_DATA_ITEM	../collectord/d_nodes.h	16;"	d
+DIRS	../Makefile	/^DIRS = util collector collectord collectord\/tools$/;"	m
+DIR_PATH_MAX	../util/u_log.c	568;"	d	file:
+DIR_PATH_MAX	../util/u_util.c	410;"	d	file:
+EXE_FMT_RE_PATTERN	../collector/c_define.h	32;"	d
+FILE_DATA_FMT_RE_PATTERN	../collector/c_define.h	34;"	d
+HDRS	../collector/Makefile	/^HDRS	= c_config.h	\\$/;"	m
+HDRS	../collectord/Makefile	/^HDRS	=		\\$/;"	m
+HDRS	../collectord/tools/Makefile	/^HDRS	= t_check_status.h	\\$/;"	m
+HDRS	../util/Makefile	/^HDRS	=		\\$/;"	m
+INCLUDES	../collector/Makefile	/^INCLUDES = -I ..\/util\/ -I ..\/common -I ..\/..\/libs\/include$/;"	m
+INCLUDES	../collectord/Makefile	/^INCLUDES = -I ..\/util\/ -I ..\/common -I ..\/..\/libs\/include\/mysql$/;"	m
+INCLUDES	../collectord/tools/Makefile	/^INCLUDES = -I .. -I ..\/..\/util\/ -I ..\/..\/common$/;"	m
+INCLUDES	../util/Makefile	/^INCLUDES =$/;"	m
+INIT_CONFIG_ERROR_MSG_LEN	../collector/c_collector.c	22;"	d	file:
+INIT_SCL_ERROR_MSG_LEN	../collector/c_collector.c	23;"	d	file:
+IP_OF_NODE_LIST	../collectord/d_nodes.c	32;"	d	file:
+LDFLAGS	../collector/Makefile	/^LDFLAGS = -g -Wall$/;"	m
+LDFLAGS	../collectord/Makefile	/^LDFLAGS = -g -Wall -O0$/;"	m
+LDFLAGS	../collectord/tools/Makefile	/^LDFLAGS = -g -Wall$/;"	m
+LDFLAGS	../util/Makefile	/^LDFLAGS = -g$/;"	m
+LIBS	../collector/Makefile	/^LIBS =  -L ..\/util -lutils $(PCRE_PATH) -lpcre$/;"	m
+LIBS	../collectord/Makefile	/^LIBS =  -lpthread -L ..\/util -lutils $(MYSQL_PATH) -lmysqlclient$/;"	m
+LIBS	../collectord/tools/Makefile	/^LIBS =  -lpthread -L ..\/..\/util -lutils$/;"	m
+LIBS	../util/Makefile	/^LIBS =$/;"	m
+LOCAL_SCIPRT_PATH_LEN	../collector/c_define.h	22;"	d
+LOCAL_SCRIPT_PATH	../collector/c_define.h	17;"	d
+LOG	../util/u_log.h	61;"	d
+LOGN	../collectord/d_recv.c	29;"	d	file:
+LOGT	../util/u_log.h	73;"	d
+LOG_BUFFER_HEAD_LEN	../util/u_log.c	42;"	d	file:
+LOG_DEBUG	../collector/c_debug_log.h	/^    LOG_DEBUG,$/;"	e	enum:__anon1
+LOG_DEBUG	../util/u_log.h	/^    LOG_DEBUG,$/;"	e	enum:__anon2
+LOG_END	../util/u_log.h	54;"	d
+LOG_ERROR	../collector/c_debug_log.h	/^    LOG_ERROR,$/;"	e	enum:__anon1
+LOG_ERROR	../util/u_log.h	/^    LOG_ERROR,$/;"	e	enum:__anon2
+LOG_EXIT_IN	../util/u_log.c	48;"	d	file:
+LOG_FATAL	../collector/c_debug_log.h	/^    LOG_FATAL$/;"	e	enum:__anon1
+LOG_FATAL	../util/u_log.h	/^    LOG_FATAL$/;"	e	enum:__anon2
+LOG_FILE_MODE	../util/u_log.c	31;"	d	file:
+LOG_INFO	../collector/c_debug_log.h	/^    LOG_INFO,$/;"	e	enum:__anon1
+LOG_INFO	../util/u_log.h	/^    LOG_INFO,$/;"	e	enum:__anon2
+LOG_KEY_CLIENT_MODE	../util/u_log.c	26;"	d	file:
+LOG_KEY_DESTROY_MODE	../util/u_log.c	27;"	d	file:
+LOG_KEY_SERVER_MODE	../util/u_log.c	25;"	d	file:
+LOG_MAX_LOG_FILENAME_LEN	../util/u_log.c	30;"	d	file:
+LOG_MAX_PATH_LEN	../util/u_log.c	29;"	d	file:
+LOG_RECV_BUFFER_LEN	../util/u_log.c	37;"	d	file:
+LOG_ROTATE_TIME	../util/u_log.c	47;"	d	file:
+LOG_SELECT_WAIT_TIME	../util/u_log.c	46;"	d	file:
+LOG_SEND_BUFFER_LEN	../util/u_log.c	38;"	d	file:
+LOG_SETLEVEL	../util/u_log.h	75;"	d
+LOG_START	../util/u_log.h	47;"	d
+LOG_START_OK_FALG_LEN	../util/u_log.c	45;"	d	file:
+LOG_START_OK_FLAG	../util/u_log.c	44;"	d	file:
+LOG_USER_BUFFER_LEN	../util/u_log.c	39;"	d	file:
+LOG_WARN	../collector/c_debug_log.h	/^    LOG_WARN,$/;"	e	enum:__anon1
+LOG_WARN	../util/u_log.h	/^    LOG_WARN,$/;"	e	enum:__anon2
+LOG_WRITE_BUFFER_LEN	../util/u_log.c	40;"	d	file:
+MAX_CLR_CONFIG_FILE_LINE_LEN	../collector/c_define.h	10;"	d
+MAX_CL_INTERVAL	../common/e_define.h	19;"	d
+MAX_CMD_REQ_LEN	../common/e_define.h	44;"	d
+MAX_CMD_RES_LEN	../common/e_define.h	45;"	d
+MAX_CMD_TIMEOUT	../collector/c_define.h	30;"	d
+MAX_CONFIG_FILE_LINE_LEN	../common/e_define.h	25;"	d
+MAX_CONFIG_ITEM_LEN	../common/e_define.h	26;"	d
+MAX_CONFIG_VALUE_LEN	../common/e_define.h	27;"	d
+MAX_DATA_ITEM_NAME_LEN	../common/e_define.h	30;"	d
+MAX_DATA_ITEM_NUM_PER_SCRIPT	../common/e_define.h	34;"	d
+MAX_DATA_VALUE_LEN	../common/e_define.h	31;"	d
+MAX_DATE_TIME_LEN	../common/e_define.h	21;"	d
+MAX_DB_NAME_LEN	../collectord/d_db.h	15;"	d
+MAX_DB_OUTPUT_INTERVAL	../collectord/d_db.h	18;"	d
+MAX_DB_PASSWORD_LEN	../collectord/d_db.h	17;"	d
+MAX_DB_USER_NAME_LEN	../collectord/d_db.h	16;"	d
+MAX_DY_NODES_NUM	../collectord/d_nodes.h	14;"	d
+MAX_FILE_NODES_NUM	../collectord/d_nodes.h	15;"	d
+MAX_FILE_PATH_LEN	../common/e_define.h	16;"	d
+MAX_GET_DATA_LEN	../collectord/tools/t_get_data.h	12;"	d
+MAX_GET_DATA_LEN	../collectord/tools/t_get_data.h	14;"	d
+MAX_GET_ITEMS_NUM	../collectord/tools/t_get_data.h	19;"	d
+MAX_GET_NODES_NUM	../collectord/tools/t_get_data.h	18;"	d
+MAX_IP_STR_LEN	../common/e_define.h	23;"	d
+MAX_IP_V4_STR_LEN	../common/e_define.h	22;"	d
+MAX_LEVEL_PATH_STR_LEN	../util/u_log.c	32;"	d	file:
+MAX_NODES_NUM	../collectord/d_define.h	16;"	d
+MAX_NODE_FILE_LINE_LEN	../common/e_define.h	35;"	d
+MAX_NODE_NAME_LEN	../common/e_define.h	29;"	d
+MAX_PATH_LEVEL	../util/u_log.c	33;"	d	file:
+MAX_RECV_DATA_LEN_PER_SCRIPT	../common/e_define.h	42;"	d
+MAX_RESULT_DATA_LEN_PER_SCRIPT	../common/e_define.h	39;"	d
+MAX_SCRIPT_NAME_LEN	../common/e_define.h	32;"	d
+MAX_SCRIPT_NUM_PER_NODE	../common/e_define.h	33;"	d
+MAX_SEND_DATA_LEN_PER_SCRIPT	../common/e_define.h	41;"	d
+MIN_CL_INTERVAL	../common/e_define.h	18;"	d
+MIN_CMD_TIMEOUT	../collector/c_define.h	29;"	d
+MIN_DB_OUTPUT_INTERVAL	../collectord/d_db.h	19;"	d
+MOD_ADLER	../util/u_hash.c	/^const int MOD_ADLER = 65521;$/;"	v
+MSG_TYPE_HEAD_LEN	../util/u_log.c	41;"	d	file:
+MYSQL_PATH	../collectord/Makefile	/^MYSQL_PATH = -L ..\/..\/libs\/lib32\/mysql$/;"	m
+MYSQL_PATH	../collectord/Makefile	/^MYSQL_PATH = -L ..\/..\/libs\/lib64\/mysql$/;"	m
+NAME_OF_NODE_LIST	../collectord/d_nodes.c	33;"	d	file:
+NEED_NOT_UPDATE	../collectord/d_db.h	/^    NEED_NOT_UPDATE = 0,$/;"	e	enum:db_interval_need_update_flag_e
+NEED_UPDATE	../collectord/d_db.h	/^    NEED_UPDATE = 1,$/;"	e	enum:db_interval_need_update_flag_e
+NETWORK_RECOVERY_RETRY_INTERVAL	../collectord/d_service.c	28;"	d	file:
+NODE_ARRAY_END_INDEX	../collectord/d_nodes.c	24;"	d	file:
+NODE_ARRAY_SIZE	../collectord/d_nodes.c	22;"	d	file:
+NODE_ARRAY_START_INDEX	../collectord/d_nodes.c	23;"	d	file:
+NODE_COUNT_DECREASE	../collectord/d_nodes.c	37;"	d	file:
+NODE_COUNT_INCREASE	../collectord/d_nodes.c	36;"	d	file:
+NODE_LIST_FILE_PATH	../common/e_define.h	12;"	d
+NODE_NOT_FOUND	../collectord/tools/t_define.h	11;"	d
+NODE_NULL_VALUE	../collectord/d_nodes.c	26;"	d	file:
+NODE_NUM_OF_LIST	../collectord/d_nodes.c	38;"	d	file:
+NODE_OF_LIST	../collectord/d_nodes.c	31;"	d	file:
+NODE_POS_IS_IN_USE	../collectord/d_nodes.c	29;"	d	file:
+NODE_POS_NOT_IN_USE	../collectord/d_nodes.c	28;"	d	file:
+NODE_RECV_THREAD_EXIT	../collectord/d_nodes.h	/^    NODE_RECV_THREAD_EXIT = 1$/;"	e	enum:node_thread_instruction_e
+NODE_RECV_THREAD_RUN	../collectord/d_nodes.h	/^    NODE_RECV_THREAD_RUN = 0,$/;"	e	enum:node_thread_instruction_e
+NODE_STATUS_ACTIVE	../collectord/d_nodes.h	/^    NODE_STATUS_ACTIVE = 1$/;"	e	enum:node_status_e
+NODE_STATUS_DOWN	../collectord/d_nodes.h	/^    NODE_STATUS_DOWN = 0,$/;"	e	enum:node_status_e
+NODE_STATUS_INFO_SIZE	../collectord/tools/t_define.h	12;"	d
+OBJS	../collector/Makefile	/^OBJS	= c_config.o	\\$/;"	m
+OBJS	../collectord/Makefile	/^OBJS	=		\\$/;"	m
+OBJS	../collectord/tools/Makefile	/^OBJS	= t_check_status.o	\\$/;"	m
+OBJS	../util/Makefile	/^OBJS	=		\\$/;"	m
+PCRE_PATH	../collector/Makefile	/^PCRE_PATH = -L ..\/..\/libs\/lib32$/;"	m
+PCRE_PATH	../collector/Makefile	/^PCRE_PATH = -L ..\/..\/libs\/lib64$/;"	m
+RECONFIG_CMD_STR	../collector/c_define.h	25;"	d
+RECONFIG_RESULT_STR	../collector/c_define.h	26;"	d
+RT_SCRIPT_DATA_LEN	../collectord/d_nodes.h	17;"	d
+SCRIPT_DATA_DELIMITER_LEN	../common/e_define.h	37;"	d
+SCRIPT_FILES_PATH	../common/e_define.h	13;"	d
+SCRIPT_FILE_PATH_LEN	../common/e_define.h	15;"	d
+SCT_EIXT_CODE	../collector/c_define.h	23;"	d
+SEND_BUFFER_FILE_INTERVAL	../collector/c_proc_sct.c	33;"	d	file:
+SERVER_SOCKET_LISTEN_LEN	../collectord/d_service.c	27;"	d	file:
+SRCS	../collector/Makefile	/^SRCS	= c_config.c	\\$/;"	m
+SRCS	../collectord/Makefile	/^SRCS	=		\\$/;"	m
+SRCS	../collectord/tools/Makefile	/^SRCS	= t_check_status.c	\\$/;"	m
+SRCS	../util/Makefile	/^SRCS	=		\\$/;"	m
+STATUS_OF_NODE_LIST	../collectord/d_nodes.c	34;"	d	file:
+TARGET	../collector/Makefile	/^TARGET = collector$/;"	m
+TARGET	../collectord/Makefile	/^TARGET = collectord$/;"	m
+TARGET	../collectord/tools/Makefile	/^TARGET = checkstatus getdata sendcmd$/;"	m
+TARGET	../util/Makefile	/^TARGET = libutils.a$/;"	m
+TIME_STAMP_LEN	../util/u_log.c	35;"	d	file:
+_CS_DEBUG_LOG_BUFFER_	../collector/c_debug_log.h	/^char  _CS_DEBUG_LOG_BUFFER_[4*1024];$/;"	v
+_CS_DEBUG_LOG_BUFFER_	../collector/c_debug_log.h	/^char *_CS_DEBUG_LOG_BUFFER_=NULL;$/;"	v
+_CS_DEBUG_LOG_FILE_	../collector/c_debug_log.h	/^FILE *_CS_DEBUG_LOG_FILE_;$/;"	v
+_CS_DEBUG_LOG_FILE_	../collector/c_debug_log.h	/^FILE *_CS_DEBUG_LOG_FILE_=NULL;$/;"	v
+_CS_DEBUG_LOG_FMT_	../collector/c_debug_log.h	39;"	d
+_CS_DEBUG_LOG_INFO_	../collector/c_debug_log.h	40;"	d
+_CS_MAX_LOG_FILE_SIZE_	../collector/c_debug_log.h	38;"	d
+_C_COLLECTOR_H_	../collector/c_collector.h	8;"	d
+_C_CONFIG_H_	../collector/c_config.h	8;"	d
+_C_DEBUG_LOG_H_	../collector/c_debug_log.h	8;"	d
+_C_DEFINE_H_	../collector/c_define.h	8;"	d
+_C_ENGINE_H_	../collector/c_engine.h	8;"	d
+_C_PROCESS_SCT_H_	../collector/c_proc_sct.h	8;"	d
+_C_PROC_CMD_H_	../collector/c_proc_cmd.h	8;"	d
+_C_SCRIPT_H_	../collector/c_script.h	8;"	d
+_C_SIGNAL_H_	../collector/c_signal.h	9;"	d
+_D_COLLECTORD_H_	../collectord/d_collectord.h	9;"	d
+_D_CONFIG_H_	../collectord/d_config.h	8;"	d
+_D_DATAS_H_	../collectord/d_datas.h	8;"	d
+_D_DB_H_	../collectord/d_db.h	8;"	d
+_D_DEFINE_H_	../collectord/d_define.h	8;"	d
+_D_NODES_H_	../collectord/d_nodes.h	8;"	d
+_D_RECV_H_	../collectord/d_recv.h	8;"	d
+_D_SERVICE_H_	../collectord/d_service.h	8;"	d
+_D_SIGNAL_H_	../collectord/d_signal.h	8;"	d
+_E_DEFINE_H_	../common/e_define.h	8;"	d
+_E_PROTOCOL_H_	../common/e_protocol.h	8;"	d
+_T_CHECK_STATUS_H_	../collectord/tools/t_check_status.h	8;"	d
+_T_DEFINE_H_	../collectord/tools/t_define.h	8;"	d
+_T_GET_DATA_H_	../collectord/tools/t_get_data.h	8;"	d
+_T_PROCESS_OPT_	../collectord/tools/t_process_opt.h	8;"	d
+_T_SEND_CMD_H_	../collectord/tools/t_send_cmd.h	8;"	d
+_U_DEBUG_FMT_	../util/u_log.h	42;"	d
+_U_DEBUG_INFO_	../util/u_log.h	43;"	d
+_U_HASH_H_	../util/u_hash.h	8;"	d
+_U_LOG_H_	../util/u_log.h	8;"	d
+_U_MUTEX_H_	../util/u_mutex.h	8;"	d
+_U_OVECOUNT_	../util/u_regex.c	44;"	d	file:
+_U_QUEUE_H_	../util/u_queue.h	8;"	d
+_U_REGEX_H_	../util/u_regex.h	8;"	d
+_U_SHM_H_	../util/u_shm.h	9;"	d
+_U_THREAD_FMT_	../util/u_log.h	45;"	d
+_U_UTIL_H_	../util/u_util.h	8;"	d
+__buf	../util/u_mutex.c	/^        struct seminfo * __buf;$/;"	m	union:semun	typeref:struct:semun::seminfo	file:
+__clrd_datas	../collectord/d_datas.h	/^    data_item_t __clrd_datas [ DATA_BUFFER_ITEM_NUM ];$/;"	m	struct:data_buffer_s
+_cs_buffer_	../collector/c_debug_log.h	/^char *_cs_buffer_=NULL;$/;"	v
+_cs_buffer_	../collector/c_debug_log.h	/^char _cs_buffer_[20];$/;"	v
+_cs_log_level	../collector/c_debug_log.h	/^log_level_t _cs_log_level;$/;"	v
+_log_s	../util/u_log.h	/^struct _log_s {$/;"	s
+added_nodes	../collectord/d_nodes.h	/^    node_info_t added_nodes [ MAX_DY_NODES_NUM ]; $/;"	m	struct:dy_nodes_s
+added_nodes_num	../collectord/d_nodes.h	/^    unsigned int added_nodes_num;$/;"	m	struct:dy_nodes_s
+adler32	../util/u_hash.c	/^unsigned int adler32 ( unsigned char * data, int len ) {$/;"	f
+arg_send_cmd_s	../collectord/tools/t_send_cmd.h	/^struct arg_send_cmd_s {$/;"	s
+arg_send_cmd_t	../collectord/tools/t_send_cmd.h	/^typedef struct arg_send_cmd_s arg_send_cmd_t;$/;"	t	typeref:struct:arg_send_cmd_s
+array	../util/u_mutex.c	/^        unsigned short * array;$/;"	m	union:semun	file:
+buf	../util/u_log.c	/^    char buf [ LOG_RECV_BUFFER_LEN ];$/;"	m	struct:log_recv_buffer_s	file:
+buf	../util/u_log.c	/^    char buf [ LOG_SEND_BUFFER_LEN ];$/;"	m	struct:log_send_buffer_s	file:
+buf	../util/u_mutex.c	/^        struct semid_ds * buf;$/;"	m	union:semun	typeref:struct:semun::semid_ds	file:
+buffer	../util/u_queue.h	/^    void *      buffer;$/;"	m	struct:__anon3
+c_execute	../collector/c_engine.c	/^int c_execute ( char * cmd, char * result, size_t result_size, int * exit_status, int timeout ) {$/;"	f
+check_log_path	../util/u_log.c	/^static int check_log_path ( char * absolute_log_path ) {$/;"	f	file:
+check_pid	../util/u_util.c	/^int check_pid ( char * path ) {$/;"	f
+check_script_list	../collector/c_script.c	/^static int check_script_list ( scl_t * scl ) {$/;"	f	file:
+client_port	../collectord/d_config.h	/^    unsigned short int client_port;$/;"	m	struct:collectord_config_s
+clr_cmd_conf_t	../collector/c_config.h	/^typedef struct collector_cmd_config_s clr_cmd_conf_t;$/;"	t	typeref:struct:collector_cmd_config_s
+clr_cmd_port	../collectord/tools/t_send_cmd.h	/^    unsigned short int clr_cmd_port;$/;"	m	struct:snd_conf_s
+clr_cmd_signal_init	../collector/c_signal.c	/^int clr_cmd_signal_init ( ) {$/;"	f
+clr_copy_nfs_file	../collector/c_proc_sct.c	/^static int clr_copy_nfs_file ( char * dst, char * src ) {$/;"	f	file:
+clr_copy_sct_files	../collector/c_proc_sct.c	/^static int clr_copy_sct_files ( scl_t * scl ) {$/;"	f	file:
+clr_rcf_return	../collector/c_config.c	82;"	d	file:
+clr_read_config_from_file	../collector/c_config.c	/^int clr_read_config_from_file ( char * clr_config_file_path, $/;"	f
+clr_script_config_update	../collector/c_config.c	/^int clr_script_config_update ( clr_sct_conf_t * clr_sct_conf_a, clr_sct_conf_t * clr_sct_conf_b ) {$/;"	f
+clr_script_signal_init	../collector/c_signal.c	/^int clr_script_signal_init ( ) {$/;"	f
+clr_sct_conf_t	../collector/c_config.h	/^typedef struct collector_script_config_s clr_sct_conf_t;$/;"	t	typeref:struct:collector_script_config_s
+clrd_exit	../collectord/d_collectord.c	/^void clrd_exit ( void ) {$/;"	f
+clrd_que	../collectord/d_datas.h	/^    u_queue_t clrd_que;$/;"	m	struct:data_buffer_s
+clrd_signal_init	../collectord/d_signal.c	/^int clrd_signal_init ( ) {$/;"	f
+cmd_data_head	../collector/c_proc_cmd.c	/^static data_head_t cmd_data_head = {$/;"	v	file:
+cmd_max_data_len	../collector/c_config.h	/^    int cmd_max_data_len;$/;"	m	struct:collector_cmd_config_s
+cmd_timeout	../collector/c_config.h	/^    short int cmd_timeout;$/;"	m	struct:collector_cmd_config_s
+collecotr_cmd_port	../collector/c_config.h	/^    unsigned short int collecotr_cmd_port;$/;"	m	struct:collector_cmd_config_s
+collect_interval	../collector/c_config.h	/^    short int collect_interval;$/;"	m	struct:collector_script_config_s
+collector_cmd_config_s	../collector/c_config.h	/^struct collector_cmd_config_s {$/;"	s
+collector_config_need_update	../collector/c_config.c	/^int collector_config_need_update ( \/* only clr sct interval is dynamic config able *\/$/;"	f
+collector_script_config_s	../collector/c_config.h	/^struct collector_script_config_s {$/;"	s
+collectord_config_get_server_ip_port	../collectord/d_config.c	/^int collectord_config_get_server_ip_port ( collectord_config_t * config, $/;"	f
+collectord_config_need_update	../collectord/d_config.c	/^int collectord_config_need_update ( collectord_config_t * config_a, collectord_config_t * config_b ) {$/;"	f
+collectord_config_s	../collectord/d_config.h	/^struct collectord_config_s {$/;"	s
+collectord_config_t	../collectord/d_config.h	/^typedef struct collectord_config_s collectord_config_t;$/;"	t	typeref:struct:collectord_config_s
+collectord_get_db_config	../collectord/d_config.c	/^int collectord_get_db_config ( collectord_config_t * config, db_config_t * db_config ) {$/;"	f
+collectord_get_db_interval	../collectord/d_config.c	/^int collectord_get_db_interval ( collectord_config_t * config,$/;"	f
+collectord_ip	../collector/c_config.h	/^    char collectord_ip [ MAX_IP_STR_LEN ];$/;"	m	struct:collector_script_config_s
+collectord_port	../collector/c_config.h	/^    unsigned short int collectord_port;$/;"	m	struct:collector_script_config_s
+collectord_update_config	../collectord/d_config.c	/^int collectord_update_config ( collectord_config_t * config_a, collectord_config_t * config_b ) {$/;"	f
+cs_log	../collector/c_debug_log.h	55;"	d
+cs_log_end	../collector/c_debug_log.h	112;"	d
+cs_log_start	../collector/c_debug_log.h	48;"	d
+daemonize_handler	../collectord/d_collectord.c	/^void daemonize_handler ( int signum ) {$/;"	f
+data	../collectord/d_recv.h	/^    char data [ MAX_RECV_DATA_LEN_PER_SCRIPT ];$/;"	m	struct:recv_buffer_s
+data_buffer_s	../collectord/d_datas.h	/^struct data_buffer_s {$/;"	s
+data_buffer_t	../collectord/d_datas.h	/^typedef struct data_buffer_s data_buffer_t;$/;"	t	typeref:struct:data_buffer_s
+data_head_s	../common/e_protocol.h	/^struct data_head_s {$/;"	s
+data_head_t	../common/e_protocol.h	/^typedef struct data_head_s data_head_t;$/;"	t	typeref:struct:data_head_s
+data_item	../collectord/d_datas.h	/^    char data_item [ MAX_DATA_ITEM_NAME_LEN ];$/;"	m	struct:data_item_s
+data_item_s	../collectord/d_datas.h	/^struct data_item_s {$/;"	s
+data_item_t	../collectord/d_datas.h	/^typedef struct data_item_s data_item_t;$/;"	t	typeref:struct:data_item_s
+data_len	../common/e_protocol.h	/^    unsigned int data_len;$/;"	m	struct:data_head_s
+data_position	../common/e_protocol.h	/^    unsigned char data_position;$/;"	m	struct:data_head_s
+data_status	../common/e_protocol.h	/^    unsigned char data_status;$/;"	m	struct:data_head_s
+data_time	../collectord/d_datas.h	/^    char data_time [ MAX_DATE_TIME_LEN ];$/;"	m	struct:data_item_s
+data_type	../common/e_protocol.h	/^    unsigned char data_type;$/;"	m	struct:data_head_s
+data_value	../collectord/d_datas.h	/^    char data_value [ MAX_DATA_VALUE_LEN ];$/;"	m	struct:data_item_s
+db_buffer	../collectord/d_db.c	/^static char db_buffer [ sizeof ( data_buffer_t ) ];$/;"	v	file:
+db_config	../collectord/d_config.h	/^    db_config_t db_config;$/;"	m	struct:collectord_config_s
+db_config_s	../collectord/d_db.h	/^struct db_config_s {$/;"	s
+db_config_t	../collectord/d_db.h	/^typedef struct db_config_s db_config_t;$/;"	t	typeref:struct:db_config_s
+db_interval_need_update_flag_e	../collectord/d_db.h	/^enum db_interval_need_update_flag_e {$/;"	g
+db_name	../collectord/d_db.h	/^    char db_name [ MAX_DB_NAME_LEN ];$/;"	m	struct:db_config_s
+db_output_interval	../collectord/d_config.h	/^    unsigned short int db_output_interval; \/* <=5 *\/$/;"	m	struct:collectord_config_s
+db_password	../collectord/d_db.h	/^    char db_password [ MAX_DB_PASSWORD_LEN ];$/;"	m	struct:db_config_s
+db_server_ip	../collectord/d_db.h	/^    char db_server_ip [ MAX_IP_STR_LEN ];$/;"	m	struct:db_config_s
+db_server_port	../collectord/d_db.h	/^    unsigned short int db_server_port;$/;"	m	struct:db_config_s
+db_update_flag_t	../collectord/d_db.h	/^typedef enum db_interval_need_update_flag_e db_update_flag_t;$/;"	t	typeref:enum:db_interval_need_update_flag_e
+db_username	../collectord/d_db.h	/^    char db_username [ MAX_DB_USER_NAME_LEN ];$/;"	m	struct:db_config_s
+debug_print_node_list	../collectord/d_nodes.c	/^static void debug_print_node_list ( node_list_t * node_list ) {$/;"	f	file:
+destroy_data_buffer	../collectord/d_datas.c	/^int destroy_data_buffer ( data_buffer_t * data_buffer ) {$/;"	f
+destroy_logger	../util/u_log.c	/^int destroy_logger ( char * log_file_path ) {$/;"	f
+destroy_node_list	../collectord/d_nodes.c	/^int destroy_node_list ( node_list_t * node_list ) {$/;"	f
+discard_time	../collectord/d_nodes.h	/^    int discard_time;$/;"	m	struct:node_rt_data_s
+dy_diff_nodes	../collectord/d_nodes.c	/^int dy_diff_nodes ( file_nodes_t * file_nodes, node_list_t * node_list, dy_nodes_t * dy_nodes ) {$/;"	f
+dy_nodes_s	../collectord/d_nodes.h	/^struct dy_nodes_s {$/;"	s
+dy_nodes_t	../collectord/d_nodes.h	/^typedef struct dy_nodes_s dy_nodes_t;$/;"	t	typeref:struct:dy_nodes_s
+end	../util/u_queue.h	/^    int         end;$/;"	m	struct:__anon3
+end_log	../util/u_log.c	/^int end_log ( log_t * log_handle ) {$/;"	f
+exit_code	../common/e_protocol.h	/^    unsigned char exit_code;$/;"	m	struct:data_head_s
+file_nodes_s	../collectord/d_nodes.h	/^struct file_nodes_s {$/;"	s
+file_nodes_t	../collectord/d_nodes.h	/^typedef struct file_nodes_s file_nodes_t;$/;"	t	typeref:struct:file_nodes_s
+fletcher16	../util/u_hash.c	/^unsigned short int fletcher16 ( unsigned char const * data, size_t bytes ) {$/;"	f
+forkresult	../collector/c_engine.c	/^static pid_t forkresult = -1;$/;"	v	file:
+g_absolute_log_path	../util/u_log.c	/^static char g_absolute_log_path [ LOG_MAX_PATH_LEN * 2 + 1 ];$/;"	v	file:
+g_cmd	../collectord/tools/t_send_cmd.c	/^char g_cmd [ MAX_CMD_REQ_LEN ];$/;"	v
+g_cmd_conf	../collector/c_config.c	/^clr_cmd_conf_t g_cmd_conf;$/;"	v
+g_collectord_config	../collectord/d_config.c	/^collectord_config_t g_collectord_config;$/;"	v
+g_data	../collectord/tools/t_get_data.c	/^char ( * g_data ) [ MAX_GET_ITEMS_NUM ][ MAX_GET_DATA_LEN ];$/;"	v
+g_data_buffer	../collectord/d_datas.c	/^data_buffer_t g_data_buffer;$/;"	v
+g_db_update_flag	../collectord/d_db.c	/^db_update_flag_t g_db_update_flag;$/;"	v
+g_log_level_string	../util/u_log.c	/^static const char * g_log_level_string [ 5 ] = { $/;"	v	file:
+g_log_level_string_len	../util/u_log.c	/^static const int g_log_level_string_len [ ] = {$/;"	v	file:
+g_node_list	../collectord/d_collectord.c	/^node_list_t * g_node_list;$/;"	v
+g_scl	../collector/c_proc_sct.c	/^scl_t g_scl;$/;"	v
+g_sct_conf	../collector/c_config.c	/^clr_sct_conf_t g_sct_conf;$/;"	v
+g_sct_pid	../collector/c_collector.c	/^pid_t g_sct_pid;$/;"	v
+g_sct_update_flag	../collector/c_collector.c	/^int g_sct_update_flag = 0;$/;"	v
+g_snd_conf	../collectord/tools/t_send_cmd.c	/^snd_conf_t g_snd_conf;$/;"	v
+get_alarm_time_of_day	../util/u_log.c	/^static int get_alarm_time_of_day ( ) {$/;"	f	file:
+get_data_item_from_buffer	../collectord/d_datas.c	/^int get_data_item_from_buffer ( data_buffer_t * data_buffer, data_item_t * data_item ) {$/;"	f
+get_file_nodes	../collectord/d_nodes.c	/^int get_file_nodes ( const char * node_file_path, file_nodes_t * file_nodes ) {$/;"	f
+get_file_scripts	../collector/c_script.c	/^static int get_file_scripts ( const char * node_file_path, scl_t * scl ) {$/;"	f	file:
+head	../collectord/d_recv.h	/^    data_head_t head;$/;"	m	struct:recv_buffer_s
+hostname_to_ip	../util/u_util.c	/^int hostname_to_ip ( const char * str, unsigned int * ip ) {$/;"	f
+in_addr_to_uint	../util/u_util.c	/^int in_addr_to_uint ( struct in_addr * in, unsigned int * ip ) {$/;"	f
+init_collector_config	../collector/c_config.c	/^int init_collector_config ( clr_sct_conf_t * clr_sct_conf, clr_cmd_conf_t * clr_cmd_conf, $/;"	f
+init_collectord_config	../collectord/d_config.c	/^int init_collectord_config ( collectord_config_t * config, char * clrd_init_cf_error_msg ) {$/;"	f
+init_data_buffer	../collectord/d_datas.c	/^int init_data_buffer ( data_buffer_t * data_buffer ) {$/;"	f
+init_logger	../util/u_log.c	/^int init_logger ( char * log_file_path ) {$/;"	f
+init_node_list	../collectord/d_nodes.c	/^int init_node_list ( file_nodes_t * file_nodes, node_list_t * node_list ) {$/;"	f
+init_script_list	../collector/c_script.c	/^int init_script_list ( char * scl_path, scl_t * scl, char * init_output_msg  ) {$/;"	f
+ip_str_is_valid	../util/u_util.c	/^int ip_str_is_valid ( char * ip ) {$/;"	f
+ipv4_ntop	../util/u_util.c	/^int ipv4_ntop ( struct in_addr * src, char * dst, const int size ) {$/;"	f
+ipv4_pton	../util/u_util.c	/^int ipv4_pton ( const char * src, struct in_addr * dst ) {$/;"	f
+ipv4_str_to_uint	../util/u_util.c	/^int ipv4_str_to_uint ( char * str, unsigned int * ip ) {$/;"	f
+ipv4_uint_to_str	../util/u_util.c	/^int ipv4_uint_to_str ( unsigned int ip, char * dst_str, int size ) {$/;"	f
+is_data_buffer_empty	../collectord/d_datas.c	/^int is_data_buffer_empty ( data_buffer_t * data_buffer ) {$/;"	f
+is_data_buffer_full	../collectord/d_datas.c	/^int is_data_buffer_full ( data_buffer_t * data_buffer ) {$/;"	f
+item_size	../util/u_queue.h	/^    int         item_size;$/;"	m	struct:__anon3
+killer	../collector/c_engine.c	/^void killer ( int sig ) {$/;"	f
+log_exit	../util/u_log.c	/^void log_exit ( void ) {$/;"	f
+log_id	../util/u_log.h	/^    log_id_t log_id;$/;"	m	struct:_log_s
+log_id_t	../util/u_log.h	/^typedef int log_id_t;$/;"	t
+log_level	../collector/c_config.h	/^    log_level_t log_level;$/;"	m	struct:collector_cmd_config_s
+log_level	../collector/c_config.h	/^    log_level_t log_level;$/;"	m	struct:collector_script_config_s
+log_level	../collectord/d_config.h	/^    log_level_t log_level;$/;"	m	struct:collectord_config_s
+log_level	../util/u_log.h	/^    log_level_t log_level;$/;"	m	struct:_log_s
+log_level_t	../collector/c_debug_log.h	/^} log_level_t; $/;"	t	typeref:enum:__anon1
+log_level_t	../util/u_log.h	/^} log_level_t;$/;"	t	typeref:enum:__anon2
+log_process_signal	../util/u_log.c	/^int log_process_signal ( ) {$/;"	f
+log_recv_buffer_s	../util/u_log.c	/^struct log_recv_buffer_s {$/;"	s	file:
+log_recv_buffer_t	../util/u_log.c	/^typedef struct log_recv_buffer_s log_recv_buffer_t;$/;"	t	typeref:struct:log_recv_buffer_s	file:
+log_sa_alrm_handler	../util/u_log.c	/^void log_sa_alrm_handler ( int sig_num ) {$/;"	f
+log_sa_usr1_handler	../util/u_log.c	/^void log_sa_usr1_handler ( int sig_num ) {$/;"	f
+log_send_buffer_s	../util/u_log.c	/^struct log_send_buffer_s {$/;"	s	file:
+log_send_buffer_t	../util/u_log.c	/^typedef struct log_send_buffer_s log_send_buffer_t;$/;"	t	typeref:struct:log_send_buffer_s	file:
+log_t	../util/u_log.h	/^typedef struct _log_s log_t;$/;"	t	typeref:struct:_log_s
+logger_pid	../util/u_log.c	/^static pid_t logger_pid;$/;"	v	file:
+main	../collector/c_collector.c	/^int main ( int argc, char * argv [ ] ) {$/;"	f
+main	../collectord/d_collectord.c	/^int main ( int argc, char * argv [ ] ) {$/;"	f
+main	../collectord/tools/t_check_status.c	/^int main ( int argc, char * argv [ ] ) {$/;"	f
+main	../collectord/tools/t_get_data.c	/^int main ( int argc, char * argv [ ] ) {$/;"	f
+main	../collectord/tools/t_send_cmd.c	/^int main ( int argc, char * argv [ ] ) {$/;"	f
+max_int	../util/u_util.c	/^inline int max_int ( int a, int b ) {$/;"	f
+mkdir_p	../util/u_log.c	/^int mkdir_p ( char * path ) {$/;"	f
+mutex_g_collectord_config	../collectord/d_config.c	/^pthread_mutex_t mutex_g_collectord_config;$/;"	v
+mutex_g_data_buffer	../collectord/d_datas.c	/^pthread_mutex_t mutex_g_data_buffer;$/;"	v
+mutex_g_db_update_flag	../collectord/d_db.c	/^pthread_mutex_t mutex_g_db_update_flag;$/;"	v
+mutex_g_node_list	../collectord/d_collectord.c	/^int mutex_g_node_list;$/;"	v
+mutex_output	../collectord/tools/t_send_cmd.c	/^pthread_mutex_t mutex_output;$/;"	v
+mutex_startup_status	../collectord/d_collectord.c	/^pthread_mutex_t mutex_startup_status;$/;"	v
+nd_ip_t	../collectord/d_nodes.h	/^typedef unsigned int nd_ip_t;$/;"	t
+nl_delete_node_all_data_by_id	../collectord/d_nodes.c	/^int nl_delete_node_all_data_by_id ( node_list_t * node_list, int node_id ) {$/;"	f
+nl_delete_node_by_nd_id	../collectord/d_nodes.c	/^int nl_delete_node_by_nd_id ( node_list_t * node_list, int node_id ) {$/;"	f
+nl_delete_node_by_nd_ip	../collectord/d_nodes.c	/^int nl_delete_node_by_nd_ip ( node_list_t * node_list, nd_ip_t ip_of_node ) {$/;"	f
+nl_delete_node_by_ndinfo	../collectord/d_nodes.c	/^int nl_delete_node_by_ndinfo ( node_list_t * node_list, node_info_t * node_info ) {$/;"	f
+nl_find_node_by_nd_ip	../collectord/d_nodes.c	/^int nl_find_node_by_nd_ip ( node_list_t * node_list, nd_ip_t ip_of_node ) {$/;"	f
+nl_find_node_by_nd_ip_str	../collectord/d_nodes.c	/^int nl_find_node_by_nd_ip_str ( node_list_t * node_list, char * node_ip_str ) {$/;"	f
+nl_find_node_by_nd_name	../collectord/d_nodes.c	/^int nl_find_node_by_nd_name ( node_list_t * node_list, char * node_name ) {$/;"	f
+nl_find_node_by_ndinfo	../collectord/d_nodes.c	/^int nl_find_node_by_ndinfo ( node_list_t * node_list, node_info_t * node_info ) {$/;"	f
+nl_get_node_all_data_by_id	../collectord/d_nodes.c	/^int nl_get_node_all_data_by_id ( $/;"	f
+nl_get_node_data_discard_time	../collectord/d_nodes.c	/^int nl_get_node_data_discard_time ( node_list_t * node_list, int node_id, int * discard_time ) {$/;"	f
+nl_get_node_ip_str_by_nd_id	../collectord/d_nodes.c	/^int nl_get_node_ip_str_by_nd_id ( char * node_ip_str, node_list_t * node_list, int node_id ) {$/;"	f
+nl_get_node_istn_by_nd_id	../collectord/d_nodes.c	/^int nl_get_node_istn_by_nd_id ( node_list_t * node_list, int node_id ) {$/;"	f
+nl_get_node_name_by_nd_id	../collectord/d_nodes.c	/^int nl_get_node_name_by_nd_id ( char * node_name, node_list_t * node_list, int node_id ) {$/;"	f
+nl_get_node_script_data_by_nd_id	../collectord/d_nodes.c	/^int nl_get_node_script_data_by_nd_id ( $/;"	f
+nl_get_node_status_by_nd_id	../collectord/d_nodes.c	/^int nl_get_node_status_by_nd_id ( node_list_t * node_list, int node_id ) {$/;"	f
+nl_get_node_threadid_by_nd_id	../collectord/d_nodes.c	/^int nl_get_node_threadid_by_nd_id ( node_list_t * node_list, int node_id, pthread_t * thread_id ) {$/;"	f
+nl_insert_node	../collectord/d_nodes.c	/^int nl_insert_node ( node_list_t * node_list, node_info_t * node_info ) {$/;"	f
+nl_put_node_script_data_by_id	../collectord/d_nodes.c	/^int nl_put_node_script_data_by_id ($/;"	f
+nl_set_node_data_discard_time	../collectord/d_nodes.c	/^int nl_set_node_data_discard_time ( node_list_t * node_list, int node_id, int discard_time ) {$/;"	f
+nl_set_node_istn_by_nd_id	../collectord/d_nodes.c	/^int nl_set_node_istn_by_nd_id ( node_list_t * node_list, int node_id, node_istn_t node_istn ) {$/;"	f
+nl_set_node_status_by_nd_id	../collectord/d_nodes.c	/^int nl_set_node_status_by_nd_id ( node_list_t * node_list, int node_id, node_status_t nd_st ) {$/;"	f
+nl_set_node_threadid_by_nd_id	../collectord/d_nodes.c	/^int nl_set_node_threadid_by_nd_id ( node_list_t * node_list, int node_id, pthread_t thread_id ) {$/;"	f
+node_ctl	../collectord/d_nodes.h	/^    node_ctl_t node_ctl;$/;"	m	struct:node_s
+node_ctl_s	../collectord/d_nodes.h	/^struct node_ctl_s {$/;"	s
+node_ctl_t	../collectord/d_nodes.h	/^typedef struct node_ctl_s node_ctl_t;$/;"	t	typeref:struct:node_ctl_s
+node_data	../collectord/d_nodes.h	/^    node_rt_data_t node_data;$/;"	m	struct:node_s
+node_info	../collectord/d_nodes.h	/^    node_info_t node_info;$/;"	m	struct:node_s
+node_info_s	../collectord/d_nodes.h	/^struct node_info_s {$/;"	s
+node_info_t	../collectord/d_nodes.h	/^typedef struct node_info_s node_info_t;$/;"	t	typeref:struct:node_info_s
+node_ip	../collectord/d_datas.h	/^    char node_ip [ MAX_IP_STR_LEN ];$/;"	m	struct:data_item_s
+node_ip	../collectord/d_nodes.h	/^    char node_ip [ MAX_IP_STR_LEN ] ;$/;"	m	struct:node_status_info_s
+node_ip	../collectord/d_nodes.h	/^    unsigned int node_ip;$/;"	m	struct:node_info_s
+node_ip	../collectord/tools/t_send_cmd.h	/^    unsigned int node_ip;$/;"	m	struct:arg_send_cmd_s
+node_istn	../collectord/d_nodes.h	/^    node_istn_t node_istn;$/;"	m	struct:node_s
+node_istn_t	../collectord/d_nodes.h	/^typedef enum node_thread_instruction_e node_istn_t;$/;"	t	typeref:enum:node_thread_instruction_e
+node_list	../collectord/d_nodes.h	/^    node_t node_list [ MAX_NODES_NUM ];$/;"	m	struct:node_list_s
+node_list_s	../collectord/d_nodes.h	/^struct node_list_s {$/;"	s
+node_list_t	../collectord/d_nodes.h	/^typedef struct node_list_s node_list_t;$/;"	t	typeref:struct:node_list_s
+node_name	../collectord/d_datas.h	/^    char node_name [ MAX_NODE_NAME_LEN ];$/;"	m	struct:data_item_s
+node_name	../collectord/d_nodes.h	/^    char node_name [ MAX_NODE_NAME_LEN ];$/;"	m	struct:node_info_s
+node_name	../collectord/d_nodes.h	/^    char node_name [ MAX_NODE_NAME_LEN ];$/;"	m	struct:node_status_info_s
+node_name	../collectord/tools/t_send_cmd.h	/^    char node_name [ 32 ];$/;"	m	struct:arg_send_cmd_s
+node_name_compare	../collectord/tools/t_check_status.c	/^static int node_name_compare ( const void * a, const void * b ) {$/;"	f	file:
+node_name_compare	../collectord/tools/t_get_data.c	/^static int node_name_compare ( const void * a, const void * b ) {$/;"	f	file:
+node_name_compare	../collectord/tools/t_send_cmd.c	/^static int node_name_compare ( const void * a, const void * b ) {$/;"	f	file:
+node_rt_data_s	../collectord/d_nodes.h	/^struct node_rt_data_s {$/;"	s
+node_rt_data_t	../collectord/d_nodes.h	/^typedef struct node_rt_data_s node_rt_data_t;$/;"	t	typeref:struct:node_rt_data_s
+node_s	../collectord/d_nodes.h	/^struct node_s {$/;"	s
+node_status	../collectord/d_nodes.h	/^    node_status_t node_status;$/;"	m	struct:node_s
+node_status	../collectord/d_nodes.h	/^    node_status_t node_status;$/;"	m	struct:node_status_info_s
+node_status_e	../collectord/d_nodes.h	/^enum node_status_e {$/;"	g
+node_status_info_s	../collectord/d_nodes.h	/^struct node_status_info_s {$/;"	s
+node_status_info_t	../collectord/d_nodes.h	/^typedef struct node_status_info_s node_status_info_t;$/;"	t	typeref:struct:node_status_info_s
+node_status_str	../collectord/tools/t_check_status.c	/^static const char * node_status_str [ 3 ] = {$/;"	v	file:
+node_status_str	../collectord/tools/t_get_data.c	/^static const char * node_status_str [ 3 ] =  {$/;"	v	file:
+node_status_str	../collectord/tools/t_send_cmd.c	/^static const char * node_status_str [ 3 ] =  {$/;"	v	file:
+node_status_t	../collectord/d_nodes.h	/^typedef enum node_status_e node_status_t;$/;"	t	typeref:enum:node_status_e
+node_t	../collectord/d_nodes.h	/^typedef struct node_s node_t;$/;"	t	typeref:struct:node_s
+node_thread_instruction_e	../collectord/d_nodes.h	/^enum node_thread_instruction_e {$/;"	g
+nodes	../collectord/d_nodes.h	/^    node_info_t nodes [ MAX_FILE_NODES_NUM ]; $/;"	m	struct:file_nodes_s
+nodes_num	../collectord/d_nodes.h	/^    unsigned int nodes_num;$/;"	m	struct:file_nodes_s
+nodes_num	../collectord/d_nodes.h	/^    unsigned int nodes_num;$/;"	m	struct:node_list_s
+parse_clr_config_line	../collector/c_config.c	/^static int parse_clr_config_line ( char * config_line, $/;"	f	file:
+parse_clr_interval	../collector/c_config.c	/^static inline short int parse_clr_interval ( char * str ) {$/;"	f	file:
+parse_cmd_timeout	../collector/c_config.c	/^static inline short int parse_cmd_timeout ( char * str ) {$/;"	f	file:
+parse_collectord_config_line	../collectord/d_config.c	/^static int parse_collectord_config_line ( char * config_line, $/;"	f	file:
+parse_db_interval	../collectord/d_config.c	/^short int parse_db_interval ( char * str ) {$/;"	f
+parse_long_int	../util/u_util.c	/^int parse_long_int ( char * str, long int * long_int_value ) {$/;"	f
+parse_port	../util/u_util.c	/^int parse_port ( char * str, unsigned short int * port ) {$/;"	f
+parse_snd_config_line	../collectord/tools/t_send_cmd.c	/^int parse_snd_config_line ( char * config_line, snd_conf_t * snd_conf ) {$/;"	f
+process_cmd_main	../collector/c_proc_cmd.c	/^int process_cmd_main ( ) {$/;"	f
+process_sct_main	../collector/c_proc_sct.c	/^int process_sct_main ( ) {$/;"	f
+produce_absolute_path	../util/u_log.c	/^static int produce_absolute_path ( char * relative_path, char * p_absolute_path ) {$/;"	f	file:
+produce_time_stamp_r	../util/u_log.c	/^static void produce_time_stamp_r ( char * buffer ) {$/;"	f	file:
+put_data_item_in_buffer	../collectord/d_datas.c	/^int put_data_item_in_buffer ( data_buffer_t * data_buffer, data_item_t * data_item ) {$/;"	f
+q_size	../util/u_queue.h	/^    int         q_size;$/;"	m	struct:__anon3
+queue_t	../util/u_queue.h	/^} queue_t;$/;"	t	typeref:struct:__anon3
+re	../util/u_regex.h	/^    pcre * re;$/;"	m	struct:u_re_s
+read_config_from_file	../collectord/d_config.c	/^static int read_config_from_file ( char * config_file_path, $/;"	f	file:
+recv_buffer_s	../collectord/d_recv.h	/^struct recv_buffer_s {$/;"	s
+recv_buffer_t	../collectord/d_recv.h	/^typedef struct recv_buffer_s recv_buffer_t;$/;"	t	typeref:struct:recv_buffer_s
+reduced_nodes	../collectord/d_nodes.h	/^    node_info_t reduced_nodes [ MAX_DY_NODES_NUM ]; $/;"	m	struct:dy_nodes_s
+reduced_nodes_num	../collectord/d_nodes.h	/^    unsigned int reduced_nodes_num;$/;"	m	struct:dy_nodes_s
+reload_config	../collector/c_signal.c	/^void reload_config ( int signum ) {$/;"	f
+rt_data_time	../collectord/d_nodes.h	/^    time_t rt_data_time;$/;"	m	struct:script_rt_data_s
+rt_node_data	../collectord/d_nodes.h	/^    script_rt_data_t rt_node_data [ MAX_SCRIPT_NUM_PER_NODE ];$/;"	m	struct:node_rt_data_s
+rt_script_data	../collectord/d_nodes.h	/^    char rt_script_data [ RT_SCRIPT_DATA_LEN ];$/;"	m	struct:script_rt_data_s
+rt_script_name	../collectord/d_nodes.h	/^    char rt_script_name [ MAX_SCRIPT_NAME_LEN ];$/;"	m	struct:script_rt_data_s
+sc_names	../collector/c_script.h	/^    char sc_names [ MAX_SCRIPT_NUM_PER_NODE ][ MAX_SCRIPT_NAME_LEN + SCRIPT_FILE_PATH_LEN ];$/;"	m	struct:script_list_s
+sc_num	../collector/c_script.h	/^    int sc_num;$/;"	m	struct:script_list_s
+scl_adjust	../collector/c_script.c	/^int scl_adjust ( scl_t * p_scl ) {$/;"	f
+scl_t	../collector/c_script.h	/^typedef struct script_list_s scl_t;$/;"	t	typeref:struct:script_list_s
+script_list_s	../collector/c_script.h	/^struct script_list_s {$/;"	s
+script_rt_data_s	../collectord/d_nodes.h	/^struct script_rt_data_s {$/;"	s
+script_rt_data_t	../collectord/d_nodes.h	/^typedef struct script_rt_data_s script_rt_data_t;$/;"	t	typeref:struct:script_rt_data_s
+sct_cur_data_head	../collector/c_proc_sct.c	/^    static data_head_t sct_cur_data_head = {$/;"	v	file:
+sct_file_data_head	../collector/c_proc_sct.c	/^    static data_head_t sct_file_data_head = {$/;"	v	file:
+sct_interval_data_head	../collector/c_proc_sct.c	/^    static data_head_t sct_interval_data_head = {$/;"	v	file:
+sd	../util/u_regex.h	/^    pcre_extra * sd;$/;"	m	struct:u_re_s
+semun	../util/u_mutex.c	/^    union semun {$/;"	u	file:
+send_buffer	../collector/c_proc_cmd.c	/^char send_buffer [ DATA_PROTOCOL_HEAD_LEN + MAX_CMD_RES_LEN + 1 ];$/;"	v
+send_cmd_read_config_from_file	../collectord/tools/t_send_cmd.c	/^int send_cmd_read_config_from_file ( char * config_file_path, snd_conf_t * snd_conf ) {$/;"	f
+send_response	../collectord/d_recv.c	/^static int send_response ( int sock_fd, int node_discard_time ) {$/;"	f	file:
+server_ip	../collectord/d_config.h	/^    char server_ip [ MAX_IP_STR_LEN ];$/;"	m	struct:collectord_config_s
+server_port	../collectord/d_config.h	/^    unsigned short int server_port;$/;"	m	struct:collectord_config_s
+set_log_level	../util/u_log.c	/^int set_log_level ( log_t * log_handle, log_level_t log_level ) {$/;"	f
+sin_addr_to_uint	../util/u_util.c	/^int sin_addr_to_uint ( struct sockaddr_in * sa, unsigned int * ip ) {$/;"	f
+snd_conf_s	../collectord/tools/t_send_cmd.h	/^struct snd_conf_s {$/;"	s
+snd_conf_t	../collectord/tools/t_send_cmd.h	/^typedef struct snd_conf_s snd_conf_t;$/;"	t	typeref:struct:snd_conf_s
+socket_fd	../collectord/d_nodes.h	/^    unsigned int socket_fd;$/;"	m	struct:node_ctl_s
+socket_fd	../collectord/d_recv.h	/^    int socket_fd;$/;"	m	struct:thread_arg_recv_s
+split_path_and_filename	../util/u_log.c	/^static int split_path_and_filename ( char * path_and_filename, char * pathname, char * filename ) {$/;"	f	file:
+start	../util/u_queue.h	/^    int         start;$/;"	m	struct:__anon3
+start_log	../util/u_log.c	/^int start_log ( char * log_file_path, log_level_t log_level, log_t * handle ) {$/;"	f
+startup_status	../collectord/d_collectord.c	/^int startup_status [ 3 ] = { 0, 0, 0 };$/;"	v
+str_get_item	../util/u_util.c	/^char * str_get_item ( char * dest, char * src, int max_len ) {$/;"	f
+t_process_cmd_options	../collectord/tools/t_process_opt.c	/^int t_process_cmd_options ( int argc, char * argv [ ], $/;"	f
+thread_arg_recv_s	../collectord/d_recv.h	/^struct thread_arg_recv_s {$/;"	s
+thread_arg_recv_t	../collectord/d_recv.h	/^typedef struct thread_arg_recv_s thread_arg_recv_t;$/;"	t	typeref:struct:thread_arg_recv_s
+thread_config	../collectord/d_config.c	/^void * thread_config ( void * arg_config ) {$/;"	f
+thread_db	../collectord/d_db.c	/^void * thread_db ( void * arg_db ) {$/;"	f
+thread_id	../collectord/d_nodes.h	/^    pthread_t thread_id;$/;"	m	struct:node_ctl_s
+thread_recv	../collectord/d_recv.c	/^void * thread_recv ( void * arg_recv ) {$/;"	f
+thread_send_cmd	../collectord/tools/t_send_cmd.c	/^void * thread_send_cmd ( void * arg_send_cmd ) {$/;"	f
+thread_service	../collectord/d_service.c	/^void * thread_service ( void * arg_service ) {$/;"	f
+timeval_current	../util/u_util.c	/^struct timeval timeval_current ( void ) {$/;"	f
+timeval_elapsed	../util/u_util.c	/^double timeval_elapsed ( struct timeval * tv ) {$/;"	f
+traversal_node_status_info	../collectord/d_nodes.c	/^int traversal_node_status_info ( node_list_t * node_list,$/;"	f
+trim_head	../util/u_util.c	/^char * trim_head ( char * str, int max_len ) {$/;"	f
+type	../util/u_log.c	/^    long int type;$/;"	m	struct:log_recv_buffer_s	file:
+type	../util/u_log.c	/^    long int type;$/;"	m	struct:log_send_buffer_s	file:
+u_copy_file	../util/u_util.c	/^int u_copy_file ( char * file_dest, char * file_src ) {$/;"	f
+u_dequeue	../util/u_queue.c	/^void u_dequeue ( queue_t * uq, void * item ) {$/;"	f
+u_enqueue	../util/u_queue.c	/^void u_enqueue ( queue_t * uq, void * item ) {$/;"	f
+u_log	../util/u_log.c	/^int u_log ( log_t * log_handle, log_level_t level, const char * fmt, ... ) {$/;"	f
+u_mkdir_p	../util/u_util.c	/^int u_mkdir_p ( char * path ) {$/;"	f
+u_msleep	../util/u_util.c	/^int u_msleep ( int seconds, int msec ) {$/;"	f
+u_mutex_attach	../util/u_mutex.c	/^int u_mutex_attach ( int key ) {$/;"	f
+u_mutex_create	../util/u_mutex.c	/^int u_mutex_create ( int key ) {$/;"	f
+u_mutex_init	../util/u_mutex.c	/^int u_mutex_init ( int mutex_id ) {$/;"	f
+u_mutex_lock	../util/u_mutex.c	/^int u_mutex_lock ( int mutex_id ) {$/;"	f
+u_mutex_rmid	../util/u_mutex.c	/^int u_mutex_rmid ( int mutex_id ) {$/;"	f
+u_mutex_unlock	../util/u_mutex.c	/^int u_mutex_unlock ( int mutex_id ) {$/;"	f
+u_queue_init	../util/u_queue.c	/^void u_queue_init ( void * base, size_t nmemb, size_t item_size, queue_t * uq ) {$/;"	f
+u_queue_is_empty	../util/u_queue.c	/^int u_queue_is_empty ( queue_t * uq ) {$/;"	f
+u_queue_is_full	../util/u_queue.c	/^int u_queue_is_full ( queue_t * uq ) {$/;"	f
+u_queue_t	../util/u_queue.h	/^typedef queue_t u_queue_t;$/;"	t
+u_re_exe	../util/u_regex.c	/^int u_re_exe ( u_re_t * u_re, char * subject, int subject_len ) {$/;"	f
+u_re_finish	../util/u_regex.c	/^int u_re_finish ( u_re_t * u_re ) {$/;"	f
+u_re_prepare	../util/u_regex.c	/^int u_re_prepare ( char * pattern, u_re_t * u_re ) {$/;"	f
+u_re_s	../util/u_regex.h	/^struct u_re_s {$/;"	s
+u_re_t	../util/u_regex.h	/^typedef struct u_re_s u_re_t;$/;"	t	typeref:struct:u_re_s
+u_shm_attach	../util/u_shm.c	/^int u_shm_attach ( int key, size_t shmsize, void * * result ) {$/;"	f
+u_shm_create	../util/u_shm.c	/^int u_shm_create ( int key, size_t shmsize, void * * result ) {$/;"	f
+u_shm_destroy	../util/u_shm.c	/^int u_shm_destroy ( int shmid, void * shmaddr ) {$/;"	f
+u_shm_detach	../util/u_shm.c	/^int u_shm_detach ( void * shmaddr ) {$/;"	f
+u_sleep	../util/u_util.c	/^int u_sleep ( int seconds ) {$/;"	f
+u_time_stamp_r	../util/u_util.c	/^void u_time_stamp_r ( char * buffer ) {$/;"	f
+uint_ip	../collectord/d_recv.h	/^    unsigned int  uint_ip;$/;"	m	struct:thread_arg_recv_s
+update_clr_sct_config	../collector/c_config.c	/^int update_clr_sct_config ( clr_sct_conf_t * clr_sct_conf ) {$/;"	f
+update_node_list	../collectord/d_nodes.c	/^int update_node_list ( dy_nodes_t * dy_nodes, node_list_t * node_list ) {$/;"	f
+update_script_list	../collector/c_script.c	/^int update_script_list ( char * scl_path, scl_t * scl ) {$/;"	f
+val	../util/u_mutex.c	/^        int val;$/;"	m	union:semun	file:
+write_data_to_file	../collector/c_proc_sct.c	/^int write_data_to_file ( char * file, char * data, int data_len ) {$/;"	f

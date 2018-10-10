@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#HOSTNAME="127.0.0.1"
+#PORT="3306"
+#USERNAME="root"
+#PASSWORD="111111"
+#DBNAME="tsce"
+HOSTNAME=`cat ../../../config/default/base.conf | awk '{if($1=="db_server_ip") {print $2}}'`
+PORT=`cat ../../../config/default/base.conf | awk '{if($1=="db_server_port") {print $2}}'`
+USERNAME=`cat ../../../config/default/base.conf | awk '{if($1=="db_username") {print $2}}'`
+PASSWORD=`cat ../../../config/default/base.conf | awk '{if($1=="db_password") {print $2}}'`
+DBNAME=`cat ../../../config/default/base.conf | awk '{if($1=="db_name") {print $2}}'`
+TABLENAME="NodeInfo"
+
+SQL="SELECT nodeName, ip, (CASE WHEN (state=1) THEN 
+					'DOWN'
+				WHEN (state=0||state=-1) THEN 
+					'ACTIVE' 
+				WHEN (state=3) THEN 
+					'NETBUSY' END) AS 'state' FROM ${TABLENAME} "
+
+mysql -h${HOSTNAME} -p${PORT} -u${USERNAME} -p${PASSWORD} ${DBNAME} -e"${SQL}"
